@@ -44,3 +44,4 @@ themes/refilter/node_modules/*
 # ================== #
 themes/refilter/gulpfile.js
 themes/refilterbuild/*
+dploy.yaml
