@@ -27,22 +27,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Typography
 # Elements
 # Forms
-# Navigation
-	## Links
-	## Menus
-# Accessibility
-# Alignments
-# Clearings
-# Widgets
-# Content
-	## Posts and pages
-	## Asides
-	## Comments
-# Media
-	## Captions
-	## Galleries
-# Page Templates
-	## Front page
+# Front page
 --------------------------------------------------------------*/
 
 // Imported but not included in the stylesheet.
@@ -62,4 +47,4 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "widgets";
 @import "content";
 @import "media";
-@import "page-templates";
+@import "front-page";
