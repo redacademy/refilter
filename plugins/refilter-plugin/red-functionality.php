@@ -7,7 +7,7 @@
  * @copyright 2019 Butt Touchers
  *
  * @wordpress-plugin
- * Plugin Name: Refiler Plugin
+ * Plugin Name: Refilter Plugin
  * Description: Refilter is a project about cleaning up cigarette butts in the ocean.
  * Version:     1.0.0
  * Author:      Edin Kaymakqi, Alex Hing Liu, Roberto Esquivel, Richard Lam
