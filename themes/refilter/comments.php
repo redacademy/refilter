@@ -15,7 +15,7 @@ if ( post_password_required() ) {
 }
 ?>
 
-<div id="comments" class="comments-area">
+<main id="comments" class="comments-area">
 
 	<?php // You can start editing here -- including this comment! ?>
 
@@ -72,4 +72,4 @@ if ( post_password_required() ) {
 		'cancel_reply_link'    => esc_html( '[Cancel reply]' )
 	) ); ?>
 
-</div><!-- #comments -->
+</main><!-- #comments -->
