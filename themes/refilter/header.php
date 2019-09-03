@@ -27,7 +27,11 @@
 				</section><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
+				<h1 class="navbar-logo">Refilter</h1>
+				<div class="navbar-btn">
+				<a class="btn-green-full" href="#">Get Involved</a>	
+				</div>			
+					<button class="menu-toggle navbar-hamburger" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
