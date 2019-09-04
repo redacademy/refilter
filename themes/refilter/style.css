@@ -277,14 +277,65 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
+.btn-green-full {
+  text-decoration: none;
+  color: #fff;
+  background: green;
+  padding: 0.9rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
-.site-header {
-  width: 100%;
+/* Links */
+a {
+  color: #000; }
+  a:visited {
+    color: #000; }
+  a:hover, a:focus, a:active {
+    color: #000; }
+  a:focus {
+    outline: thin dotted; }
+  a:hover, a:active {
+    outline: 0; }
+
+/* Menus */
+.main-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  width: 100%; }
+  .main-navigation ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding-left: 0; }
+    .main-navigation ul ul {
+      -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+              box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+      float: left;
+      position: absolute;
+      top: 0;
+      left: -999rem;
+      z-index: 99999; }
+      .main-navigation ul ul ul {
+        left: -999rem;
+        top: 0; }
+      .main-navigation ul ul li:hover > ul,
+      .main-navigation ul ul li.focus > ul {
+        left: 100%; }
+      .main-navigation ul ul a {
+        width: 200px; }
+    .main-navigation ul li:hover > ul,
+    .main-navigation ul li.focus > ul {
+      left: auto; }
+  .main-navigation li {
+    float: left;
+    position: relative; }
+  .main-navigation a {
+    display: block;
+    text-decoration: none; }
 
 /* Small menu. */
 .menu-toggle,
@@ -296,5 +347,24 @@ textarea {
     display: none; }
   .main-navigation ul {
     display: block; } }
+
+.site-main .comment-navigation, .site-main
+.posts-navigation, .site-main
+.post-navigation {
+  margin: 0 0 0 0;
+  overflow: hidden; }
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+  float: left;
+  width: 50%; }
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+  float: right;
+  text-align: right;
+  width: 50%; }
 
 /* Front page */
