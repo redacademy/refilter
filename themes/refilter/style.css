@@ -229,6 +229,9 @@ html {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
+body {
+  background: url("http://refilter.van.cp.academy.red/wp-content/uploads/2019/09/pattern.jpg") no-repeat center bottom/cover; }
+
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
@@ -276,6 +279,10 @@ textarea {
   color: #fff;
   border-radius: 8px;
   font-size: 0.9rem; }
+
+.wp-block-button__link {
+  background: #0ed166;
+  border-radius: 8px; }
 
 /*--------------------------------------------------------------
 # Navigation
