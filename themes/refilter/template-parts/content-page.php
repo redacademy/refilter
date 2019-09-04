@@ -9,6 +9,8 @@
 
 <main id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<article class="entry-content">
+	<?php the_post_thumbnail('', ['class' => 'wavy-banner']) ?>
+	<section class="wave"></section>
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(

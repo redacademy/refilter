@@ -13,3 +13,24 @@
     background: #0ed166;
     border-radius: 8px;
 }
+
+.wavy-banner {
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+}
+
+// .wave:before {
+//     content: '';
+//     position: absolute;
+//     left: 0;
+//     bottom: 0;
+//     width: 100%;
+//     height: 105px;
+//     background: url('http://refilter.van.cp.academy.red/wp-content/uploads/2019/09/wave.png');
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;    
+// }
