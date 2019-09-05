@@ -408,3 +408,6 @@ textarea {
       text-align: left; } }
 
 /* Front page */
+/* about page */
+.entry-header h1 {
+  text-align: center; }
