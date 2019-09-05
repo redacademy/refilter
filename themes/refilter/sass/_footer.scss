@@ -1,0 +1,23 @@
+.site-footer{
+    background:$brown;
+    height: 150px;
+}
+
+.f-title{
+    display: flex;
+    justify-content: center;
+
+    span{
+        margin-left: 20px;
+    }
+}
+
+.f-year{
+    display: flex;
+    justify-content: center;
+}
+.non-profit{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
