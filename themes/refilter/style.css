@@ -421,3 +421,37 @@ textarea {
       text-align: left; } }
 
 /* Front page */
+/* about page */
+.entry-header h1 {
+  text-align: center; }
+
+.site-footer {
+  background: #efc579;
+  height: 150px; }
+
+.f-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .f-title span {
+    margin-left: 20px; }
+
+.f-year {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.non-profit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px; }
