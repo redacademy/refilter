@@ -14,16 +14,11 @@
     border-radius: 8px;
 }
 
-.wavy-banner {
-    width: 100%;
-    min-height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    object-fit: cover;
+.hfeed.site.container {
+    min-width: 1240px;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
 }
 
 // .wave:before {
