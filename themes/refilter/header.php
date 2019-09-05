@@ -39,6 +39,13 @@
 						<button class="menu-toggle navbar-hamburger" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'hamburger' ); ?></button>
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					</nav><!-- #site-navigation -->
-					</header><!-- #masthead -->
+					
+					<section class="landing">
+					<h1 class="landing-title"><?php the_field('landing_title'); ?></h1>
+					<h2 class="landing-question"><?php the_field('landing_question'); ?></h2>
+					<h3 class="landing-quote"><?php the_field('landing_quote'); ?></h3>
+
+					</section>	
+				</header><!-- #masthead -->
 
 			<main id="content" class="site-content">

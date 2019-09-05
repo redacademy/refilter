@@ -35,18 +35,28 @@
 		</section>
 
 			<ul class="contribute-types">
-				<li class="contribute-recycling"><?php the_field('contribute_recycling'); ?></li>
-				<li class="contribute-events"><?php the_field('contribute_events'); ?></li>
-				<li class="contribute-donation"><?php the_field('contribute_donation'); ?></li>
-				<li class="contribute-word"><?php the_field('contribute_word'); ?></li>			
+				<li class="contribute-recycling">
+					<h3 class="contribute-recycling-title"><?php the_field('contribute_recycling_title'); ?></h3>
+					<p class="contribute-recycling-description"><?php the_field('contribute_recycling_description'); ?></p>
+				</li>
+				<li class="contribute-events">
+					<h3 class="contribute-events-title"><?php the_field('contribute_events_title'); ?></h3>
+					<p class="contribute-events-description"><?php the_field('contribute_events_description'); ?></p>
+				</li>
+				<li class="contribute-donation">
+					<h3 class="contribute-donation-title"><?php the_field('contribute_donation_title'); ?></h3>
+					<p class="contribute-donation-description"><?php the_field('contribute_donation_description'); ?></p>
+				</li>
+				<li class="contribute-word">
+					<h3 class="contribute-word-title"><?php the_field('contribute_word_title'); ?></h3>
+					<p class="contribute-word-description"><?php the_field('contribute_word_description'); ?></p>
+				</li>	
 			</ul>
 
 			<section class="butt-count">
 			<h1 class="butt-count-title"><?php the_field('butt_count_title'); ?></h1>
-			<h1 class="butt-count-title"><?php the_field('butt_count_title'); ?></h1>						
-			<h1 class="butt-count-title"><?php the_field('butt_count_title'); ?></h1>						
-			<span class="butt-count-butts-collected"><?php the_field('butt_count_butts_collected'); ?></span>						
-			<span class="butt-count-waste-collected"><?php the_field('butt_count_waste_collected'); ?></span>						
+			<span class="butt-count-butts-collected"><?php the_field('butts_collected'); ?></span>						
+			<span class="butt-count-waste-collected"><?php the_field('waste_collected'); ?></span>						
 			</section>
 
 			<ul class="instagram-feed">
@@ -54,9 +64,9 @@
 			</ul>
 
 			<section class="wavy-newsletter">
-				<h1 class="wavy-newsletter-title"><?php the_field('wavy_newsletter_title'); ?></h1>										
-				<input class="wavy-newsletter-name" type="text" placeholder="<?php the_field('wavy_newsletter_name'); ?>" />
-				<input class="wavy-newsletter-email" type="text" placeholder="<?php the_field('wavy_newsletter_email'); ?>" />													
+				<h1 class="wavy-newsletter-title"><?php the_field('newsletter_title'); ?></h1>										
+				<input class="wavy-newsletter-name" type="text" placeholder="<?php the_field('newsletter_name'); ?>" />
+				<input class="wavy-newsletter-email" type="text" placeholder="<?php the_field('newsletter_email'); ?>" />													
 			</section>
 	</section><!-- .entry-content -->
 </main><!-- #post-## -->
