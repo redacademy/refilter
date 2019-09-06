@@ -11,7 +11,19 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
+				<div>
+					<p class="f-title"> Contact Us
+					<span><i class="fab fa-instagram"></i></span>
+
+					<span><i class="fab fa-facebook-f"></i></span>
+					</p>
+
+					<div class="f-year">
+					<span>2019-2019 re: FILTER, inc.</span>
+					</div>
+					<span class="non-profit">non-profit # 1065546-5</span>
+					
+
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</main><!-- #page -->

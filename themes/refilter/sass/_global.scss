@@ -18,6 +18,13 @@ body {
   background: url('http://refilter.van.cp.academy.red/wp-content/uploads/2019/09/pattern.jpg') no-repeat center bottom/cover;
 }
 
+.entry-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 img {
   height: auto; /* Make sure images are scaled correctly. */
   max-width: 100%; /* Adhere to container width. */

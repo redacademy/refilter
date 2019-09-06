@@ -12,25 +12,40 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<?php wp_head(); ?>
+	<style>
+		.wavy-banner {
+			background: url('<?php echo get_the_post_thumbnail_url() ?>') no-repeat center center/cover;
+			min-height: 80vh;
+		}
+	</style>
 	</head>
 
 	<body <?php body_class(); ?>>
-		<main id="page" class="hfeed site">
+		<main id="page" class="hfeed site container">
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 
-			<header id="masthead" class="site-header" role="banner">
+			<header id="masthead" class="site-header wavy-banner" role="banner">
+				<section class="wave"></section>				
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-				<section class="site-branding">
-					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
-				</section><!-- .site-branding -->
-				<section class="navbar-btn">
-				<a class="btn-green-full" href="#">Get Involved</a>	
-				</section>			
-					<button class="menu-toggle navbar-hamburger" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'hamburger' ); ?></button>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-				</nav><!-- #site-navigation -->
-			</header><!-- #masthead -->
+					<section class="site-branding">
+						<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+						<p class="site-description"><?php bloginfo( 'description' ); ?></p>
+					</section><!-- .site-branding -->
+					<section class="navbar-btn">
+					<a class="btn-green-full" href="#">Get Involved</a>	
+					</section>			
+						<button class="menu-toggle navbar-hamburger" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'hamburger' ); ?></button>
+						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					</nav><!-- #site-navigation -->
+					
+					<section class="landing">
+					<h1 class="landing-title"><?php the_field('landing_title'); ?></h1>
+					<h2 class="landing-question"><?php the_field('landing_question'); ?></h2>
+					<h3 class="landing-quote"><?php the_field('landing_quote'); ?></h3>
+
+					</section>	
+				</header><!-- #masthead -->
 
 			<main id="content" class="site-content">
