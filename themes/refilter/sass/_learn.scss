@@ -1,0 +1,40 @@
+/* Learn page */
+
+.page-id-16{
+    color: #fff;
+
+    .entry-content{
+        text-align: center;
+        h2{
+            width: 350px;
+            margin: 0 auto;
+            padding: 10px;
+            padding-bottom: 10px;
+            font-size:23px;
+            font-weight: 50;
+            letter-spacing: 10px;
+        }
+        p{
+            width: 400px;
+            margin: 0 auto;
+            padding: 10px;
+            padding-bottom: 10px;
+            font-size: 36px;
+            font-weight: 100;
+        }
+    }
+
+    .entry-title {
+        display: flex;
+        height: 30vh;
+        h1 {
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+            text-align: center;
+            margin: auto;
+        }
+    }
+}
