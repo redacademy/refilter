@@ -8,7 +8,8 @@
 get_header(); ?>
 
 	<main id="primary" class="content-area">
-		<section id="main" class="site-main" role="main">
+		<section id="main" class="site-main-learn" role="main">
+            <?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
