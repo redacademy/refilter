@@ -55,8 +55,10 @@
 
 			<section class="butt-count">
 			<h1 class="butt-count-title"><?php the_field('butt_count_title'); ?></h1>
-			<span class="butt-count-butts-collected"><?php the_field('butts_collected'); ?></span>						
-			<span class="butt-count-waste-collected"><?php the_field('waste_collected'); ?></span>						
+			<h2 class="butt-count-butts-collected-text"><?php the_field('butts_collected_text'); ?></h2>						
+			<h2 class="butt-count-butts-collected-number"><?php the_field('butts_collected_number'); ?></h2>						
+			<h2 class="butt-count-butts-collected-text"><?php the_field('butts_collected_text'); ?></h2>								
+			<h2 class="butt-count-waste-collected-number"><?php the_field('waste_collected_number'); ?></h2>						
 			</section>
 
 			<ul class="instagram-feed">
