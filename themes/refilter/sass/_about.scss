@@ -1,7 +1,17 @@
 /* about page */
 
-.entry-header {
-    h1 {
-        text-align: center;
+
+    
+.about-content-area {
+    max-width: 480px;
+    margin: 0 auto;
+.about-site-main {
+    max-width: 480px;
+    margin: 0 auto;
+    .about-entry-title {
+        color: white;
+        position: absolute;
+        top: 40vh;
     }
+}
 }

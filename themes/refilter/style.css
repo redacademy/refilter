@@ -453,10 +453,18 @@ textarea {
       color: #fff;
       text-align: center;
       margin: auto; }
-=======
+
 /* about page */
-.entry-header h1 {
-  text-align: center; }
+.about-content-area {
+  max-width: 480px;
+  margin: 0 auto; }
+  .about-content-area .about-site-main {
+    max-width: 480px;
+    margin: 0 auto; }
+    .about-content-area .about-site-main .about-entry-title {
+      color: white;
+      position: absolute;
+      top: 40vh; }
 
 .site-footer {
   background: #efc579;
