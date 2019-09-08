@@ -1,1 +1,95 @@
 /* Front page */
+
+.our-purpose,
+.what-we-do {
+  padding: 1.5rem 0;
+
+  .purpose-title,
+  .what-we-do-title {
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  .what-we-do-title {
+    margin-top: 0;
+  }
+
+  .purpose-description,
+  .what-we-do-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-weight: 300;
+  }
+
+  .what-we-do-image {
+    display: none;
+  }
+}
+
+.wavy-testimonial {
+  color: #fff;
+  padding: 2rem 0;
+  text-shadow: 0px 0px 2px #000000;
+  line-height: 1.5;
+  font-weight: 300;
+
+  .wavy-testimonial-description,
+  .wavy-testimonial-author,
+  .what-we-do-member,
+  .wavy-testimonial-event {
+    width: 80%;
+  }
+
+  .wavy-testimonial-description {
+    font-size: 1.6rem;
+  }
+
+  .wavy-testimonial-author {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .wavy-testimonial-event {
+    font-size: 1.3rem;
+  }
+}
+
+.contribute {
+  padding: 2rem 0;
+  text-align: left;
+  line-height: 1.6;
+  font-size: 1.1rem;
+
+  .contribute-title {
+    width: 100%;
+  }
+}
+
+.contribute-types {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  li {
+    padding: 0.5rem 0;
+  }
+}
+
+.butt-count {
+  padding: 2rem 0;
+
+  .butt-count-title {
+    font-size: 1.7rem;
+  }
+
+  .butt-count-title {
+    font-size: 1.9rem;
+    padding: 0.5rem 0;
+  }
+
+  .butt-count-text {
+    margin-top: 2rem;
+    font-weight: 100;
+  }
+}
