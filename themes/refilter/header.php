@@ -20,11 +20,11 @@
 		}
 
 		.wavy-testimonial {
-			background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('http://via.placeholder.com/640x360') no-repeat center center/cover;
+			background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('<?php the_field('wavy_testimonial_image'); ?>') no-repeat center center/cover;
 		}	
 		
 		.wavy-newsletter {
-			background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('http://via.placeholder.com/640x360') no-repeat center center/cover;
+			background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('<?php the_field('newsletter_image'); ?>') no-repeat center center/cover;
 		}		
 	</style>
 	</head>
