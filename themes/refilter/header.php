@@ -15,37 +15,37 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<?php wp_head(); ?>
 	<style>
-		.wavy-banner {
-			background: url('<?php echo get_the_post_thumbnail_url() ?>') no-repeat center center/cover;
-			min-height: 80vh;
+		.landing {
+			background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('<?php echo get_the_post_thumbnail_url(); ?>') no-repeat center center/cover;
 		}
+
+		.wavy-testimonial {
+			background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('http://via.placeholder.com/640x360') no-repeat center center/cover;
+		}	
+		
+		.wavy-newsletter {
+			background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('http://via.placeholder.com/640x360') no-repeat center center/cover;
+		}		
 	</style>
 	</head>
+	<!-- '<?php echo the_field('wavy-testimonial-image'); ?>'  -->
 
 	<body <?php body_class(); ?>>
-		<main id="page" class="hfeed site container">
+		<main id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 
-			<header id="masthead" class="site-header wavy-banner" role="banner">
-				<section class="wave"></section>				
+			<header id="masthead" class="site-header" role="banner">
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<section class="site-branding">
 						<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 						<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 					</section><!-- .site-branding -->
 					<section class="navbar-btn">
-					<a class="btn-green-full" href="#">Get Involved</a>	
+					<a class="btn green-full" href="#">Get Involved</a>	
 					</section>			
 						<button class="menu-toggle navbar-hamburger" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'hamburger' ); ?></button>
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					</nav><!-- #site-navigation -->
-					
-					<section class="landing">
-					<h1 class="landing-title"><?php the_field('landing_title'); ?></h1>
-					<h2 class="landing-question"><?php the_field('landing_question'); ?></h2>
-					<h3 class="landing-quote"><?php the_field('landing_quote'); ?></h3>
-
-					</section>	
+					</nav><!-- #site-navigation -->	
 				</header><!-- #masthead -->
 
 			<main id="content" class="site-content">

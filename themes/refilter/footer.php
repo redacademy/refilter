@@ -9,21 +9,15 @@
 
 			</section><!-- #content -->
 
-			<footer id="colophon" class="site-footer" role="contentinfo">
-				<div class="site-info">
-				<div>
-					<p class="f-title"> Contact Us
-					<span><i class="fab fa-instagram"></i></span>
-
+			<footer id="colophon" class="site-footer container" role="contentinfo">
+				<section class="footer-contact">
+					<p> Contact Us
 					<span><i class="fab fa-facebook-f"></i></span>
+					<span><i class="fab fa-instagram"></i></span>
 					</p>
-
-					<div class="f-year">
-					<span>2019-2019 re: FILTER, inc.</span>
-					</div>
-					<span class="non-profit">non-profit # 1065546-5</span>
-					
-
+					<p>2018 - 2019 re:FILTER, Inc.</p>
+					<p> &copy; Non-profit # 1065546-5</p>
+				</section>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</main><!-- #page -->
