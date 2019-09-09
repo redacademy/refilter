@@ -36,16 +36,23 @@ img {
 
 .container {
   width: 80%;
-  max-width: 1240px;
+  max-width: 1366px;
   margin: 0 auto;
   text-align: left;
 }
 
 .container-fluid {
-  max-width: 1240px;
+  max-width: 1366px;
   width: 100%;
   margin: 0 auto;
   text-align: center;
+}
+
+.container-content > * {
+  max-width: 650px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .landing {
