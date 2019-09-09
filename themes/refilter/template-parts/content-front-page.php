@@ -18,16 +18,18 @@
 				<a class="btn green-full" href="#">Learn More</a>
 			</section>
 
-				<section class="our-purpose container">
+				<section class="our-purpose container container-content">
 					<h3 class="purpose-title"><?php the_field('purpose_title'); ?></h3>			
 					<p class="purpose-description"><?php the_field('purpose_description'); ?></p>	
 				</section>
 
 				<section class="what-we-do container">
 					<h3 class="what-we-do-title"><?php the_field('what_we_do_title'); ?></h3>			
+					<section class="overlapping-text">					
 					<p class="what-we-do-description"><?php the_field('what_we_do_description'); ?></p>	
 					<p class="what-we-do-description"><?php the_field('what_we_do_description_2'); ?></p>				
 					<img class="what-we-do-image" src="<?php the_field('what_we_do_image'); ?>;" />
+					</section>					
 					<a class="btn green-empty" href="#">Learn More</a>
 				</section>
 
