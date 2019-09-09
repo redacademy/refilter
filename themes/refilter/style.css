@@ -630,6 +630,45 @@ textarea {
       color: white;
       position: absolute;
       top: 40vh; }
+  .about-content-area .mission-container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding-bottom: 8%; }
+    .about-content-area .mission-container .icon-1-image-wrapper {
+      max-width: 20%; }
+    .about-content-area .mission-container .icon-2-image-wrapper {
+      max-width: 20%; }
+  .about-content-area .who-we-are-container {
+    max-width: 80%;
+    margin: 0 auto; }
+    .about-content-area .who-we-are-container h2 {
+      text-align: center; }
+    .about-content-area .who-we-are-container h3 {
+      text-align: center; }
+    .about-content-area .who-we-are-container .staff-member-1-image-wrapper {
+      max-width: 70%;
+      margin: 0 auto;
+      padding-top: 5%; }
+    .about-content-area .who-we-are-container .staff-member-2-image-wrapper {
+      max-width: 70%;
+      margin: 0 auto; }
+    .about-content-area .who-we-are-container .staff-member-3-image-wrapper {
+      max-width: 70%;
+      margin: 0 auto; }
+    .about-content-area .who-we-are-container .staff-member-4-image-wrapper {
+      max-width: 70%;
+      margin: 0 auto; }
+    .about-content-area .who-we-are-container .social-media-icon-container {
+      margin: 0 auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      max-width: 65%;
+      padding-top: 4%;
+      padding-bottom: 28%; }
 
 .site-footer {
   padding: 2em 0 0.5rem 0;
