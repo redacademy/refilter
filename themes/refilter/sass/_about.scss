@@ -14,4 +14,55 @@
         top: 40vh;
     }
 }
+
+    .mission-container {
+        max-width: 80%;
+        margin: 0 auto;
+        padding-bottom: 8%;
+        .icon-1-image-wrapper {
+            max-width: 20%;
+        }
+        .icon-2-image-wrapper {
+            max-width: 20%;
+        }
+    }
+
+    .who-we-are-container {
+        max-width: 80%;
+        margin: 0 auto;
+        h2 {
+                text-align: center;
+        }
+        h3 {
+            text-align: center;
+        }
+        .staff-member-1-image-wrapper {
+            max-width: 70%;
+            margin: 0 auto;
+            padding-top: 5%;
+        }
+        .staff-member-2-image-wrapper {
+            max-width: 70%;
+            margin: 0 auto;
+        }
+
+        .staff-member-3-image-wrapper {
+            max-width: 70%;
+            margin: 0 auto;
+        }
+        .staff-member-4-image-wrapper {
+            max-width: 70%;
+            margin: 0 auto;
+        }
+        .social-media-icon-container {
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            max-width: 65%;
+            padding-top: 4%;
+            padding-bottom: 28%;
+
+        }
+    }
 }
+ 
