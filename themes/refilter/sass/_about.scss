@@ -5,13 +5,24 @@
 .about-content-area {
     max-width: 480px;
     margin: 0 auto;
+    @include desktop {
+        max-width: 100%;
+      }
+    
 .about-site-main {
     max-width: 480px;
     margin: 0 auto;
+    @include desktop {
+        max-width: 100%;
+      }
     .about-entry-title {
         color: white;
         position: absolute;
         top: 40vh;
+        
+        @include desktop {
+            max-width: 100%;
+          }    
     }
 }
 
@@ -36,23 +47,66 @@
         h3 {
             text-align: center;
         }
+        p {
+            display: none;
+            @include desktop {
+                max-width: 100%;
+                display: block;
+              }
+        }
         .staff-member-1-image-wrapper {
             max-width: 70%;
             margin: 0 auto;
             padding-top: 5%;
+        }
+
+        .staff-member-1-fun-fact-container {
+            display: none;
+            background-color: #39a8ab;
+            @include desktop {
+                max-width: 100%;
+                display: flex;
+              }
         }
         .staff-member-2-image-wrapper {
             max-width: 70%;
             margin: 0 auto;
         }
 
+        .staff-member-2-fun-fact-container {
+            display: none;
+            background-color: #39a8ab;
+            @include desktop {
+                max-width: 100%;
+                display: flex;
+              }
+        }
+
         .staff-member-3-image-wrapper {
             max-width: 70%;
             margin: 0 auto;
         }
+
+        .staff-member-3-fun-fact-container {
+            display: none;
+            background-color: #39a8ab;
+            @include desktop {
+                max-width: 100%;
+                display: flex;
+              }
+        }
         .staff-member-4-image-wrapper {
             max-width: 70%;
             margin: 0 auto;
+        }
+
+        .staff-member-4-fun-fact-container {
+            display: none;
+            background-color: #39a8ab;
+            @include desktop {
+                max-width: 100%;
+                display: flex;
+              }
         }
         .social-media-icon-container {
             margin: 0 auto;

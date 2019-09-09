@@ -56,6 +56,17 @@
             </div>    
             <h2 class="staff-member-name-1"><?php the_field('staff_member_1_name'); ?></h2>
             <h3 class="staff-member-title-1"><?php the_field('staff_member_1_title'); ?></h3>
+            <p class="staff-member-1-description"><?php the_field('staff_member_1_description'); ?></p>
+            <div class="staff-member-1-fun-fact-container">
+                <div class="staff-member-1-fun-fact-image-wrapper">
+                <?php 
+                    $image_fun_fact1 = get_field('staff_member_1_fun_fact_icon'); // assigns the image field to the variable of $image
+                    if( !empty($image_fun_fact1) ){ ?> <!-- if the $image variable isn't empty, display the following: -->
+                    <img src="<?php echo $image_fun_fact1['url']; ?>" alt="<?php echo $image_fun_fact1['alt']; ?>" /> <!--displays the URL for the image variable and also the alt tag which is entered in the WordPress media library-->
+                <?php }; ?> <!--ends the if statement -->
+                </div>   
+                <p class="staff-member-1-fun-fact"><?php the_field('staff_member_1_fun_fact'); ?></p>
+            </div>
             <div class="social-media-icon-container">
                 <div class="ln-icon-wrapper"><i class="fab fa-linkedin-in fa-3x"></i></div>
                 <div class="ig-icon-wrapper"><i class="fab fa-instagram fa-3x"></i></div>
@@ -70,6 +81,17 @@
             </div>    
             <h2 class="staff-member-name-2"><?php the_field('staff_member_2_name'); ?></h2>
             <h3 class="staff-member-title-2"><?php the_field('staff_member_2_title'); ?></h3>
+            <p class="staff-member-2-description"><?php the_field('staff_member_2_description'); ?></p>
+            <div class="staff-member-2-fun-fact-container">
+                <div class="staff-member-2-fun-fact-image-wrapper">
+                <?php 
+                    $image_fun_fact2 = get_field('staff_member_2_fun_fact_icon'); // assigns the image field to the variable of $image
+                    if( !empty($image_fun_fact2) ){ ?> <!-- if the $image variable isn't empty, display the following: -->
+                    <img src="<?php echo $image_fun_fact2['url']; ?>" alt="<?php echo $image_fun_fact2['alt']; ?>" /> <!--displays the URL for the image variable and also the alt tag which is entered in the WordPress media library-->
+                <?php }; ?> <!--ends the if statement -->
+                </div>   
+                <p class="staff-member-2-fun-fact"><?php the_field('staff_member_2_fun_fact'); ?></p>
+            </div>
             <div class="social-media-icon-container">
                 <div class="ln-icon-wrapper"><i class="fab fa-linkedin-in fa-3x"></i></div>
                 <div class="ig-icon-wrapper"><i class="fab fa-instagram fa-3x"></i></div>
@@ -84,6 +106,17 @@
             </div>    
             <h2 class="staff-member-name-3"><?php the_field('staff_member_3_name'); ?></h2>
             <h3 class="staff-member-title-3"><?php the_field('staff_member_3_title'); ?></h3>
+            <p class="staff-member-3-description"><?php the_field('staff_member_3_description'); ?></p>
+            <div class="staff-member-3-fun-fact-container">
+                <div class="staff-member-3-fun-fact-image-wrapper">
+                <?php 
+                    $image_fun_fact3 = get_field('staff_member_3_fun_fact_icon'); // assigns the image field to the variable of $image
+                    if( !empty($image_fun_fact3) ){ ?> <!-- if the $image variable isn't empty, display the following: -->
+                    <img src="<?php echo $image_fun_fact3['url']; ?>" alt="<?php echo $image_fun_fact3['alt']; ?>" /> <!--displays the URL for the image variable and also the alt tag which is entered in the WordPress media library-->
+                <?php }; ?> <!--ends the if statement -->
+                </div>   
+                <p class="staff-member-2-fun-fact"><?php the_field('staff_member_2_fun_fact'); ?></p>
+            </div>           
             <div class="social-media-icon-container">
                 <div class="ln-icon-wrapper"><i class="fab fa-linkedin-in fa-3x"></i></div>
                 <div class="ig-icon-wrapper"><i class="fab fa-instagram fa-3x"></i></div>
@@ -98,6 +131,17 @@
             </div>    
             <h2 class="staff-member-name-4"><?php the_field('staff_member_4_name'); ?></h2>
             <h3 class="staff-member-title-4"><?php the_field('staff_member_4_title'); ?></h3>
+            <p class="staff-member-4-description"><?php the_field('staff_member_4_description'); ?></p>
+            <div class="staff-member-4-fun-fact-container">
+                <div class="staff-member-4-fun-fact-image-wrapper">
+                <?php 
+                    $image_fun_fact4 = get_field('staff_member_4_fun_fact_icon'); // assigns the image field to the variable of $image
+                    if( !empty($image_fun_fact4) ){ ?> <!-- if the $image variable isn't empty, display the following: -->
+                    <img src="<?php echo $image_fun_fact4['url']; ?>" alt="<?php echo $image_fun_fact4['alt']; ?>" /> <!--displays the URL for the image variable and also the alt tag which is entered in the WordPress media library-->
+                <?php }; ?> <!--ends the if statement -->
+                </div>   
+                <p class="staff-member-2-fun-fact"><?php the_field('staff_member_2_fun_fact'); ?></p>
+            </div>           
             <div class="social-media-icon-container">
                 <div class="ln-icon-wrapper"><i class="fab fa-linkedin-in fa-3x"></i></div>
                 <div class="ig-icon-wrapper"><i class="fab fa-instagram fa-3x"></i></div>
