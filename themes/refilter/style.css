@@ -619,6 +619,24 @@ textarea {
       text-align: center;
       margin: auto; }
 
+.projects-title {
+  text-align: center; }
+
+.partners-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.project-partner-title {
+  text-align: center; }
+
+.tab-one-container {
+  widows: 500px;
+  height: 600px; }
+
 /* about page */
 .about-content-area {
   max-width: 480px;
