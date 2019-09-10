@@ -639,17 +639,50 @@ textarea {
       @media (min-width: 768px) {
         .about-content-area .about-site-main .about-entry-title {
           max-width: 100%; } }
+  @media (min-width: 768px) {
+    .about-content-area .mission-title {
+      max-width: 40.4%;
+      text-align: left;
+      margin: 0 auto;
+      padding-top: 6%;
+      padding-bottom: 3%; } }
   .about-content-area .mission-container {
     max-width: 80%;
     margin: 0 auto;
     padding-bottom: 8%; }
-    .about-content-area .mission-container .icon-1-image-wrapper {
+    @media (min-width: 768px) {
+      .about-content-area .mission-container {
+        max-width: 40%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; } }
+    @media (min-width: 768px) {
+      .about-content-area .mission-container .mission-1-wrapper {
+        max-width: 49%; } }
+    .about-content-area .mission-container .mission-1-wrapper .icon-1-image-wrapper {
       max-width: 20%; }
-    .about-content-area .mission-container .icon-2-image-wrapper {
+      @media (min-width: 768px) {
+        .about-content-area .mission-container .mission-1-wrapper .icon-1-image-wrapper {
+          max-width: 25%; } }
+    @media (min-width: 768px) {
+      .about-content-area .mission-container .mission-2-wrapper {
+        max-width: 49%; } }
+    .about-content-area .mission-container .mission-2-wrapper .icon-2-image-wrapper {
       max-width: 20%; }
+      @media (min-width: 768px) {
+        .about-content-area .mission-container .mission-2-wrapper .icon-2-image-wrapper {
+          max-width: 25%; } }
   .about-content-area .who-we-are-container {
     max-width: 80%;
     margin: 0 auto; }
+    @media (min-width: 768px) {
+      .about-content-area .who-we-are-container {
+        display: grid;
+        grid-template-columns: 40% 1fr;
+        grid-template-rows: 1fr 1fr; } }
     .about-content-area .who-we-are-container h2 {
       text-align: center; }
     .about-content-area .who-we-are-container h3 {
@@ -673,6 +706,9 @@ textarea {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex; } }
+      @media (min-width: 768px) {
+        .about-content-area .who-we-are-container .staff-member-1-fun-fact-container .staff-member-1-fun-fact-icon-wrapper {
+          max-width: 6%; } }
     .about-content-area .who-we-are-container .staff-member-2-image-wrapper {
       max-width: 70%;
       margin: 0 auto; }
@@ -685,6 +721,9 @@ textarea {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex; } }
+      @media (min-width: 768px) {
+        .about-content-area .who-we-are-container .staff-member-2-fun-fact-container .staff-member-2-fun-fact-icon-wrapper {
+          max-width: 6%; } }
     .about-content-area .who-we-are-container .staff-member-3-image-wrapper {
       max-width: 70%;
       margin: 0 auto; }
@@ -697,6 +736,9 @@ textarea {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex; } }
+      @media (min-width: 768px) {
+        .about-content-area .who-we-are-container .staff-member-3-fun-fact-container .staff-member-3-fun-fact-icon-wrapper {
+          max-width: 6%; } }
     .about-content-area .who-we-are-container .staff-member-4-image-wrapper {
       max-width: 70%;
       margin: 0 auto; }
@@ -709,6 +751,9 @@ textarea {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex; } }
+      @media (min-width: 768px) {
+        .about-content-area .who-we-are-container .staff-member-4-fun-fact-container .staff-member-4-fun-fact-icon-wrapper {
+          max-width: 6%; } }
     .about-content-area .who-we-are-container .social-media-icon-container {
       margin: 0 auto;
       display: -webkit-box;
@@ -718,8 +763,10 @@ textarea {
           -ms-flex-pack: justify;
               justify-content: space-between;
       max-width: 65%;
-      padding-top: 4%;
-      padding-bottom: 28%; }
+      padding-top: 4%; }
+      @media (min-width: 768px) {
+        .about-content-area .who-we-are-container .social-media-icon-container {
+          max-width: 39%; } }
 
 .site-footer {
   padding: 2em 0 0.5rem 0;
