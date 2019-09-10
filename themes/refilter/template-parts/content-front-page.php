@@ -35,7 +35,7 @@
 
 
 		<section class="wavy-testimonial container-fluid">
-			<p class="wavy-testimonial-description"><?php the_field('wavy_testimonial_description'); ?></p>
+		<p class="wavy-testimonial-description"><?php the_field('wavy_testimonial_description'); ?></p>
 			<p class="wavy-testimonial-author"><?php the_field('wavy_testimonial_author'); ?>
 			<span class="wavy-testimonial-member"><?php the_field('wavy_testimonial_member'); ?></span>	
 			</p>	
