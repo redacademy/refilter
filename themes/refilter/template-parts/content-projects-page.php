@@ -30,30 +30,11 @@
             <button class="tab-two" style ="background-color:red"onclick="openTab('Two')">assdasd</button>
             </div>
 			<div id="One" class="tab-one-container" style="display:none">
-			<div class="balls">
-			<div></div>
-			<div></div>
-			<div></div>
-			</div>
-			
-
+		
             </div>
 
 			<div id="Two" class="tab-two-container" style="display:none">
-			<div class="dots">
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			</div>
- 
-            </div>
-
+			
 
 				
 			</div>
