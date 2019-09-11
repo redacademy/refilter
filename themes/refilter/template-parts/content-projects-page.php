@@ -18,7 +18,7 @@
 				<a class="btn green-full" href="#">Learn More</a>
             </section>
             
-            <section class="container-content">
+            <section class="container container-content">
             <h1 class="projects-title"><?php the_field('project_description_title'); ?></h1>
             <p class="proejcts-descripton"><?php the_field('projects_description'); ?></p>
 			</section>
@@ -27,13 +27,17 @@
 		
 			<div class="slide-container">
             <button class="tab-one" onclick="openTab('One')">London</button>
-            <button class="tab-two" style ="background-color:red"onclick="openTab('Two')">assdasd</button>
+			<button class="tab-two" onclick="openTab('Two')">assdasd</button>
+			
             </div>
-			<div id="One" class="tab-one-container" style="display:none">
+			<div id="One" class="tab-container" style="display:none">
+
+			<h2> hekanksfkaksjas</h2>
 		
             </div>
 
-			<div id="Two" class="tab-two-container" style="display:none">
+			<div id="Two" class="tab-container" style="display:none">
+			<h2>lasfalmmmmmmvv</h2>
 			
 
 				

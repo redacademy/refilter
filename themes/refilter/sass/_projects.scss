@@ -1,5 +1,11 @@
 .projects-title{
-    text-align: center;
+    text-align: left;
+    margin-top: 20px;
+    padding-bottom: 15px;
+}
+.proejcts-descripton{
+    line-height: 2;
+    margin-bottom: 20px;
 }
 
 
@@ -17,4 +23,78 @@
 
 .tab-one-container{
      
+
+    
 }
+.tab-one {
+    z-index: 1;
+    position: relative;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    padding: 0.5em 1em;
+    outline: none;
+    border: none;
+    background-color:$blueish
+  }
+  
+  .tab-one::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:$light_green;
+    transform-origin: center top;
+    transform: scaleY(0);
+    transition: transform 0.25s ease-in-out;
+  }
+  
+  .tab-one:hover {
+    cursor: pointer;
+  }
+  
+  .tab-one:hover::before {
+    transform-origin: center bottom;
+    transform: scaleY(1);
+  }
+  .tab-two {
+    z-index: 1;
+    position: relative;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    padding: 0.5em 1em;
+    outline: none;
+    border: none;
+    background-color:$blueish;
+  }
+  
+  .tab-two::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $light_green;
+    transform-origin: center top;
+    transform: scaleY(0);
+    transition: transform 0.25s ease-in-out;
+  }
+  
+  .tab-two:hover {
+    cursor: pointer;
+  }
+  
+  .tab-two:hover::before {
+    transform-origin: center bottom;
+    transform: scaleY(1);
+  }
+  
+  
+  
+  
