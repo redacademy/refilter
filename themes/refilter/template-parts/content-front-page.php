@@ -35,7 +35,7 @@
 
 
 		<section class="wavy-testimonial container-fluid">
-			<p class="wavy-testimonial-description"><?php the_field('wavy_testimonial_description'); ?></p>
+		<p class="wavy-testimonial-description"><?php the_field('wavy_testimonial_description'); ?></p>
 			<p class="wavy-testimonial-author"><?php the_field('wavy_testimonial_author'); ?>
 			<span class="wavy-testimonial-member"><?php the_field('wavy_testimonial_member'); ?></span>	
 			</p>	
@@ -76,6 +76,10 @@
 				<h2 class="butt-count-text"><?php the_field('butts_collected_text'); ?></h2>						
 				<h2 class="butt-count-number"><?php the_field('waste_collected_number'); ?></h2>						
 				<h2 class="butt-count-text"><?php the_field('butts_collected_text'); ?></h2>								
+			</section>
+
+			<section class="instagram-feed">
+				<?php the_content(); ?>
 			</section>
 
 			<!-- <ul class="instagram-feed">
