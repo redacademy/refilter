@@ -151,8 +151,17 @@
   line-height: 1.6;
   font-size: 1.1rem;
 
+  @include desktop {
+    margin: 4rem auto;
+    line-height: 1.6;
+  }
+
   .contribute-title {
     width: 100%;
+
+    @include desktop {
+      margin-bottom: 2rem;
+    }
   }
 }
 
@@ -161,8 +170,19 @@
   padding: 0;
   list-style-type: none;
 
+  @include desktop {
+    display: grid;
+    grid-gap: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    margin-top: 2rem;
+  }
+
   li {
     padding: 0.5rem 0;
+
+    @include desktop {
+    }
   }
 }
 

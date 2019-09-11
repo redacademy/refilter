@@ -46,7 +46,7 @@
 			<p class="wavy-testimonial-event"><?php the_field('wavy_testimonial_event'); ?></p>	
 		</section>
 		
-		<section class="contribute container">
+		<section class="contribute container container-content">
 			<h1 class="contribute-title"><?php the_field('contribute_title'); ?></h1>
 			<p class="contribute-description"><?php the_field('contribute_description'); ?></p>
 
