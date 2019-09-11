@@ -78,7 +78,7 @@
 				<h2 class="butt-count-text"><?php the_field('butts_collected_text'); ?></h2>								
 			</section>
 
-			<section class="instagram-feed">
+			<section class="instagram-feed container">
 				<?php the_content(); ?>
 			</section>
 
