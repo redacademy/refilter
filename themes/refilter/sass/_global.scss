@@ -106,7 +106,8 @@ img {
 }
 
 .wavy-newsletter {
-  padding: 2rem 0;
+  margin: 4rem auto;
+  padding: 5rem 0;
   color: #fff;
   line-height: 1.5;
 
@@ -114,11 +115,37 @@ img {
     font-size: 2rem;
     font-weight: 300;
     width: 80%;
+
+    @include desktop {
+      font-weight: 600;
+      font-size: 2.4rem;
+    }
   }
 
-  input {
-    width: 80%;
-    padding: 0.75rem 0 1rem 0.5rem;
-    margin: 0.8rem 0;
+  .wavy-newsletter-form {
+    width: 70%;
+
+    @include desktop {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    input {
+      width: 80%;
+      padding: 0.75rem;
+      margin: 0.8rem 0;
+
+      @include desktop {
+        width: 25%;
+      }
+    }
+
+    button {
+      @include desktop {
+        background: #fff;
+        color: #17cf54;
+      }
+    }
   }
 }
