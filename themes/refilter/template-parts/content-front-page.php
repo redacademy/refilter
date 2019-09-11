@@ -75,12 +75,22 @@
 		</section>
 
 			<section class="butt-count container">
-				<h1 class="butt-count-title"><?php the_field('butt_count_title'); ?></h1>
+			<h1 class="butt-count-title"><?php the_field('butt_count_title'); ?></h1>
+
+				<section class="butt-count-content">
+				
+				<section class="butt-count-left">
 				<h2 class="butt-count-number"><?php the_field('butts_collected_number'); ?></h2>						
 				<h2 class="butt-count-text"><?php the_field('butts_collected_text'); ?></h2>						
+				</section>
+
+				<section class="butt-count-right">				
 				<h2 class="waste-count-number"><?php the_field('waste_collected_number'); ?></h2>						
 				<h2 class="waste-count-text"><?php the_field('waste_collected_text'); ?></h2>								
+				</section>	
 			</section>
+			</section>
+
 
 			<section class="instagram-feed container">
 				<h1 class="instagram-feed-title"><?php the_field('instagram_field_title'); ?></h1>
