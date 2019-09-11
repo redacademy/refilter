@@ -652,13 +652,27 @@ textarea {
   text-align: left;
   line-height: 1.6;
   font-size: 1.1rem; }
+  @media (min-width: 768px) {
+    .contribute {
+      margin: 4rem auto;
+      line-height: 1.6; } }
   .contribute .contribute-title {
     width: 100%; }
+    @media (min-width: 768px) {
+      .contribute .contribute-title {
+        margin-bottom: 2rem; } }
 
 .contribute-types {
   margin: 0;
   padding: 0;
   list-style-type: none; }
+  @media (min-width: 768px) {
+    .contribute-types {
+      display: grid;
+      grid-gap: 5rem;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      margin-top: 2rem; } }
   .contribute-types li {
     padding: 0.5rem 0; }
 
