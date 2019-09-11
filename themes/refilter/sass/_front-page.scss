@@ -188,18 +188,53 @@
 
 .butt-count {
   padding: 2rem 0;
+  text-align: center;
 
-  .butt-count-title {
-    font-size: 1.7rem;
+  .butt-count-content {
+    @include desktop {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 70%;
+      margin-top: 2rem;
+    }
+  }
+
+  .butt-count-left {
+    @include desktop {
+      border-right: 3px solid #17cf54;
+      border-right-width: 60%;
+      padding-right: 2.3rem;
+    }
   }
 
   .butt-count-title {
     font-size: 1.9rem;
     padding: 0.5rem 0;
+
+    @include desktop {
+      font-size: 2.5rem;
+    }
   }
 
-  .butt-count-text {
+  .butt-count-text,
+  .waste-count-text {
     margin-top: 2rem;
     font-weight: 100;
+    text-transform: uppercase;
+
+    @include desktop {
+      font-size: 1.75rem;
+      letter-spacing: 0.7rem;
+      margin-bottom: 0;
+    }
+  }
+
+  .butt-count-number,
+  .waste-count-number {
+    @include desktop {
+      font-size: 3.5rem;
+      margin-top: 0;
+    }
   }
 }
