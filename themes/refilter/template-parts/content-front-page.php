@@ -9,7 +9,6 @@
 
 <main id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<section class="entry-content">
-		<?php the_content(); ?>
 
 		<section class="our-purpose">
 		<h3 class="purpose-title"><?php the_field('purpose_title'); ?></h3>			
