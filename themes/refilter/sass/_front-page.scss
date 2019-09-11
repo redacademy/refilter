@@ -113,11 +113,21 @@
   line-height: 1.5;
   font-weight: 300;
 
+  @include desktop {
+    text-align: center;
+    align-items: flex-start;
+  }
+
   .wavy-testimonial-description,
   .wavy-testimonial-author,
   .what-we-do-member,
   .wavy-testimonial-event {
     width: 80%;
+
+    @include desktop {
+      width: 50%;
+      margin-left: 6rem;
+    }
   }
 
   .wavy-testimonial-description {

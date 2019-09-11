@@ -11,7 +11,6 @@
 	<section class="entry-content">
 
 		<section class="landing container-fluid">
-			<section class="landing-wave"></section>				
 				<h1 class="landing-title"><?php the_field('landing_title'); ?></h1>
 				<h2 class="landing-question"><?php the_field('landing_question'); ?></h2>
 				<h3 class="landing-quote"><?php the_field('landing_quote'); ?></h3>
@@ -79,11 +78,12 @@
 				<h1 class="butt-count-title"><?php the_field('butt_count_title'); ?></h1>
 				<h2 class="butt-count-number"><?php the_field('butts_collected_number'); ?></h2>						
 				<h2 class="butt-count-text"><?php the_field('butts_collected_text'); ?></h2>						
-				<h2 class="butt-count-number"><?php the_field('waste_collected_number'); ?></h2>						
-				<h2 class="butt-count-text"><?php the_field('butts_collected_text'); ?></h2>								
+				<h2 class="waste-count-number"><?php the_field('waste_collected_number'); ?></h2>						
+				<h2 class="waste-count-text"><?php the_field('waste_collected_text'); ?></h2>								
 			</section>
 
 			<section class="instagram-feed container">
+				<h1 class="instagram-feed-title"><?php the_field('instagram_field_title'); ?></h1>
 				<?php the_content(); ?>
 			</section>
 
