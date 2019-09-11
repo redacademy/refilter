@@ -78,6 +78,10 @@
 				<h2 class="butt-count-text"><?php the_field('butts_collected_text'); ?></h2>								
 			</section>
 
+			<section class="instagram-feed">
+				<?php the_content(); ?>
+			</section>
+
 			<!-- <ul class="instagram-feed">
 				<li class="instagram_feed_image"><img src="<?php the_field("instagram_feed_image"); ?>" /></li>
 			</ul> -->
