@@ -93,16 +93,18 @@
 
 
 			<section class="instagram-feed container">
-				<h1 class="instagram-feed-title"><?php the_field('instagram_field_title'); ?></h1>
+				<h1 class="instagram-feed-title"><?php the_field('instagram_feed_title'); ?></h1>
 				<?php the_content(); ?>
 			</section>
 
-			<form class="wavy-newsletter container-fluid">
+			<section class="wavy-newsletter container-fluid">
 				<h1 class="wavy-newsletter-title"><?php the_field('newsletter_title'); ?></h1>										
+				<form class="wavy-newsletter-form">
 				<input class="wavy-newsletter-name" type="text" placeholder="<?php the_field('newsletter_name'); ?>" />
 				<input class="wavy-newsletter-email" type="text" placeholder="<?php the_field('newsletter_email'); ?>" />													
 				<button class="btn green-empty" type="submit">Join Mailing List</button>
 			</form>
+		</section>
 	</section><!-- .entry-content -->
 </main><!-- #post-## -->
 

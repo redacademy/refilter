@@ -196,7 +196,7 @@
       align-items: center;
       justify-content: space-between;
       width: 70%;
-      margin-top: 2rem;
+      margin: 2rem 0;
     }
   }
 
@@ -235,6 +235,14 @@
     @include desktop {
       font-size: 3.5rem;
       margin-top: 0;
+    }
+  }
+}
+
+.instagram-feed {
+  .instagram-feed-title {
+    @include desktop {
+      font-size: 2.8rem;
     }
   }
 }
