@@ -25,12 +25,17 @@
 
 				<section class="what-we-do container">
 					<h3 class="what-we-do-title"><?php the_field('what_we_do_title'); ?></h3>			
-					<section class="overlapping-text">					
+					<section class="overlapping-content">
+					<section class="overlapping-text">
 					<p class="what-we-do-description"><?php the_field('what_we_do_description'); ?></p>	
 					<p class="what-we-do-description"><?php the_field('what_we_do_description_2'); ?></p>				
+					<a class="btn green-empty" href="#">Learn More</a>					
+				</section>	
+
+					<section class="overlapping-image">
 					<img class="what-we-do-image" src="<?php the_field('what_we_do_image'); ?>;" />
-					</section>					
-					<a class="btn green-empty" href="#">Learn More</a>
+					</section>	
+				</section>
 				</section>
 
 
@@ -81,10 +86,6 @@
 			<section class="instagram-feed container">
 				<?php the_content(); ?>
 			</section>
-
-			<!-- <ul class="instagram-feed">
-				<li class="instagram_feed_image"><img src="<?php the_field("instagram_feed_image"); ?>" /></li>
-			</ul> -->
 
 			<form class="wavy-newsletter container-fluid">
 				<h1 class="wavy-newsletter-title"><?php the_field('newsletter_title'); ?></h1>										
