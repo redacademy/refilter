@@ -1,12 +1,19 @@
 /* Front page */
 
+.our-purpose {
+  margin-top: 1.5rem;
+
+  @include desktop {
+    margin-top: 3rem;
+  }
+}
+
 .our-purpose,
 .what-we-do {
   padding: 1.5rem 0;
 
   @include desktop {
-    padding: 4rem 0;
-    line-height: 2;
+    line-height: 1.6;
   }
 
   .purpose-title,
@@ -42,25 +49,61 @@
 
   .what-we-do-image {
     display: none;
+    border-radius: 4px;
 
     @include desktop {
       display: block;
-      width: 600px;
-      border-radius: 4px;
-      position: absolute;
     }
   }
 }
 
 .what-we-do {
   @include desktop {
-    position: relative;
+    margin: 3rem auto 10rem auto;
   }
-  // .overlapping-text {
-  //   @include desktop {
-  //   }
-  // }
-  // }
+  .overlapping-content {
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+      width: 80%;
+      position: relative;
+    }
+
+    .overlapping-text {
+      @include desktop {
+        background: #17cf54;
+        padding: 0.65rem;
+        flex-basis: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+        color: #fff;
+        border-radius: 4px;
+        transform: translateX(65px) translateY(65px);
+        z-index: -1;
+
+        p {
+          margin: 0;
+        }
+      }
+    }
+
+    .overlapping-image {
+      @include desktop {
+        flex-basis: 50%;
+        z-index: -2;
+      }
+    }
+  }
+
+  .btn {
+    @include desktop {
+      color: #17cf54;
+      margin-top: 1.5rem;
+      background: #fff;
+    }
+  }
 }
 
 .wavy-testimonial {
