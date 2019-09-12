@@ -1,7 +1,7 @@
 .btn {
   text-decoration: none;
   border: 2px solid #17cf54;
-  padding: 0.65rem 2rem;
+  padding: 0.55rem 2rem;
   border-radius: 4px;
   font-size: 1rem;
   white-space: nowrap;
@@ -16,4 +16,9 @@
 .green-empty {
   color: #17cf54;
   background: transparent;
+}
+
+.white-empty {
+  color: #17cf54;
+  background: #fff;
 }
