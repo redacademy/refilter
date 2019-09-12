@@ -28,6 +28,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Forms
 # Front page
 --------------------------------------------------------------*/
+@import url(../fonts/stylesheet.css);
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -750,46 +751,22 @@ textarea {
     font-size: 2.8rem; } }
 
 /* Learn page */
-.page-id-16 {
-  color: #fff; }
-  .page-id-16 .entry-content {
-    text-align: center; }
-    .page-id-16 .entry-content h2 {
-      width: 350px;
-      margin: 0 auto;
-      padding: 10px;
-      padding-bottom: 10px;
-      font-size: 23px;
-      font-weight: 50;
-      letter-spacing: 10px; }
-    .page-id-16 .entry-content p {
-      width: 400px;
-      margin: 0 auto;
-      padding: 10px;
-      padding-bottom: 10px;
-      font-size: 36px;
-      font-weight: 100; }
-  .page-id-16 .entry-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 30vh; }
-    .page-id-16 .entry-title h1 {
-      text-align: center; }
-    .page-id-16 .entry-title a {
-      text-decoration: none;
-      color: #fff;
-      text-align: center;
-      margin: auto; }
-  .page-id-16 .shuffle-quotes p {
-    font-size: 1rem;
-    color: black; }
-  .page-id-16 .wavy-quiz-question p {
-    font-size: 1rem;
-    color: black; }
-  .page-id-16 .template-download img {
-    height: 75vh;
-    width: 300px; }
+.page-id-16 .how-to-help {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem; }
+  @media (min-width: 768px) {
+    .page-id-16 .how-to-help {
+      margin-top: 3rem; } }
+  .page-id-16 .how-to-help .how-to-help-title {
+    font-family: 'MADEEvolveSans-Bold',Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    width: 100%; }
+    @media (min-width: 768px) {
+      .page-id-16 .how-to-help .how-to-help-title {
+        font-size: 2.5rem;
+        margin-bottom: 1rem; } }
+  .page-id-16 .how-to-help .how-to-help-description {
+    font-family: 'MADEEvolveSans-Bold',Arial, Helvetica, sans-serif; }
 
 /* about page */
 .about-content-area {
