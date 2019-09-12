@@ -621,6 +621,15 @@ textarea {
       color: #fff;
       text-align: center;
       margin: auto; }
+  .page-id-16 .shuffle-quotes p {
+    font-size: 1rem;
+    color: black; }
+  .page-id-16 .wavy-quiz-question p {
+    font-size: 1rem;
+    color: black; }
+  .page-id-16 .template-download img {
+    height: 75vh;
+    width: 300px; }
 
 /* about page */
 .about-content-area {
