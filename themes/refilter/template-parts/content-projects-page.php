@@ -46,9 +46,14 @@
             <section class ="container-content"> 
 			<h1 class="project-partner-title"><?php the_field('project_partner_title'); ?> </h1>
 			<div class="partners-container">
-				
-			<h2 class="partner-one"> <?php the_field('partner_one'); ?>  </h2>   
-			<h2 class="partner-two"> <?php the_field('partner_two'); ?>  </h2>   
+				<div class="partner-one-container">   
+					<h2 class="partner-one"> <?php the_field('partner_one'); ?>  </h2>   
+					<h3 class="partner-description"> <?php the_field('partner_one_description'); ?>  </h3>   
+					<h3 class="partner-website"> <?php the_field('projects_partner_website_one'); ?>  </h3> 
+					
+					
+				</div>
+				<h2 class="partner-two"> <?php the_field('partner_two'); ?>  </h2>   
 			<h2 class="partner-three"> <?php the_field('partner_three'); ?>  </h2>   
 			</div>
 			</section>
