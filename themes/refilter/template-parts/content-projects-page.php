@@ -50,20 +50,20 @@
 				<div class="partner-container">   
 					<h2 class="partner-one"> <?php the_field('partner_one'); ?>  </h2>   
 					<h3 class="partner-description"> <?php the_field('partner_one_description'); ?>  </h3>   
-					<a class="partner-website" href="<?php the_field('projects_partner_website_one'); ?>" > ascasd</a>
+					<a class="partner-website" href="<?php the_field('projects_partner_website_one'); ?>" >www.pdl.smugmug.com</a>
 
 				</div>
 
 				<div class="partner-container">
 			     	<h2 class="partner-two"> <?php the_field('partner_two'); ?>  </h2>      
 					<h3 class="partner-description"> <?php the_field('partner_two_description'); ?>  </h3>   
-					<a class="partner-website" href="<?php the_field('projects_partner_website_two'); ?>" > ascasd</a>
+					<a class="partner-website" href="<?php the_field('projects_partner_website_two'); ?>" > @hillseyed</a>
 
 				</div>
 				<div class="partner-container">
 			     	<h2 class="partner-two"> <?php the_field('partner_three'); ?>  </h2>      
 					<h3 class="partner-description"> <?php the_field('partner_three_description'); ?>  </h3>   
-					<a class="partner-website" href="<?php the_field('projects_partner_website_three'); ?>" > ascasd</a>
+					<a class="partner-website" href="<?php the_field('projects_partner_website_three'); ?>" >www.banancampphoto.com</a>
 
 				</div>
 			</div>

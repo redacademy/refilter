@@ -11,7 +11,6 @@
 	<section class="entry-content">
 
 		<section class="landing container-fluid">
-			<section class="landing-wave"></section>				
 				<h1 class="landing-title"><?php the_field('landing_title'); ?></h1>
 				<h2 class="landing-question"><?php the_field('landing_question'); ?></h2>
 				<h3 class="landing-quote"><?php the_field('landing_quote'); ?></h3>
@@ -25,24 +24,29 @@
 
 				<section class="what-we-do container">
 					<h3 class="what-we-do-title"><?php the_field('what_we_do_title'); ?></h3>			
-					<section class="overlapping-text">					
+					<section class="overlapping-content">
+					<section class="overlapping-text">
 					<p class="what-we-do-description"><?php the_field('what_we_do_description'); ?></p>	
 					<p class="what-we-do-description"><?php the_field('what_we_do_description_2'); ?></p>				
+					<a class="btn green-empty" href="#">Learn More</a>					
+				</section>	
+
+					<section class="overlapping-image">
 					<img class="what-we-do-image" src="<?php the_field('what_we_do_image'); ?>;" />
-					</section>					
-					<a class="btn green-empty" href="#">Learn More</a>
+					</section>	
+				</section>
 				</section>
 
 
 		<section class="wavy-testimonial container-fluid">
-			<p class="wavy-testimonial-description"><?php the_field('wavy_testimonial_description'); ?></p>
+		<p class="wavy-testimonial-description"><?php the_field('wavy_testimonial_description'); ?></p>
 			<p class="wavy-testimonial-author"><?php the_field('wavy_testimonial_author'); ?>
 			<span class="wavy-testimonial-member"><?php the_field('wavy_testimonial_member'); ?></span>	
 			</p>	
 			<p class="wavy-testimonial-event"><?php the_field('wavy_testimonial_event'); ?></p>	
 		</section>
 		
-		<section class="contribute container">
+		<section class="contribute container container-content">
 			<h1 class="contribute-title"><?php the_field('contribute_title'); ?></h1>
 			<p class="contribute-description"><?php the_field('contribute_description'); ?></p>
 
@@ -71,23 +75,36 @@
 		</section>
 
 			<section class="butt-count container">
-				<h1 class="butt-count-title"><?php the_field('butt_count_title'); ?></h1>
+			<h1 class="butt-count-title"><?php the_field('butt_count_title'); ?></h1>
+
+				<section class="butt-count-content">
+				
+				<section class="butt-count-left">
 				<h2 class="butt-count-number"><?php the_field('butts_collected_number'); ?></h2>						
 				<h2 class="butt-count-text"><?php the_field('butts_collected_text'); ?></h2>						
-				<h2 class="butt-count-number"><?php the_field('waste_collected_number'); ?></h2>						
-				<h2 class="butt-count-text"><?php the_field('butts_collected_text'); ?></h2>								
+				</section>
+
+				<section class="butt-count-right">				
+				<h2 class="waste-count-number"><?php the_field('waste_collected_number'); ?></h2>						
+				<h2 class="waste-count-text"><?php the_field('waste_collected_text'); ?></h2>								
+				</section>	
+			</section>
 			</section>
 
-			<!-- <ul class="instagram-feed">
-				<li class="instagram_feed_image"><img src="<?php the_field("instagram_feed_image"); ?>" /></li>
-			</ul> -->
 
-			<form class="wavy-newsletter container-fluid">
+			<section class="instagram-feed container">
+				<h1 class="instagram-feed-title"><?php the_field('instagram_feed_title'); ?></h1>
+				<?php the_content(); ?>
+			</section>
+
+			<section class="wavy-newsletter container-fluid">
 				<h1 class="wavy-newsletter-title"><?php the_field('newsletter_title'); ?></h1>										
+				<form class="wavy-newsletter-form">
 				<input class="wavy-newsletter-name" type="text" placeholder="<?php the_field('newsletter_name'); ?>" />
 				<input class="wavy-newsletter-email" type="text" placeholder="<?php the_field('newsletter_email'); ?>" />													
 				<button class="btn green-empty" type="submit">Join Mailing List</button>
 			</form>
+		</section>
 	</section><!-- .entry-content -->
 </main><!-- #post-## -->
 

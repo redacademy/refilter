@@ -18,7 +18,7 @@
 		.landing {
 			background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('<?php echo get_the_post_thumbnail_url(); ?>') no-repeat center center/cover;
 		}
-
+		
 		.wavy-testimonial {
 			background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('<?php the_field('wavy_testimonial_image'); ?>') no-repeat center center/cover;
 		}	
