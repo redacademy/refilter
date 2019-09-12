@@ -628,15 +628,25 @@ textarea {
   line-height: 2;
   margin-bottom: 20px; }
 
+.partner-description {
+  padding-top: 30px;
+  line-height: 1.7; }
+
 .partners-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  @media (min-width: 768px) {
+    .partners-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
 
 .project-partner-title {
+  padding-top: 40px;
+  text-align: left; }
+
+.slide-container {
   text-align: center; }
 
 .tab-one {
@@ -658,7 +668,7 @@ textarea {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #39a84b;
+  background-color: #0ed166;
   -webkit-transform-origin: center top;
           transform-origin: center top;
   -webkit-transform: scaleY(0);
@@ -696,7 +706,7 @@ textarea {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #39a84b;
+  background-color: #0ed166;
   -webkit-transform-origin: center top;
           transform-origin: center top;
   -webkit-transform: scaleY(0);

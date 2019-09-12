@@ -8,23 +8,31 @@
     margin-bottom: 20px;
 }
 
-
+.partner-description{
+    padding-top: 30px;
+    line-height: 1.7;
+}
 
 .partners-container{
-    display: flex;
+ @include desktop{
+     display: flex;
+ }
     justify-content: space-between;
 }
 
 .project-partner-title{
+    padding-top: 40px;
+    text-align: left;
+}
+
+.slide-container{
     text-align: center;
 }
 
-
-
 .tab-one-container{
-     
-
     
+
+     
 }
 .tab-one {
     z-index: 1;
