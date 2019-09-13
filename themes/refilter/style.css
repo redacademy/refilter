@@ -310,7 +310,6 @@ img {
 .landing {
   min-height: 100vh;
   color: #fff;
-  text-shadow: 0px 0px 2px #000000;
   position: relative; }
   @media (min-width: 768px) {
     .landing {
@@ -661,7 +660,6 @@ textarea {
 .wavy-testimonial {
   color: #fff;
   padding: 2rem 0;
-  text-shadow: 0px 0px 2px #000000;
   line-height: 1.5;
   font-weight: 300; }
   @media (min-width: 768px) {
