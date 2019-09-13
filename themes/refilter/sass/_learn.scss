@@ -2,8 +2,24 @@
 
 .page-id-16{
 
-    .landing-question{
+    .landing{
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('http://refilter.van.cp.academy.red/wp-content/uploads/2019/09/hero-home-mobile.jpg') no-repeat center center/cover;
         
+        
+
+        @include desktop{
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('//localhost:3000/refilter/wp-content/uploads/2019/09/hero-learn-desktop.png') no-repeat center center/cover;
+        }
+    }
+
+    .landing-title{
+        font-size: 3rem;
+        font-weight: 300;
+        
+    }
+
+    .landing-question{
+       
     }
     .how-to-help{
         margin-top: 1.5rem;
