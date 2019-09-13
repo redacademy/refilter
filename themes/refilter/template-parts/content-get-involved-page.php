@@ -9,7 +9,72 @@
 
 <main id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<section class="entry-content">
-	
+    
+    <section class="landing container-fluid">
+			<h1 class="landing-title"><?php the_field('landing_title'); ?></h1>
+			<p class="landing-description"><?php the_field('landing_description'); ?></p>
+        </section>
+        
+    <!-- <section class="upcoming-events">
+        <h1 class="upcoming-events-title"></h1>
+        <ul class="upcoming-events-list">
+            <li class="upcoming-event"></li>
+            <li class="upcoming-event"></li>
+            <li class="upcoming-event"></li>
+        </ul>
+    </section> -->
+
+    <section class="become-a-member">
+        <h1 class="become-a-member-title"><?php the_field('become_a_member_title'); ?></h1>
+        
+        <section class="member-options">
+
+        <section class="member-image">
+            <img src="<?php the_field('become_a_member_image'); ?>" alt="member" />
+        </section>
+
+        <section class="member-description">
+            <p class="member-description"><?php the_field('become_a_member_description'); ?></p>
+        
+            <ul>
+                <h2 class="standard-class-title"><?php the_field('stardard_class_title'); ?></h2>
+                <li>
+                <?php
+                    if( have_rows('standard_class_bullet_points') ):
+                        while ( have_rows('standard_class_bullet_points') ) : the_row();
+                            the_sub_field('standard_class_bullet_point');
+                        endwhile;
+                    else :
+    
+                    endif;
+                    ?>
+                </li>
+
+                <h2 class="voting-class-title"><?php the_field('voting_class_title'); ?></h2>
+          
+                <li>
+                <?php
+                    if( have_rows('voting_class_bullet_points') ):
+                        while ( have_rows('voting_class_bullet_points') ) : the_row();
+                            the_sub_field('voting_class_bullet_point');
+                        endwhile;
+                    else :
+                        
+                    endif;
+                    ?>
+                </li>
+            </ul>
+        </section>
+
+        <section class="support-our-cause">
+            <h1 class="support-our-cause-title"><?php the_field('support_our_cause_title'); ?></h1>
+            <p class="support-our-cause-description"><?php the_field('support_our_cause_description'); ?></p>
+        </section>
+
+    </section>
+</section>
+
+
 	</section><!-- .entry-content -->
 </main><!-- #post-## -->
 

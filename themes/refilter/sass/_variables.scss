@@ -1,4 +1,24 @@
+// Structure
+
+$desktop: 768px;
+
+// Colors
+
+$light_green: #39a84b;
 $light_green: #0ed166;
 $brown: #efc579;
 $blueish: #00849f;
-$desktop: 768px;
+
+// Typography
+
+$font__hero-image-heading: 'MADEEvolveSans-Bold', sans-serif;
+$font__hero-image-sub-heading-question: 'MADEEvolveSans-Light', sans-serif;
+$font__hero-image-sub-heading-description: 'MADEEvolveSans-Medium', sans-serif;
+$font__heading1: 'MADEEvolveSans-Bold', sans-serif;
+$font__heading2: 'MADEEvolveSans-Bold', sans-serif;
+$font__heading3: 'MADEEvolveSans-Bold', sans-serif;
+$font__heading4: 'MADEEvolveSans-Bold', sans-serif;
+$font__body: 'MADEEvolveSans', sans-serif;
+$font__button: 'MADEEvolveSans-Medium', sans-serif;
+$font__caption-heading: 'MADEEvolveSans-Bold', sans-serif;
+$font__caption-body-text: 'MADEEvolveSans', sans-serif;
