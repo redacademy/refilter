@@ -1,62 +1,29 @@
 /* Learn page */
 
 .page-id-16{
-    color: #fff;
 
-    .entry-content{
-        text-align: center;
-        h2{
-            width: 350px;
-            margin: 0 auto;
-            padding: 10px;
-            padding-bottom: 10px;
-            font-size:23px;
-            font-weight: 50;
-            letter-spacing: 10px;
-        }
-        p{
-            width: 400px;
-            margin: 0 auto;
-            padding: 10px;
-            padding-bottom: 10px;
-            font-size: 36px;
-            font-weight: 100;
-        }
+    .landing-question{
+        
     }
+    .how-to-help{
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
 
-    .entry-title {
-        display: flex;
-        height: 30vh;
-        h1 {
-            text-align: center;
+        @include desktop {
+          margin-top: 3rem;
         }
-        a{
-            text-decoration: none;
-            color: #fff;
-            text-align: center;
-            margin: auto;
-        }
+	.how-to-help-title{
+        font-family: 'MADEEvolveSans-Bold',Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        width: 100%;
+        
+        @include desktop {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+          }
     }
-
-    .shuffle-quotes{
-        p{
-            font-size: 1rem;
-            color: black;
-        }
+    .how-to-help-description{
+        font-family: 'MADEEvolveSans-Bold',Arial, Helvetica, sans-serif;
     }
-    .wavy-quiz-question{
-        p{
-            font-size: 1rem;
-            color: black;
-        }
-    }
-
-    .template-download{
-        img{
-            height: 75vh;
-            width: 300px;
-        }
-    }
-
-    
 }
+    }

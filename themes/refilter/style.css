@@ -28,6 +28,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Forms
 # Front page
 --------------------------------------------------------------*/
+@import url(../fonts/stylesheet.css);
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -213,6 +214,36 @@ th {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
+h1 {
+  font-family: "MADEEvolveSans-Bold", sans-serif;
+  font-size: 62.68px; }
+
+h2 {
+  font-family: "MADEEvolveSans-Light", sans-serif;
+  font-size: 31px;
+  font-weight: bold;
+  letter-spacing: 0.50rem; }
+
+h3 {
+  font-family: "MADEEvolveSans-Medium", sans-serif;
+  font-size: 36px; }
+
+p {
+  font-family: "MADEEvolveSans", sans-serif;
+  font-size: 18px; }
+
+button {
+  font-family: "MADEEvolveSans-Medium", sans-serif;
+  font-size: 16px; }
+
+label {
+  font-family: "MADEEvolveSans-Bold", sans-serif;
+  font-size: 13.64px; }
+
+input {
+  font-family: "MADEEvolveSans", sans-serif;
+  font-size: 13.64px; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -289,17 +320,15 @@ img {
     line-height: 1.5;
     width: 80%; }
   .landing .landing-title {
-    font-size: 2.4rem;
     padding-bottom: 1rem; }
   .landing .landing-question {
     text-transform: uppercase;
     font-weight: 200;
-    letter-spacing: 0.5rem;
-    margin-bottom: 1.5rem; }
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem; }
   .landing .landing-quote {
     margin: 0;
     font-weight: 400;
-    font-size: 2.35rem;
     margin-bottom: 2rem; }
 
 .wavy-newsletter {
@@ -308,13 +337,11 @@ img {
   color: #fff;
   line-height: 1.5; }
   .wavy-newsletter .wavy-newsletter-title {
-    font-size: 2rem;
     font-weight: 300;
     width: 80%; }
     @media (min-width: 768px) {
       .wavy-newsletter .wavy-newsletter-title {
-        font-weight: 600;
-        font-size: 2.4rem; } }
+        font-weight: 600; } }
   .wavy-newsletter .wavy-newsletter-form {
     width: 70%; }
     @media (min-width: 768px) {
@@ -742,46 +769,22 @@ textarea {
     font-size: 2.8rem; } }
 
 /* Learn page */
-.page-id-16 {
-  color: #fff; }
-  .page-id-16 .entry-content {
-    text-align: center; }
-    .page-id-16 .entry-content h2 {
-      width: 350px;
-      margin: 0 auto;
-      padding: 10px;
-      padding-bottom: 10px;
-      font-size: 23px;
-      font-weight: 50;
-      letter-spacing: 10px; }
-    .page-id-16 .entry-content p {
-      width: 400px;
-      margin: 0 auto;
-      padding: 10px;
-      padding-bottom: 10px;
-      font-size: 36px;
-      font-weight: 100; }
-  .page-id-16 .entry-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 30vh; }
-    .page-id-16 .entry-title h1 {
-      text-align: center; }
-    .page-id-16 .entry-title a {
-      text-decoration: none;
-      color: #fff;
-      text-align: center;
-      margin: auto; }
-  .page-id-16 .shuffle-quotes p {
-    font-size: 1rem;
-    color: black; }
-  .page-id-16 .wavy-quiz-question p {
-    font-size: 1rem;
-    color: black; }
-  .page-id-16 .template-download img {
-    height: 75vh;
-    width: 300px; }
+.page-id-16 .how-to-help {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem; }
+  @media (min-width: 768px) {
+    .page-id-16 .how-to-help {
+      margin-top: 3rem; } }
+  .page-id-16 .how-to-help .how-to-help-title {
+    font-family: 'MADEEvolveSans-Bold',Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    width: 100%; }
+    @media (min-width: 768px) {
+      .page-id-16 .how-to-help .how-to-help-title {
+        font-size: 2.5rem;
+        margin-bottom: 1rem; } }
+  .page-id-16 .how-to-help .how-to-help-description {
+    font-family: 'MADEEvolveSans-Bold',Arial, Helvetica, sans-serif; }
 
 .projects-title {
   text-align: left;

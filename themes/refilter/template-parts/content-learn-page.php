@@ -43,8 +43,7 @@
                 <p><?php the_field('quote_18'); ?></p>
             </section>
 
-            <section class="wavy-quiz container-fluid">
-                <img class="wavy-quiz-image" src="<?php the_field('wavy_quiz_image'); ?>;" />
+            <section class="wavy-quiz container-fluid" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('<?php the_field('wavy_quiz_image'); ?>') no-repeat center center/cover;">
                 <p class="wavy-quiz-question"><?php the_field('wavy_quiz_question'); ?></p>
                 <a class="btn green-full" href="#">Take the Quiz</a>
             </section>
@@ -73,11 +72,13 @@
                 </span>
             </section>
 
-            <form class="wavy-newsletter container-fluid">
+            <section class="wavy-newsletter container-fluid">
 				<h1 class="wavy-newsletter-title"><?php the_field('newsletter_title'); ?></h1>										
-				<input class="wavy-newsletter-name" type="text" placeholder="<?php the_field('newsletter_name'); ?>" />
-				<input class="wavy-newsletter-email" type="text" placeholder="<?php the_field('newsletter_email'); ?>" />													
-				<button class="btn green-empty" type="submit">Join Mailing List</button>
-			</form>
+				<form class="wavy-newsletter-form">
+                    <input class="wavy-newsletter-name" type="text" placeholder="<?php the_field('newsletter_name'); ?>" />
+                    <input class="wavy-newsletter-email" type="text" placeholder="<?php the_field('newsletter_email'); ?>" />													
+                    <button class="btn green-empty" type="submit">Join Mailing List</button>
+			    </form>
+		    </section>
 	</section><!-- .entry-content -->
 </main><!-- #post-## -->
