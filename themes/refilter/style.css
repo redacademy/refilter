@@ -783,6 +783,116 @@ textarea {
     height: 75vh;
     width: 300px; }
 
+.projects-title {
+  text-align: left;
+  margin-top: 20px;
+  padding-bottom: 15px; }
+
+.proejcts-descripton {
+  line-height: 2;
+  margin-bottom: 20px; }
+
+.partner-description {
+  padding-top: 30px;
+  line-height: 1.7; }
+
+.partners-container {
+  display: inline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  @media (min-width: 768px) {
+    .partners-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+
+.project-partner-title {
+  padding-top: 40px;
+  text-align: left; }
+
+.partner-website {
+  text-decoration: none; }
+
+.slide-container {
+  text-align: center; }
+
+.tab-one {
+  z-index: 1;
+  position: relative;
+  font-size: inherit;
+  font-family: inherit;
+  color: white;
+  padding: 0.5em 1em;
+  outline: none;
+  border: none;
+  background-color: #00849f; }
+
+.tab-one::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #0ed166;
+  -webkit-transform-origin: center top;
+          transform-origin: center top;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out; }
+
+.tab-one:hover {
+  cursor: pointer; }
+
+.tab-one:hover::before {
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1); }
+
+.tab-two {
+  z-index: 1;
+  position: relative;
+  font-size: inherit;
+  font-family: inherit;
+  color: white;
+  padding: 0.5em 1em;
+  outline: none;
+  border: none;
+  background-color: #00849f; }
+
+.tab-two::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #0ed166;
+  -webkit-transform-origin: center top;
+          transform-origin: center top;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out; }
+
+.tab-two:hover {
+  cursor: pointer; }
+
+.tab-two:hover::before {
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1); }
+
 /* about page */
 .about-content-area {
   max-width: 480px;
