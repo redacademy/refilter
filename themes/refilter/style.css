@@ -238,6 +238,10 @@ img {
   height: auto;
   max-width: 100%; }
 
+.navbar-hamburger i {
+  font-size: 1.5rem;
+  padding: 0 1.5rem 0 1rem; }
+
 .container,
 .container-fluid {
   display: -webkit-box;
