@@ -32,7 +32,19 @@
             </div>
 			<div id="One" class="tab-container" style="display:none">
 
-			<h2> hekanksfkaksjas</h2>
+			<?php
+
+             $loop = new WP_Query( array(
+             'post_type' => 'projects_type',
+         	 'posts_per_page' => 1
+			));
+										?>
+<?php while ( $loop->have_posts() ) : $loop->the_post(); the_title(); ?>
+
+  <!-- do stuff -->
+<?php endwhile; wp_reset_query(); ?>
+
+
 		
             </div>
 
