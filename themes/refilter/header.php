@@ -16,7 +16,13 @@
 	<?php wp_head(); ?>
 	<style>
 		.landing {
-			background: url('<?php echo get_the_post_thumbnail_url(); ?>') no-repeat center center/cover;
+			background: url('<?php the_field('landing_image_mobile'); ?>') no-repeat center center/cover;
+		}
+
+		@media only screen and (min-width: 768px) {
+			.landing {
+			background: url('<?php the_field('landing_image_desktop'); ?>') no-repeat center center/cover;
+			}
 		}
 		
 		.wavy-testimonial {
