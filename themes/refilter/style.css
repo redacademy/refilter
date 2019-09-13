@@ -214,6 +214,36 @@ th {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
+h1 {
+  font-family: "MADEEvolveSans-Bold", sans-serif;
+  font-size: 62.68px; }
+
+h2 {
+  font-family: "MADEEvolveSans-Light", sans-serif;
+  font-size: 31px;
+  font-weight: bold;
+  letter-spacing: 0.50rem; }
+
+h3 {
+  font-family: "MADEEvolveSans-Medium", sans-serif;
+  font-size: 36px; }
+
+p {
+  font-family: "MADEEvolveSans", sans-serif;
+  font-size: 18px; }
+
+button {
+  font-family: "MADEEvolveSans-Medium", sans-serif;
+  font-size: 16px; }
+
+label {
+  font-family: "MADEEvolveSans-Bold", sans-serif;
+  font-size: 13.64px; }
+
+input {
+  font-family: "MADEEvolveSans", sans-serif;
+  font-size: 13.64px; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -298,17 +328,15 @@ img {
     line-height: 1.5;
     width: 80%; }
   .landing .landing-title {
-    font-size: 2.4rem;
     padding-bottom: 1rem; }
   .landing .landing-question {
     text-transform: uppercase;
     font-weight: 200;
-    letter-spacing: 0.5rem;
-    margin-bottom: 1.5rem; }
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem; }
   .landing .landing-quote {
     margin: 0;
     font-weight: 400;
-    font-size: 2.35rem;
     margin-bottom: 2rem; }
 
 .wavy-newsletter {
@@ -317,13 +345,11 @@ img {
   color: #fff;
   line-height: 1.5; }
   .wavy-newsletter .wavy-newsletter-title {
-    font-size: 2rem;
     font-weight: 300;
     width: 80%; }
     @media (min-width: 768px) {
       .wavy-newsletter .wavy-newsletter-title {
-        font-weight: 600;
-        font-size: 2.4rem; } }
+        font-weight: 600; } }
   .wavy-newsletter .wavy-newsletter-form {
     width: 70%; }
     @media (min-width: 768px) {
