@@ -44,7 +44,7 @@
                 <p><?php the_field('quote_18'); ?></p>
             </section>
 
-            <section class="wavy-quiz container-fluid" style="background: url('<?php the_field('wavy_quiz_image_mobile'); ?>') no-repeat center center/cover;">
+            <section class="wavy-quiz container-fluid" style="background: url('<?php the_field('wavy_quiz_image_mobile'); ?>') no-repeat center center/cover; background-size: 100% 100%">
                 <h3 class="wavy-quiz-question"><?php the_field('wavy_quiz_question'); ?></h3>
                 <button class="learn-btn" type="submit">Take the Quiz <i class="fas fa-arrow-right"></i></button>
             </section>

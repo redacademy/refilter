@@ -2,7 +2,9 @@
 
 .page-id-16{
 
-    
+    .wavy-quiz{
+        width: 100vh;
+    }
 
     p{
         line-height: 1.75rem;
@@ -69,6 +71,7 @@
 
 .wavy-quiz {
     height: 400px;
+    width: 100%;
     color: $white;
 
     h3{

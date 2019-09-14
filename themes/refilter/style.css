@@ -769,6 +769,9 @@ textarea {
     font-size: 2.8rem; } }
 
 /* Learn page */
+.page-id-16 .wavy-quiz {
+  width: 100vh; }
+
 .page-id-16 p {
   line-height: 1.75rem;
   letter-spacing: 0.1rem; }
@@ -820,6 +823,7 @@ textarea {
 
 .page-id-16 .wavy-quiz {
   height: 400px;
+  width: 100%;
   color: #F8F6F0; }
   .page-id-16 .wavy-quiz h3 {
     font-size: 1.5rem;
@@ -887,7 +891,7 @@ textarea {
   padding: 0.5em 1em;
   outline: none;
   border: none;
-  background-color: #00849f; }
+  background-color: #00849F; }
 
 .tab-one::before {
   content: '';
@@ -897,7 +901,7 @@ textarea {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #0ed166;
+  background-color: #39A8AB;
   -webkit-transform-origin: center top;
           transform-origin: center top;
   -webkit-transform: scaleY(0);
@@ -925,7 +929,7 @@ textarea {
   padding: 0.5em 1em;
   outline: none;
   border: none;
-  background-color: #00849f; }
+  background-color: #00849F; }
 
 .tab-two::before {
   content: '';
@@ -935,7 +939,7 @@ textarea {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #0ed166;
+  background-color: #39A8AB;
   -webkit-transform-origin: center top;
           transform-origin: center top;
   -webkit-transform: scaleY(0);
