@@ -247,6 +247,16 @@ input {
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
+.work-in-progress {
+  padding: 0.6rem 2rem;
+  z-index: 9999;
+  letter-spacing: 0.2rem;
+  color: #fff;
+  background: #a30c0c;
+  position: absolute;
+  top: 0;
+  right: 0; }
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
