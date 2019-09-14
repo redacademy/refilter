@@ -2,6 +2,19 @@
 # Elements
 --------------------------------------------------------------*/
 
+.work-in-progress {
+  padding: 0.6rem 2rem;
+  z-index: 9999;
+  letter-spacing: 0.2rem;
+  color: #fff;
+  background: #a30c0c;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+// Do not remove the block above!
+
 html {
   box-sizing: border-box;
   @include font-size(1);
@@ -65,7 +78,6 @@ img {
 .landing {
   min-height: 100vh;
   color: #fff;
-  text-shadow: 0px 0px 2px #000000;
   position: relative;
 
   // &:after {
