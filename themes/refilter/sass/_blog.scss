@@ -2,32 +2,88 @@
 
 
 .home-content-area {
-    max-width: 768px;
+    max-width: 480px;
     margin: 0 auto;
     background-color: green;
+    @include desktop {
+        max-width: 100%;       
+    }
+    @include tablet {
+        background-color: yellow;
+        }
 
     .blog-banner {
+        
         max-width: 90%;
         margin: 0 auto;
         position: relative;
+        
+        @include tablet {
+           
+            }
+        @include desktop {
+            width: 60%;
+                       
+        }
+        img {
+            border-radius: 10px;
+            
+            @include tablet {
+                  
+            }
+            @include desktop {
+                width: 100%;
+                height: 75vh;
+                border-radius: 0px;              
+            }
+        }   
     }
 
     .blog-post-title-wrapper {
         color: white; 
+       
         position: absolute;
         top: 10vh;
         left: 4vw;
+        h2 {
+           font-size: 1.2rem;
+           @include desktop {
+           
+            font-size: 2rem;
+        }
+        }
+        @include desktop {
+            top: 15vh;
+            
+       
+        }
 
     }
 
     .blog-post-description-wrapper {
         display: none;
+        @include desktop {
+            display: block;
+            color: white;
+            position: absolute;
+            top: 30vh;
+            left: 4vw;
+            
+        }  
     }
 
     .read-more-wrapper {
+        max-width: 90%;
         color: white;     
         position: absolute;
         top: 35vh;
         left: 4vw;
+        p {
+            font-weight: bold;
+        }
+        @include desktop {
+            top: 56vh;
+            font-size:2rem;
+        }
     }
     }
