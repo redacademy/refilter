@@ -67,19 +67,89 @@
     }
 }
 
+//Help Spread Section
+
+.help-spread{
+    margin: 2rem 2rem;
+}
+
+.help-spread-title{
+    margin: 1rem 1rem;
+    margin-left: 2rem;
+    
+}
+
+.help-template-download{
+    width: 300px;
+    text-align: center;
+    margin-left: 2rem;
+}
+
+// Template Download Section
+
+.template-download{
+    height: 100%;
+    color: $white;
+
+    .learn-btn{
+        padding: 12px 30px;
+        letter-spacing: 0.1rem;
+        font-weight: 300;
+        font-size: 1rem;
+        background-color: $light_green;
+        border: $light_green;
+        box-shadow: 0 4px 4px rgba(12, 11, 11, 0.45);
+        border-radius: 5px;
+        margin-bottom: 5rem;
+        width: 180px;
+        align-self: center;
+        i{
+            margin-left: 10px;
+            font-size: 14px; 
+         }
+    }
+
+    h2{
+        font-family: $font__hero-image-sub-heading-description;
+        letter-spacing: 0;
+    }
+
+    p{
+        font-family: $font__hero-image-heading;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        letter-spacing: 0.2; 
+    }
+}
+
+.wallpaper1, .wallpaper2, .wallpaper3{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 70vh;
+    background-size: 664px 1022px; 
+    border-radius: 5px;
+    margin: 1.5rem;
+}
+
+.template-download-question{
+
+}
+
+.template-download-description{
+   
+}
+
+
 // Buttons
 
 .wavy-quiz {
-    height: 400px;
+    height: 450px;
     width: 100%;
     color: $white;
 
     h3{
-        font-size: 1.5rem;
-        padding-top: 0.5rem;
-        padding-bottom:  0;
-        padding-left:  2rem;
-        padding-right:  2rem;
+        
         width: 300px;
     }
 
