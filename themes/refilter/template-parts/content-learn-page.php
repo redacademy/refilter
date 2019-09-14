@@ -55,21 +55,24 @@
             </section>
 
             <section class="template-download container-fluid">
-                <span class="wallpaper1" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('<?php the_field('wallpaper_1'); ?>') no-repeat center center/cover;">
+                <span class="wallpaper" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('<?php the_field('wallpaper_1'); ?>') no-repeat center center/cover;">
+                    <a class="download-btn" href="#"><i class="fas fa-file-download"></i></a>    
                     <h2 class="template-download-question"><?php the_field('wallpaper_1_question'); ?></h2>
                     <p class="template-download-description"><?php the_field('wallpaper_1_description'); ?></p>	
-                    <button class="learn-btn" type="submit">Learn More &rarr;</button>    
+                    <a class="learn-btn"href="#">Learn More <i class="fas fa-arrow-right"></i></a>    
                 </span>
-                <span class="wallpaper2" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('<?php the_field('wallpaper_2'); ?>') no-repeat center center/cover;">
+                <span class="wallpaper" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('<?php the_field('wallpaper_2'); ?>') no-repeat center center/cover;">
+                    <a class="download-btn" href="#"><i class="fas fa-file-download"></i></a>    
                     <h2 class="template-download-question"><?php the_field('wallpaper_2_question'); ?></h2>
                     <p class="template-download-description"><?php the_field('wallpaper_2_description'); ?></p>	
-                    <button class="learn-btn" type="submit">Learn More &rarr;</button>
+                    <a class="learn-btn" href="#">Learn More <i class="fas fa-arrow-right"></i></a>
                 </span>
                 
-                <span class="wallpaper3" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('<?php the_field('wallpaper_3'); ?>') no-repeat center center/cover;">
+                <span class="wallpaper" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('<?php the_field('wallpaper_3'); ?>') no-repeat center center/cover;">
+                    <a class="download-btn" href="#"><i class="fas fa-file-download"></i></a>    
                     <h2 class="template-download-question"><?php the_field('wallpaper_3_question'); ?></h2>
                     <p class="template-download-description"><?php the_field('wallpaper_3_description'); ?></p>	
-                    <button class="learn-btn" type="submit">Learn More &rarr;</button>
+                    <a class="learn-btn" href="#">Learn More <i class="fas fa-arrow-right"></i></a>
                 </span>
             </section>
 
