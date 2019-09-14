@@ -777,6 +777,40 @@ textarea {
     font-size: 2.8rem; } }
 
 /* Learn page */
+.page-id-16 p {
+  line-height: 1.75rem;
+  letter-spacing: 0.1rem; }
+
+.page-id-16 .landing {
+  background-position-y: 0rem;
+  background-position-x: -42rem; }
+  @media (min-width: 768px) {
+    .page-id-16 .landing {
+      background-position-x: 0; } }
+  .page-id-16 .landing .learn-btn {
+    padding: 15px 50px;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    background-color: #39A8AB;
+    border: #39A8AB;
+    -webkit-box-shadow: 0 4px 4px rgba(182, 182, 182, 0.75);
+            box-shadow: 0 4px 4px rgba(182, 182, 182, 0.75);
+    border-radius: 5px; }
+    .page-id-16 .landing .learn-btn i {
+      margin-left: 10px;
+      font-size: 18px; }
+
+.page-id-16 .landing-wave {
+  margin-top: 12rem; }
+
+.page-id-16 .landing-title {
+  font-size: 3rem;
+  font-weight: 300; }
+
+.page-id-16 .landing-question {
+  margin-top: 10rem; }
+
 .page-id-16 .how-to-help {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem; }
@@ -784,15 +818,39 @@ textarea {
     .page-id-16 .how-to-help {
       margin-top: 3rem; } }
   .page-id-16 .how-to-help .how-to-help-title {
-    font-family: 'MADEEvolveSans-Bold',Arial, Helvetica, sans-serif;
-    font-size: 2rem;
+    padding: 1rem;
     width: 100%; }
     @media (min-width: 768px) {
       .page-id-16 .how-to-help .how-to-help-title {
-        font-size: 2.5rem;
         margin-bottom: 1rem; } }
   .page-id-16 .how-to-help .how-to-help-description {
-    font-family: 'MADEEvolveSans-Bold',Arial, Helvetica, sans-serif; }
+    padding: 1rem; }
+
+.page-id-16 .wavy-quiz {
+  height: 400px;
+  color: #F8F6F0; }
+  .page-id-16 .wavy-quiz h3 {
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 300px; }
+  .page-id-16 .wavy-quiz a {
+    text-decoration: none; }
+  .page-id-16 .wavy-quiz .learn-btn {
+    padding: 12px 30px;
+    letter-spacing: 0.1rem;
+    font-weight: 300;
+    font-size: 0.9rem;
+    background-color: #39A8AB;
+    border: #39A8AB;
+    -webkit-box-shadow: 0 4px 4px rgba(14, 11, 11, 0.35);
+            box-shadow: 0 4px 4px rgba(14, 11, 11, 0.35);
+    border-radius: 5px; }
+    .page-id-16 .wavy-quiz .learn-btn i {
+      margin-left: 10px;
+      font-size: 12px; }
 
 .projects-title {
   text-align: left;

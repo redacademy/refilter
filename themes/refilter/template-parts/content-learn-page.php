@@ -14,7 +14,8 @@
 			<section class="landing-wave"></section>				
 				<h1 class="landing-title"><?php the_field('learn_landing_title'); ?></h1>
 				<h2 class="landing-question"><?php the_field('learn_landing_question'); ?></h2>
-				<h3 class="landing-quote"><?php the_field('learn_landing_quote'); ?></h3>
+                <h3 class="landing-quote"><?php the_field('learn_landing_quote'); ?></h3>
+                <button class="learn-btn" type="submit">Learn More <i class="fas fa-arrow-right"></i></button>
 			</section>
 
             <section class="how-to-help container container-content">
@@ -43,14 +44,14 @@
                 <p><?php the_field('quote_18'); ?></p>
             </section>
 
-            <section class="wavy-quiz container-fluid" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('<?php the_field('wavy_quiz_image'); ?>') no-repeat center center/cover;">
-                <p class="wavy-quiz-question"><?php the_field('wavy_quiz_question'); ?></p>
-                <a class="btn green-full" href="#">Take the Quiz</a>
+            <section class="wavy-quiz container-fluid" style="background: url('<?php the_field('wavy_quiz_image_mobile'); ?>') no-repeat center center/cover;">
+                <h3 class="wavy-quiz-question"><?php the_field('wavy_quiz_question'); ?></h3>
+                <button class="learn-btn" type="submit">Take the Quiz <i class="fas fa-arrow-right"></i></button>
             </section>
 
             <section class="help-spread container container-content">
 					<h3 class="help-spread-title"><?php the_field('spread_title'); ?></h3>			
-					<p class="help-templeate-download"><?php the_field('template_download_description'); ?></p>	
+					<p class="help-template-download"><?php the_field('template_download_description'); ?></p>	
             </section>
 
             <section class="template-download container-fluid">
