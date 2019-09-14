@@ -1,0 +1,33 @@
+/* blog page */
+
+
+.home-content-area {
+    max-width: 768px;
+    margin: 0 auto;
+    background-color: green;
+
+    .blog-banner {
+        max-width: 90%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .blog-post-title-wrapper {
+        color: white; 
+        position: absolute;
+        top: 10vh;
+        left: 4vw;
+
+    }
+
+    .blog-post-description-wrapper {
+        display: none;
+    }
+
+    .read-more-wrapper {
+        color: white;     
+        position: absolute;
+        top: 35vh;
+        left: 4vw;
+    }
+    }

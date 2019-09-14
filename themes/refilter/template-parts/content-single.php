@@ -14,38 +14,29 @@
 		<?php endif; ?>
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-			<?php refilter_posted_on(); ?> / <?php refilter_comment_count(); ?> / <?php refilter_posted_by(); ?>
+			
 	</header><!-- .entry-header -->
 
 	<section class="entry-content">
 		
+	<li>
+                <?php
+                    if( have_rows('blog_posts') ):
+                        while ( have_rows('blog_posts') ) : the_row();
+                            the_sub_field('blog_post_1_title');
+                            the_sub_field('blog_post_1_description');
 
-		<?php 
-
-$fields = get_fields();
-$image = get_field('image'); // assigns the image field to the variable of $image
-
-
-if( $fields ): ?>
-    <ul>
-		<?php foreach( $fields as $name => $value
-		
-		): ?>
-		<?php the_content(); ?>
-            <li><?php echo $value; ?></li>
-        <?php endforeach; ?>
-    </ul>
-<?php endif; ?>
+                        endwhile;
+                    else :
+    
+                    endif;
+                    ?>
+                </li>
 
 
 
-<?php 
-$image = get_field('image'); // assigns the image field to the variable of $image
-if( !empty($image) ){ ?> <!-- if the $image variable isn't empty, display the following: -->
 
-    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /> <!--displays the URL for the image variable and also the alt tag which is entered in the WordPress media library-->
 
-<?php }; ?> <!--ends the if statement -->
 
 		<?php
 			wp_link_pages( array(

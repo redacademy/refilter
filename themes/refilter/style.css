@@ -1149,6 +1149,28 @@ textarea {
       max-width: 65%;
       padding-top: 4%; }
 
+/* blog page */
+.home-content-area {
+  max-width: 768px;
+  margin: 0 auto;
+  background-color: green; }
+  .home-content-area .blog-banner {
+    max-width: 90%;
+    margin: 0 auto;
+    position: relative; }
+  .home-content-area .blog-post-title-wrapper {
+    color: white;
+    position: absolute;
+    top: 10vh;
+    left: 4vw; }
+  .home-content-area .blog-post-description-wrapper {
+    display: none; }
+  .home-content-area .read-more-wrapper {
+    color: white;
+    position: absolute;
+    top: 35vh;
+    left: 4vw; }
+
 .site-footer {
   padding: 2em 0 0.5rem 0;
   font-weight: 200;
