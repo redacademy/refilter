@@ -56,3 +56,4 @@
 				</header><!-- #masthead -->
 
 			<main id="content" class="site-content">
+				<p class="work-in-progress">Work in progress!</p> <!-- do not remove this line!-->
