@@ -1161,12 +1161,14 @@ textarea {
     .home-content-area {
       background-color: yellow; } }
   .home-content-area .blog-banner {
+    background-color: orange;
     max-width: 90%;
     margin: 0 auto;
     position: relative; }
     @media (min-width: 768px) {
       .home-content-area .blog-banner {
-        width: 60%; } }
+        width: 60%;
+        padding-bottom: 50px; } }
     .home-content-area .blog-banner img {
       border-radius: 10px; }
       @media (min-width: 768px) {
@@ -1208,6 +1210,14 @@ textarea {
       .home-content-area .read-more-wrapper {
         top: 56vh;
         font-size: 2rem; } }
+
+/* posts page */
+.background-container {
+  height: 100vh; }
+  .background-container .blog-entry-content {
+    background-color: blue;
+    width: 55%;
+    height: 660px; }
 
 .site-footer {
   padding: 2em 0 0.5rem 0;

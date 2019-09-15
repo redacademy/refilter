@@ -20,7 +20,7 @@
 	        	<h2 class="landing-question"><?php the_field('who_we_are_page_question'); ?></h2>
 				<h3 class="landing-quote"><?php the_field('who_we_are_page_quote'); ?></h3>
 				<a class="btn green-full" href="#">Learn More</a>
-            </section>
+        </section>
             
             <h2 class="mission-title"><?php the_field('mission_title'); ?></h2>
 
