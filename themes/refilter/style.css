@@ -817,6 +817,8 @@ textarea {
     .page-id-16 .how-to-help {
       margin-top: 3rem; } }
   .page-id-16 .how-to-help .how-to-help-title {
+    font-family: "MADEEvolveSans-Bold", sans-serif;
+    font-size: 47px;
     padding: 1rem;
     width: 100%; }
     @media (min-width: 768px) {
@@ -829,7 +831,6 @@ textarea {
   margin: 2rem 2rem; }
 
 .page-id-16 .help-spread-title {
-  margin: 1rem 1rem;
   margin-left: 2rem; }
 
 .page-id-16 .help-template-download {

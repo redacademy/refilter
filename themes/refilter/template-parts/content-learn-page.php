@@ -19,29 +19,21 @@
 			</section>
 
             <section class="how-to-help container container-content">
-					<h3 class="how-to-help-title"><?php the_field('help_title'); ?></h3>			
+					<h1 class="how-to-help-title"><?php the_field('help_title'); ?></h2>			
 					<p class="how-to-help-description"><?php the_field('help_description'); ?></p>	
             </section>
             
             <section class="shuffle-quotes container">			
-                <p><?php the_field('quote_1'); ?></p>
-                <p><?php the_field('quote_2'); ?></p>
-                <p><?php the_field('quote_3'); ?></p>
-                <p><?php the_field('quote_4'); ?></p>
-                <p><?php the_field('quote_5'); ?></p>
-                <p><?php the_field('quote_6'); ?></p>
-                <p><?php the_field('quote_7'); ?></p>
-                <p><?php the_field('quote_8'); ?></p>
-                <p><?php the_field('quote_9'); ?></p>
-                <p><?php the_field('quote_10'); ?></p>
-                <p><?php the_field('quote_11'); ?></p>
-                <p><?php the_field('quote_12'); ?></p>
-                <p><?php the_field('quote_13'); ?></p>
-                <p><?php the_field('quote_14'); ?></p>
-                <p><?php the_field('quote_15'); ?></p>
-                <p><?php the_field('quote_16'); ?></p>
-                <p><?php the_field('quote_17'); ?></p>
-                <p><?php the_field('quote_18'); ?></p>
+                <p><?php
+                    if( have_rows('quotes') ):
+                        while ( have_rows('quotes') ) : the_row();
+                            the_sub_field('single_quote');
+                        endwhile;
+                    else :
+                        
+                    endif;
+                    ?></p>
+
             </section>
 
             <section class="wavy-quiz container-fluid" style="background: url('<?php the_field('wavy_quiz_image_mobile'); ?>') no-repeat center center/cover; background-size: 100% 100%">
