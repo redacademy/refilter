@@ -17,11 +17,13 @@
 	<style>
 		.landing {
 			background: url('<?php the_field('landing_image_mobile'); ?>') no-repeat center center/cover;
+			
 		}
 
 		@media only screen and (min-width: 768px) {
 			.landing {
 			background: url('<?php the_field('landing_image_desktop'); ?>') no-repeat center center/cover;
+			
 			}
 		}
 		
