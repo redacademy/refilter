@@ -14,61 +14,57 @@
 			<section class="landing-wave"></section>				
 				<h1 class="landing-title"><?php the_field('learn_landing_title'); ?></h1>
 				<h2 class="landing-question"><?php the_field('learn_landing_question'); ?></h2>
-				<h3 class="landing-quote"><?php the_field('learn_landing_quote'); ?></h3>
+                <h3 class="landing-quote"><?php the_field('learn_landing_quote'); ?></h3>
+                <button class="learn-btn" type="submit">Learn More <i class="fas fa-arrow-right"></i></button>
 			</section>
 
             <section class="how-to-help container container-content">
-					<h3 class="how-to-help-title"><?php the_field('help_title'); ?></h3>			
+					<h1 class="how-to-help-title"><?php the_field('help_title'); ?></h2>			
 					<p class="how-to-help-description"><?php the_field('help_description'); ?></p>	
             </section>
             
             <section class="shuffle-quotes container">			
-                <p><?php the_field('quote_1'); ?></p>
-                <p><?php the_field('quote_2'); ?></p>
-                <p><?php the_field('quote_3'); ?></p>
-                <p><?php the_field('quote_4'); ?></p>
-                <p><?php the_field('quote_5'); ?></p>
-                <p><?php the_field('quote_6'); ?></p>
-                <p><?php the_field('quote_7'); ?></p>
-                <p><?php the_field('quote_8'); ?></p>
-                <p><?php the_field('quote_9'); ?></p>
-                <p><?php the_field('quote_10'); ?></p>
-                <p><?php the_field('quote_11'); ?></p>
-                <p><?php the_field('quote_12'); ?></p>
-                <p><?php the_field('quote_13'); ?></p>
-                <p><?php the_field('quote_14'); ?></p>
-                <p><?php the_field('quote_15'); ?></p>
-                <p><?php the_field('quote_16'); ?></p>
-                <p><?php the_field('quote_17'); ?></p>
-                <p><?php the_field('quote_18'); ?></p>
+                <p><?php
+                    if( have_rows('quotes') ):
+                        while ( have_rows('quotes') ) : the_row();
+                            the_sub_field('single_quote');
+                        endwhile;
+                    else :
+                        
+                    endif;
+                    ?></p>
+
             </section>
 
-            <section class="wavy-quiz container-fluid" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('<?php the_field('wavy_quiz_image'); ?>') no-repeat center center/cover;">
-                <p class="wavy-quiz-question"><?php the_field('wavy_quiz_question'); ?></p>
-                <a class="btn green-full" href="#">Take the Quiz</a>
+            <section class="wavy-quiz container-fluid" style="background: url('<?php the_field('wavy_quiz_image_mobile'); ?>') no-repeat center center/cover; background-size: 100% 100%">
+                <h3 class="wavy-quiz-question"><?php the_field('wavy_quiz_question'); ?></h3>
+                <button class="learn-btn" type="submit">Take the Quiz <i class="fas fa-arrow-right"></i></button>
             </section>
 
             <section class="help-spread container container-content">
 					<h3 class="help-spread-title"><?php the_field('spread_title'); ?></h3>			
-					<p class="help-templeate-download"><?php the_field('template_download_description'); ?></p>	
+					<p class="help-template-download"><?php the_field('template_download_description'); ?></p>	
             </section>
 
             <section class="template-download container-fluid">
-                <span style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('<?php the_field('wallpaper_1'); ?>') no-repeat center center/cover;">
+                <span class="wallpaper" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('<?php the_field('wallpaper_1'); ?>') no-repeat center center/cover;">
+                    <a class="download-btn" href="#"><i class="fas fa-file-download"></i></a>    
                     <h2 class="template-download-question"><?php the_field('wallpaper_1_question'); ?></h2>
                     <p class="template-download-description"><?php the_field('wallpaper_1_description'); ?></p>	
-                    <button class="btn green-empty" type="submit">Learn More &rarr;</button>    
+                    <a class="learn-btn"href="#">Learn More <i class="fas fa-arrow-right"></i></a>    
                 </span>
-                <span style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('<?php the_field('wallpaper_2'); ?>') no-repeat center center/cover;">
+                <span class="wallpaper" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('<?php the_field('wallpaper_2'); ?>') no-repeat center center/cover;">
+                    <a class="download-btn" href="#"><i class="fas fa-file-download"></i></a>    
                     <h2 class="template-download-question"><?php the_field('wallpaper_2_question'); ?></h2>
                     <p class="template-download-description"><?php the_field('wallpaper_2_description'); ?></p>	
-                    <button class="btn green-empty" type="submit">Learn More &rarr;</button>
+                    <a class="learn-btn" href="#">Learn More <i class="fas fa-arrow-right"></i></a>
                 </span>
                 
-                <span style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('<?php the_field('wallpaper_3'); ?>') no-repeat center center/cover;">
+                <span class="wallpaper" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('<?php the_field('wallpaper_3'); ?>') no-repeat center center/cover;">
+                    <a class="download-btn" href="#"><i class="fas fa-file-download"></i></a>    
                     <h2 class="template-download-question"><?php the_field('wallpaper_3_question'); ?></h2>
                     <p class="template-download-description"><?php the_field('wallpaper_3_description'); ?></p>	
-                    <button class="btn green-empty" type="submit">Learn More &rarr;</button>
+                    <a class="learn-btn" href="#">Learn More <i class="fas fa-arrow-right"></i></a>
                 </span>
             </section>
 
