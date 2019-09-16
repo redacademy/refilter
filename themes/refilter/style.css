@@ -1344,11 +1344,13 @@ textarea {
 
 /* posts page */
 .background-container {
-  height: 100vh; }
-  .background-container .blog-entry-content {
+  width: 100%; }
+  .background-container .blog-entry-content-desktop-wrapper {
+    margin: 0 auto;
     background-color: blue;
-    width: 55%;
-    height: 660px; }
+    width: 80%; }
+    .background-container .blog-entry-content-desktop-wrapper img {
+      width: 400px; }
 
 .site-footer {
   padding: 2em 0 0.5rem 0;

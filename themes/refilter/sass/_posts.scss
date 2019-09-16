@@ -1,17 +1,22 @@
 /* posts page */
 
-
-
-
-
 .background-container {
-    height : 100vh;
     
-    .blog-entry-content {
-       background-color: blue;
-        width: 55%;
-        height:  660px;
-       
-    }
+width: 100%;   
+ 
+.blog-entry-content-desktop-wrapper {
 
+margin:  0 auto;
+background-color: blue;
+width: 80% ;
+    img {
+        width: 400px; 
+    }
+ 
 }
+}
+
+
+
+
+
