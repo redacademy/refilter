@@ -10,7 +10,6 @@
         position: relative;
         background-color: yellow;
          .right-image {
-            
             position: relative;
             left: 60px;
             bottom: 20px;
@@ -23,19 +22,29 @@
 }
 
 .desktop-background-container {
-    
-width: 100%;   
+    width: 100%;   
  
 .desktop-blog-entry-content-wrapper {
 
 margin:  0 auto;
 background-color: blue;
-width: 80% ;
-    img {
-        width: 400px; 
+max-width: 55%; 
+padding: 2rem;
+.overlapping-content-desktop {
+    position: relative;
+    background-color: yellow;
+     .right-image {
+        position: relative;
+        left: 170px;
+        bottom: 60px;
     }
- 
+    img {
+        width: 67%;
+        border-radius: 10px; 
+    }
 }
+    
+ }
 }
 
 

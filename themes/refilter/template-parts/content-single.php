@@ -37,10 +37,17 @@
 	</section>			
 	
 	<section class="desktop-blog-entry-content-wrapper"> 
-				<p><?php the_field('blog_post_content'); ?></p>
+		<p><?php the_field('blog_post_content'); ?></p>
+		<div class="overlapping-content-desktop">
+			<div class="left-image">	
 				<img src="<?php the_field('blog_post_content_left_image'); ?>" />
-			<img src="<?php the_field('blog_post_content_right_image'); ?>" />
+			</div>
+			<div class="right-image">
+				<img src="<?php the_field('blog_post_content_right_image'); ?>" />
+			</div>
+		</div>
 	</section>
+
 </div>		
 
 <section class="mobile landing container-fluid">
@@ -50,16 +57,16 @@
 </section>		
 
 <section class="mobile-blog-entry-content">
-	
 		<p><?php the_field('blog_post_content'); ?></p>
 	<div class="overlapping-content-mobile">
 		<div class="left-image">	
 			<img src="<?php the_field('blog_post_content_left_image'); ?>" />
-	</div>	
+		</div>	
 		<div class="right-image">
 			<img src="<?php the_field('blog_post_content_right_image'); ?>" />
-			</div>	 
+		</div>	 
 	</div>	
+	
 </section>
 		
 		
