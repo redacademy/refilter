@@ -1,10 +1,32 @@
 /* posts page */
 
-.background-container {
+
+
+.mobile-blog-entry-content {
+    margin: 0 auto;
+    max-width: 80%;
+    
+    .overlapping-content-mobile {
+        position: relative;
+        background-color: yellow;
+         .right-image {
+            
+            position: relative;
+            left: 60px;
+            bottom: 20px;
+        }
+    img  {
+        max-width: 80%;
+        border-radius: 10px;
+       }
+}
+}
+
+.desktop-background-container {
     
 width: 100%;   
  
-.blog-entry-content-desktop-wrapper {
+.desktop-blog-entry-content-wrapper {
 
 margin:  0 auto;
 background-color: blue;

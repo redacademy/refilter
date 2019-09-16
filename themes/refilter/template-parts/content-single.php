@@ -12,31 +12,31 @@
 	
 <style> 
 @media only screen and (min-width: 768px) {
-		.background-container {
+		.desktop-background-container {
 		background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25));	
 		background: url('<?php the_field('landing_blog_post_image_desktop'); ?>') no-repeat center center/cover;
 		}
 		.mobile { display: none;
 		} 
-		.blog-entry-content  { display: none;} 
+		.mobile-blog-entry-content  { display: none;} 
 		}
 
 		@media only screen and (max-width: 767px) {
 		.landing {
 		background: url('<?php the_field('landing_blog_post_image_mobile'); ?>') no-repeat center center/cover;
 		}	
-		.background-container { display: none;}
+		.desktop-background-container { display: none;}
 		}
 </style> 	
 
 
-<div class="background-container">
+<div class="desktop-background-container">
 	<section class="desktop landing container-fluid">
 		<h2><?php the_field('blog_post_title'); ?></h2>
 		<p><?php the_field('blog_post_description'); ?></p>
 	</section>			
 	
-	<section class="blog-entry-content-desktop-wrapper"> 
+	<section class="desktop-blog-entry-content-wrapper"> 
 				<p><?php the_field('blog_post_content'); ?></p>
 				<img src="<?php the_field('blog_post_content_left_image'); ?>" />
 			<img src="<?php the_field('blog_post_content_right_image'); ?>" />
@@ -49,10 +49,17 @@
 				<p><?php the_field('blog_post_description'); ?></p>
 </section>		
 
-<section class="blog-entry-content">
-	<p><?php the_field('blog_post_content'); ?></p>
-		<img src="<?php the_field('blog_post_content_left_image'); ?>" />
-		<img src="<?php the_field('blog_post_content_right_image'); ?>" />
+<section class="mobile-blog-entry-content">
+	
+		<p><?php the_field('blog_post_content'); ?></p>
+	<div class="overlapping-content-mobile">
+		<div class="left-image">	
+			<img src="<?php the_field('blog_post_content_left_image'); ?>" />
+	</div>	
+		<div class="right-image">
+			<img src="<?php the_field('blog_post_content_right_image'); ?>" />
+			</div>	 
+	</div>	
 </section>
 		
 		

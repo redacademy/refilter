@@ -1343,13 +1343,27 @@ textarea {
         font-size: 2rem; } }
 
 /* posts page */
-.background-container {
+.mobile-blog-entry-content {
+  margin: 0 auto;
+  max-width: 80%; }
+  .mobile-blog-entry-content .overlapping-content-mobile {
+    position: relative;
+    background-color: yellow; }
+    .mobile-blog-entry-content .overlapping-content-mobile .right-image {
+      position: relative;
+      left: 60px;
+      bottom: 20px; }
+    .mobile-blog-entry-content .overlapping-content-mobile img {
+      max-width: 80%;
+      border-radius: 10px; }
+
+.desktop-background-container {
   width: 100%; }
-  .background-container .blog-entry-content-desktop-wrapper {
+  .desktop-background-container .desktop-blog-entry-content-wrapper {
     margin: 0 auto;
     background-color: blue;
     width: 80%; }
-    .background-container .blog-entry-content-desktop-wrapper img {
+    .desktop-background-container .desktop-blog-entry-content-wrapper img {
       width: 400px; }
 
 .site-footer {
