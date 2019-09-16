@@ -30,6 +30,8 @@
 </style> 	
 
 
+<!---------desktop layout------------->
+
 <div class="desktop-background-container">
 	<section class="desktop landing container-fluid">
 		<h2><?php the_field('blog_post_title'); ?></h2>
@@ -46,6 +48,46 @@
 				<img src="<?php the_field('blog_post_content_right_image'); ?>" />
 			</div>
 		</div>
+
+		<div class="desktop-related-posts-wrapper">
+		<h2>Related Posts</h2>	
+
+		<?php
+// Default arguments
+$args = array(
+	'posts_per_page' => 2, // How many items to display
+	'post__not_in'   => array( get_the_ID() ), // Exclude current post
+	'no_found_rows'  => true, // We don't ned pagination so this speeds up the query
+);
+
+// Check for current post category and add tax_query to the query arguments
+$cats = wp_get_post_terms( get_the_ID(), 'category' ); 
+$cats_ids = array();  
+foreach( $cats as $wpex_related_cat ) {
+	$cats_ids[] = $wpex_related_cat->term_id; 
+}
+if ( ! empty( $cats_ids ) ) {
+	$args['category__in'] = $cats_ids;
+}
+
+// Query posts
+$wpex_query = new wp_query( $args );
+
+// Loop through posts
+foreach( $wpex_query->posts as $post ) : setup_postdata( $post ); ?>
+	
+		<div class="desktop-related-posts-text">
+			<h3><?php the_title(); ?></h3>
+			<h3>Read More -></h3>
+		</div>
+		<a href="<?php the_permalink(); ?>"><img src="<?php the_field('landing_blog_post_image_desktop'); ?>" /></a>
+	
+<?php
+// End loop
+endforeach;
+
+// Reset post data
+wp_reset_postdata(); ?></div>
 	</section>
 
 </div>		
@@ -57,7 +99,7 @@
 </section>		
 
 <section class="mobile-blog-entry-content">
-		<p><?php the_field('blog_post_content'); ?></p>
+	<p><?php the_field('blog_post_content'); ?></p>
 	<div class="overlapping-content-mobile">
 		<div class="left-image">	
 			<img src="<?php the_field('blog_post_content_left_image'); ?>" />
@@ -65,8 +107,50 @@
 		<div class="right-image">
 			<img src="<?php the_field('blog_post_content_right_image'); ?>" />
 		</div>	 
-	</div>	
+	</div>
 	
+	
+	<!---------mobile layout------------->
+
+	<div class="mobile-related-posts-wrapper">
+		<h2>Related Posts</h2>	
+
+		<?php
+// Default arguments
+$args = array(
+	'posts_per_page' => 2, // How many items to display
+	'post__not_in'   => array( get_the_ID() ), // Exclude current post
+	'no_found_rows'  => true, // We don't ned pagination so this speeds up the query
+);
+
+// Check for current post category and add tax_query to the query arguments
+$cats = wp_get_post_terms( get_the_ID(), 'category' ); 
+$cats_ids = array();  
+foreach( $cats as $wpex_related_cat ) {
+	$cats_ids[] = $wpex_related_cat->term_id; 
+}
+if ( ! empty( $cats_ids ) ) {
+	$args['category__in'] = $cats_ids;
+}
+
+// Query posts
+$wpex_query = new wp_query( $args );
+
+// Loop through posts
+foreach( $wpex_query->posts as $post ) : setup_postdata( $post ); ?>
+	
+		<div class="mobile-related-posts-text">
+			<h3><?php the_title(); ?></h3>
+			<h3>Read More -></h3>
+		</div>
+		<a href="<?php the_permalink(); ?>"><img src="<?php the_field('landing_blog_post_image_desktop'); ?>" /></a>
+	
+<?php
+// End loop
+endforeach;
+
+// Reset post data
+wp_reset_postdata(); ?></div>
 </section>
 		
 		

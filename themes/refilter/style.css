@@ -1374,6 +1374,13 @@ textarea {
       .desktop-background-container .desktop-blog-entry-content-wrapper .overlapping-content-desktop img {
         width: 67%;
         border-radius: 10px; }
+    .desktop-background-container .desktop-blog-entry-content-wrapper .desktop-related-posts-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .desktop-background-container .desktop-blog-entry-content-wrapper .desktop-related-posts-wrapper img {
+        width: 30%;
+        border-radius: 10px; }
 
 .site-footer {
   padding: 2em 0 0.5rem 0;
