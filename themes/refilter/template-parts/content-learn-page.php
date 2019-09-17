@@ -27,7 +27,7 @@
                 <?php if( have_rows('quotes') ): ?>
                     <ul class="quotes-grid">
                         <?php while( have_rows('quotes') ): the_row();?>
-                            <li class="single-quote" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('<?php the_field('wallpaper_1'); ?>') no-repeat center center/cover;">
+                            <li class="single-quote" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('<?php the_sub_field('single_quote_image_background'); ?>') no-repeat center center/cover;">
                                 <?php the_sub_field('single_quote'); ?>
                             </li>
                         <?php endwhile; ?>
