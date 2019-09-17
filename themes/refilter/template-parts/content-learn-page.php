@@ -23,17 +23,17 @@
 					<p class="how-to-help-description"><?php the_field('help_description'); ?></p>	
             </section>
             
-            <section class="shuffle-quotes container">			
-                <p><?php
-                    if( have_rows('quotes') ):
-                        while ( have_rows('quotes') ) : the_row();
-                            the_sub_field('single_quote');
-                        endwhile;
-                    else :
-                        
-                    endif;
-                    ?></p>
-
+            <section class="shuffle-quotes-grid container container-fluid">			
+                <?php if( have_rows('quotes') ): ?>
+                    <ul class="quotes-grid">
+                        <?php while( have_rows('quotes') ): the_row();?>
+                            <li class="single-quote" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('<?php the_field('wallpaper_1'); ?>') no-repeat center center/cover;">
+                                <?php the_sub_field('single_quote'); ?>
+                            </li>
+                        <?php endwhile; ?>
+                        <button class="reshuffle-btn" type="submit"><i class="fas fa-random"></i>Reshuffle Cards</button>
+                    </ul>
+                <?php endif; ?>
             </section>
 
             <section class="wavy-quiz container-fluid" style="background: url('<?php the_field('wavy_quiz_image_mobile'); ?>') no-repeat center center/cover; background-size: 100% 100%">

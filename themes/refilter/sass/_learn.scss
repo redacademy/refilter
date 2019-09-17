@@ -8,7 +8,7 @@
     }
 
     .wavy-quiz{
-        width: 100vh;
+       
     }
 
     p{
@@ -17,8 +17,7 @@
     }
 
     .landing{
-        background-position-y: 0rem;
-        background-position-x: -42rem;
+        
         @include desktop {
             background-position-x: 0;
           }
@@ -82,15 +81,86 @@
 
 .help-spread-title{
     
-    margin-left: 2rem;
+    
     
 }
 
 .help-template-download{
     width: 300px;
     text-align: center;
-    margin-left: 2rem;
+   
 }
+
+// Shuffle Quotes Grid Section
+
+.shuffle-quotes-grid{
+
+    font-family: $font__body;
+    color: $white;
+   
+    
+    ul{  
+    margin: 0;
+    padding:0;
+    }
+
+    .quotes-grid{
+        text-align: flex-start;
+        display: grid;
+        justify-items: center;
+        text-align: left;
+        margin: 0;
+        grid-template-columns: 1fr;
+        grid-gap: 1.5rem;
+        padding: 0rem 1.5rem;
+        width: 100%;
+        
+        li{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            margin: 0;
+            padding: 2rem;
+            font-size: 1.2rem;
+            list-style: none;  
+            background-color: $light_green;
+            font-weight: bold;
+            display: flex;
+            font-size: 1.2rem;
+            min-height: 180px;
+        }
+        .reshuffle-btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            border-radius: 5px;
+            border: none;
+            font-size: 1.2rem;
+            list-style: none;  
+            background-color:$light_green;
+            font-weight: bold;
+            box-shadow: 0 4px 4px rgba(182, 182, 182, 0.75);
+            display: inline-block;
+            width: 100%;
+            display: flex;
+            margin: 0;
+padding: 1rem;
+            
+            }
+        i{
+            margin-right: 1rem;
+        }    
+    }
+
+    .single-quote{
+        align-self: center; 
+    }
+    
+    }
+}
+
 
 // Template Download Section
 
@@ -190,6 +260,5 @@
             margin-left: 10px;
             font-size: 12px; 
          }
-}
 }
 }
