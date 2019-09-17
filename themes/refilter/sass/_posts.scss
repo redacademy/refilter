@@ -3,15 +3,113 @@
 
 
 
+/* mobile */
 
-.background-container {
-    height : 100vh;
+.mobile-blog-entry-content {
+    margin: 0 auto;
+    max-width: 80%;
     
-    .blog-entry-content {
-       background-color: blue;
-        width: 55%;
-        height:  660px;
-       
+    .overlapping-content-mobile {
+        
+        background-color: yellow;
+         .right-image {
+            position: relative;
+            left: 60px;
+            bottom: 20px;
+        }
+        img  {
+            max-width: 80%;
+            border-radius: 10px;
+       }
+}
+    .mobile-related-posts-wrapper {
+            .mobile-related-posts-title {
+                position: absolute;
+                margin: 0;
+                top: 40px;
+                left: 40px;
+                z-index: 1; 
+                color: white;
+            }
+
+            .mobile-read-more {
+                position: absolute;
+                margin: 0;
+                bottom: 40px;
+                left: 40px;
+                z-index: 1; 
+                color: white;
+            }
+        
+    
+        .mobile-related-posts-image-wrapper {
+            position: relative;
+            img { 
+                border-radius: 10px;
+            }
+    }
+    }
+}
+
+
+/* desktop */
+
+.desktop-background-container {
+    width: 100%;   
+ 
+.desktop-blog-entry-content-wrapper {
+
+margin:  0 auto;
+background-color: blue;
+max-width: 55%; 
+padding: 2rem;
+
+.overlapping-content-desktop {
+    position: relative;
+    background-color: yellow;
+     .right-image {
+        position: relative;
+        left: 170px;
+        bottom: 60px;
+    }
+    img {
+        width: 67%;
+        border-radius: 10px; 
+    }
+}
+.desktop-related-posts-wrapper{
+    display: flex;
+    justify-content: center;
+    
+    .desktop-related-posts-title {
+        position: absolute;
+        margin: 0;
+        top: 40px;
+        left: 30px;
+        z-index: 1; 
+        color: white;
+        font-size: 1.5rem;
+    }
+    .desktop-read-more {
+        position: absolute;
+        margin: 0;
+        bottom: 40px;
+        left: 30px;
+        z-index: 1; 
+        color: white;
+        font-size: 1.5rem;
     }
 
+    .desktop-related-posts-image-wrapper {
+        position: relative;
+        img {
+            width: 97%;
+            border-radius: 10px; 
+    }
 }
+ }
+
+
+} 
+}
+
