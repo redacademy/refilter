@@ -17,12 +17,14 @@
 	<style>
 		.landing {
 			background: url('<?php the_field('landing_image_mobile'); ?>') no-repeat center center/cover;
+			background: url('<?php the_field('about_page_landing_image_mobile'); ?>') no-repeat center center/cover;
 			
 		}
 
 		@media only screen and (min-width: 768px) {
 			.landing {
 			background: url('<?php the_field('landing_image_desktop'); ?>') no-repeat center center/cover;
+			background: url('<?php the_field('about_page_landing_image_desktop'); ?>') no-repeat center center/cover;
 			
 			}
 		}
@@ -37,7 +39,7 @@
 	</style>
 	</head>
 
-	<body <?php body_class() ; ?>>
+	<body <?php if ( is_single() ) { body_class( array( 'full-background',  ) ); } else { body_class(); } ?>>
 		<main id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 

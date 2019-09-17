@@ -1055,12 +1055,13 @@ textarea {
       @media (min-width: 768px) {
         .about-content-area .about-site-main .about-entry-title {
           max-width: 100%; } }
-  @media (min-width: 768px) {
-    .about-content-area .mission-title {
-      text-align: left;
-      font-size: 2.5rem;
-      padding-top: 6%;
-      padding-bottom: 3%; } }
+  .about-content-area .mission-title {
+    text-align: center; }
+    @media (min-width: 768px) {
+      .about-content-area .mission-title {
+        font-size: 2.5rem;
+        padding-top: 6%;
+        padding-bottom: 3%; } }
   .about-content-area .mission {
     background-color: black; }
     @media (min-width: 768px) {
@@ -1344,83 +1345,77 @@ textarea {
 
 /* posts page */
 /* mobile */
-.mobile-blog-entry-content {
+.blog-entry-content {
   margin: 0 auto;
   max-width: 80%; }
-  .mobile-blog-entry-content .overlapping-content-mobile {
+  .blog-entry-content .overlapping-content {
     background-color: yellow; }
-    .mobile-blog-entry-content .overlapping-content-mobile .right-image {
+    .blog-entry-content .overlapping-content .right-image {
       position: relative;
       left: 60px;
       bottom: 20px; }
-    .mobile-blog-entry-content .overlapping-content-mobile img {
+    .blog-entry-content .overlapping-content img {
       max-width: 80%;
       border-radius: 10px; }
-  .mobile-blog-entry-content .mobile-related-posts-wrapper .mobile-related-posts-title {
+  .blog-entry-content .related-posts-wrapper .related-posts-title {
     position: absolute;
     margin: 0;
     top: 40px;
     left: 40px;
     z-index: 1;
     color: white; }
-  .mobile-blog-entry-content .mobile-related-posts-wrapper .mobile-read-more {
+  .blog-entry-content .related-posts-wrapper .read-more {
     position: absolute;
     margin: 0;
     bottom: 40px;
     left: 40px;
     z-index: 1;
     color: white; }
-  .mobile-blog-entry-content .mobile-related-posts-wrapper .mobile-related-posts-image-wrapper {
+  .blog-entry-content .related-posts-wrapper .related-posts-image-wrapper {
     position: relative; }
-    .mobile-blog-entry-content .mobile-related-posts-wrapper .mobile-related-posts-image-wrapper img {
+    .blog-entry-content .related-posts-wrapper .related-posts-image-wrapper img {
       border-radius: 10px; }
 
 /* desktop */
-.desktop-background-container {
-  width: 100%; }
-  .desktop-background-container .desktop-blog-entry-content-wrapper {
-    margin: 0 auto;
+@media only screen and (min-width: 768px) {
+  .blog-entry-content {
     background-color: blue;
     max-width: 55%;
     padding: 2rem; }
-    .desktop-background-container .desktop-blog-entry-content-wrapper .overlapping-content-desktop {
+    .blog-entry-content .overlapping-content {
       position: relative;
       background-color: yellow; }
-      .desktop-background-container .desktop-blog-entry-content-wrapper .overlapping-content-desktop .right-image {
-        position: relative;
+      .blog-entry-content .overlapping-content .right-image {
         left: 170px;
         bottom: 60px; }
-      .desktop-background-container .desktop-blog-entry-content-wrapper .overlapping-content-desktop img {
-        width: 67%;
-        border-radius: 10px; }
-    .desktop-background-container .desktop-blog-entry-content-wrapper .desktop-related-posts-wrapper {
+      .blog-entry-content .overlapping-content img {
+        width: 67%; }
+    .blog-entry-content .related-posts-wrapper {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
-      .desktop-background-container .desktop-blog-entry-content-wrapper .desktop-related-posts-wrapper .desktop-related-posts-title {
+      .blog-entry-content .related-posts-wrapper .related-posts-title {
         position: absolute;
         margin: 0;
         top: 40px;
         left: 30px;
-        z-index: 1;
-        color: white;
         font-size: 1.5rem; }
-      .desktop-background-container .desktop-blog-entry-content-wrapper .desktop-related-posts-wrapper .desktop-read-more {
+      .blog-entry-content .related-posts-wrapper .read-more {
         position: absolute;
         margin: 0;
         bottom: 40px;
-        left: 30px;
+        left: 40px;
         z-index: 1;
         color: white;
         font-size: 1.5rem; }
-      .desktop-background-container .desktop-blog-entry-content-wrapper .desktop-related-posts-wrapper .desktop-related-posts-image-wrapper {
+      .blog-entry-content .related-posts-wrapper .related-posts-image-wrapper {
         position: relative; }
-        .desktop-background-container .desktop-blog-entry-content-wrapper .desktop-related-posts-wrapper .desktop-related-posts-image-wrapper img {
-          width: 97%;
-          border-radius: 10px; }
+        .blog-entry-content .related-posts-wrapper .related-posts-image-wrapper img {
+          border-radius: 10px;
+          max-width: 97%; } }
 
 .site-footer {
   padding: 2em 0 0.5rem 0;
