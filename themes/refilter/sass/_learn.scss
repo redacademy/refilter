@@ -21,42 +21,61 @@
     }
 
     
+.learn {
+  a {
+    text-decoration: none;
+    color: $white;
+  }
 
-    .landing{
-        .learn-btn{
-        padding: 15px 50px;
-        letter-spacing: 0.1rem;
-        font-weight: 500;
-        font-size: 1.2rem;
-        background-color: $light_green;
-        border: $light_green;
-        box-shadow: 0 4px 4px rgba(12, 11, 11, 0.45);
-        border-radius: 5px;
-        i{
-            margin-left: 10px;
-            font-size: 18px; 
-        }
-        @include desktop {
-            display: none;  
-        }   
-        }
+  .wavy-quiz {
+  }
+
+  p {
+    line-height: 1.75rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .landing {
+    .learn-btn {
+      padding: 15px 50px;
+      letter-spacing: 0.1rem;
+      font-weight: 500;
+      font-size: 1.2rem;
+      background-color: $light_green;
+      border: $light_green;
+      box-shadow: 0 4px 4px rgba(12, 11, 11, 0.45);
+      border-radius: 5px;
+      i {
+        margin-left: 10px;
+        font-size: 18px;
+      }
+      @include desktop {
+        display: none;
+      }
     }
+  }
 
-    .landing-wave {
-            margin-top: 12rem;
-            
+  .landing-wave {
+    margin-top: 12rem;
+  }
+
+  .landing-title {
+    font-size: 3rem;
+    font-weight: 300;
+  }
+
+  .landing-question {
+    margin-top: 10rem;
+    @include desktop {
+      margin-top: 0;
     }
+  }
+  .how-to-help {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 
-    .landing-title{
-        font-size: 3rem;
-        font-weight: 300;
-    }
-
-    .landing-question{
-        margin-top: 10rem;
-        @include desktop {
-            margin-top: 0;  
-        }   
+    @include desktop {
+      margin-top: 0;
     }
     .how-to-help{
         margin-top: 1.5rem;
@@ -83,20 +102,35 @@
             align-content: center;
             margin-bottom: 1rem;
           }
+    .how-to-help-title {
+      font-family: $font__heading1;
+      font-size: 47px;
+      padding: 1rem;
+      width: 100%;
+
+      @include desktop {
+        text-align: center;
+        margin-bottom: 1rem;
+      }
     }
-}
+    .how-to-help-description {
+      padding: 1rem;
+      @include desktop {
+        align-content: center;
+        margin-bottom: 1rem;
+      }
+    }
+  }
 
-// Shuffle Quotes Grid Section
+  // Shuffle Quotes Grid Section
 
-.shuffle-quotes-grid{
-
+  .shuffle-quotes-grid {
     font-family: $font__body;
     color: $white;
-   
-    
-    ul{  
-    margin: 0;
-    padding:0;
+
+    ul {
+      margin: 0;
+      padding: 0;
     }
 
     .quotes-grid{
@@ -178,14 +212,59 @@
             }
 
             }
-        
+    .quotes-grid {
+      text-align: flex-start;
+      display: grid;
+      justify-items: center;
+      text-align: left;
+      margin: 0;
+      grid-template-columns: 1fr;
+      grid-gap: 1.5rem;
+      padding: 0rem 1.5rem;
+      width: 100%;
+
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        margin: 0;
+        padding: 2rem;
+        font-size: 1.2rem;
+        list-style: none;
+        background-color: $light_green;
+        font-weight: bold;
+        display: flex;
+        font-size: 1.2rem;
+        min-height: 200px;
+        line-height: 2rem;
+      }
+      .reshuffle-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+        font-size: 1.2rem;
+        list-style: none;
+        background-color: $light_green;
+        font-weight: bold;
+        box-shadow: 0 4px 4px rgba(182, 182, 182, 0.75);
+        display: inline-block;
+        margin: 0;
+        padding: 1rem;
+        margin-bottom: 4rem;
+      }
+      i {
+        margin-right: 1rem;
+      }
     }
 
-    .single-quote{
-        align-self: center; 
+    .single-quote {
+      align-self: center;
     }
-    
-    }
+  }
 }
 
 //Help Spread Section
@@ -219,8 +298,17 @@
     letter-spacing: 0.1rem;
     font-size: 0.9rem;
     padding: 1rem;
+.help-spread {
+  margin-top: 4rem;
 }
 
+.help-spread-title {
+  margin-bottom: 2rem;
+}
+
+.help-template-download {
+  text-align: center;
+}
 
 // Template Download Section
 
@@ -297,14 +385,69 @@
         @include desktop{
             margin-bottom: 5rem;
         }
+.template-download {
+  height: 100%;
+  color: $white;
+
+  .wallpaper {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 70vh;
+    background-size: 664px 1022px;
+    border-radius: 5px;
+    margin: 1.5rem;
+  }
+
+  .download-btn {
+    font-size: 1rem;
+    background-color: $light_green;
+    border: $light_green;
+    box-shadow: 0 4px 4px rgba(12, 11, 11, 0.1);
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 1rem 1.3rem;
+    i {
+      font-size: 35px;
     }
-}
-.template-download-question{
+  }
 
+  .learn-btn {
+    padding: 12px 30px;
+    letter-spacing: 0.1rem;
+    font-weight: 300;
+    font-size: 0.9rem;
+    background-color: $light_green;
+    border: $light_green;
+    box-shadow: 0 4px 4px rgba(12, 11, 11, 0.45);
+    border-radius: 5px;
+    margin-bottom: 5rem;
+    align-self: center;
+    i {
+      margin-left: 10px;
+      font-size: 12px;
+    }
+  }
+
+  h2 {
+    font-family: $font__hero-image-sub-heading-description;
+    letter-spacing: 0;
+  }
+
+  p {
+    font-family: $font__hero-image-heading;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    letter-spacing: 0.2;
+  }
+}
+.template-download-question {
 }
 
-.template-download-description{
-   
+.template-download-description {
 }
 
 .template-download .learn-btn{
@@ -398,3 +541,71 @@
          }
 }
 }
+// .wavy-newsletter {
+//   width: 100%;
+//   min-height: 560px;
+//   .btn {
+//     background-color: $white;
+//     font-size: 1rem;
+//     letter-spacing: 0.1rem;
+//     width: 230px;
+//   }
+// }
+
+// .wavy-newsletter-title {
+//   font-size: 2rem;
+// }
+
+// .wavy-newsletter-form {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+// .wavy-newsletter .wavy-newsletter-form {
+//   width: 100%;
+//   height: 150px;
+//   margin: 10px;
+//   text-align: center;
+
+//   .btn {
+//     height: 50px;
+//   }
+// }
+
+// .wavy-newsletter-name {
+// }
+
+// .wavy-newsletter-email {
+// }
+
+// // Buttons
+
+// .wavy-quiz {
+//   height: 450px;
+//   width: 100%;
+//   color: $white;
+
+//   h3 {
+//     width: 300px;
+//   }
+
+//   a {
+//     text-decoration: none;
+//   }
+//   .learn-btn {
+//     padding: 12px 30px;
+//     letter-spacing: 0.1rem;
+//     font-weight: 300;
+//     font-size: 0.9rem;
+//     background-color: $light_green;
+//     border: $light_green;
+//     box-shadow: 0 4px 4px rgba(14, 11, 11, 0.35);
+//     border-radius: 5px;
+//     i {
+//       margin-left: 10px;
+//       font-size: 12px;
+//     }
+//   }
+// }

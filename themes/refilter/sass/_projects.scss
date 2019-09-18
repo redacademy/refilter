@@ -1,3 +1,4 @@
+
 .projects-title{
     text-align: left;
     margin-top: 20px;
@@ -32,80 +33,13 @@
 .slide-container{
     text-align: center;
 }
-.tab-one-container{
-    
 
-     
+.tabs {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
 }
-.tab-one {
-    z-index: 1;
-    position: relative;
-    font-size: inherit;
-    font-family: inherit;
-    color: white;
-    padding: 0.5em 1em;
-    outline: none;
-    border: none;
-    background-color:$blue
-  }
-  
-  .tab-one::before {
-    content: '';
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color:$light_green;
-    transform-origin: center top;
-    transform: scaleY(0);
-    transition: transform 0.25s ease-in-out;
-  }
-  
-  .tab-one:hover {
-    cursor: pointer;
-  }
-  
-  .tab-one:hover::before {
-    transform-origin: center bottom;
-    transform: scaleY(1);
-  }
-  .tab-two {
-    z-index: 1;
-    position: relative;
-    font-size: inherit;
-    font-family: inherit;
-    color: white;
-    padding: 0.5em 1em;
-    outline: none;
-    border: none;
-    background-color:$blue;
-  }
-  
-  .tab-two::before {
-    content: '';
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: $light_green;
-    transform-origin: center top;
-    transform: scaleY(0);
-    transition: transform 0.25s ease-in-out;
-  }
-  
-  .tab-two:hover {
-    cursor: pointer;
-  }
-  
-  .tab-two:hover::before {
-    transform-origin: center bottom;
-    transform: scaleY(1);
-  }
-  
-  
-  
-  
+
+.active {
+  border-bottom: 2px solid #000;
+}
