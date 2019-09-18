@@ -1412,7 +1412,8 @@ textarea {
         color: white;
         font-size: 1.5rem; }
       .blog-entry-content .related-posts-wrapper .related-posts-image-wrapper {
-        position: relative; }
+        position: relative;
+        max-width: 400px; }
         .blog-entry-content .related-posts-wrapper .related-posts-image-wrapper img {
           border-radius: 10px;
           max-width: 97%; } }
