@@ -29,7 +29,7 @@ html {
 
 body {
   background: url('http://refilter.van.cp.academy.red/wp-content/uploads/2019/09/pattern.jpg')
-    no-repeat center bottom/cover;
+    repeat-y bottom/contain;
   color: #000;
   font-size: 14;
 }
