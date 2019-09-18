@@ -32,12 +32,44 @@
             </div>
 			<div id="One" class="tab-container" style="display:none">
 
-			<h2> hekanksfkaksjas</h2>
+			<?php
+
+             $loop = new WP_Query( array(
+             'post_type' => 'projects',
+			//   'posts_per_page' => 2,
+			  'date_query'    => array(
+				'column'  => 'post_date',
+				'after'   => '- 30 days'
+		     	)
+		     	));
+		 								?>
+               <?php while ( $loop->have_posts() ) : $loop->the_post(); the_title(); ?>
+                <a href="<?php the_permalink(); ?>">permalink</a>
+
+                 <!-- do stuff -->
+              <?php endwhile; wp_reset_query(); ?>
+
+
 		
             </div>
 
 			<div id="Two" class="tab-container" style="display:none">
-			<h2>lasfalmmmmmmvv</h2>
+			<?php
+
+$loop = new WP_Query( array(
+'post_type' => 'projects',
+//   'posts_per_page' => 2,
+ 'date_query'    => array(
+   'column'  => 'post_date',
+   'after'   => '- 30 days'
+)
+));
+						   ?>
+<?php while ( $loop->have_posts() ) : $loop->the_post(); the_title(); ?>
+
+<!-- do stuff -->
+<?php endwhile; wp_reset_query(); ?>
+
 			
 
 				
@@ -48,21 +80,21 @@
 			<p class="partner-description"> <?php the_field('projects_partner_description'); ?>  </p>    
 			<div class="partners-container">
 				<div class="partner-container">   
-					<h2 class="partner-one"> <?php the_field('partner_one'); ?>  </h2>   
-					<h3 class="partner-description"> <?php the_field('partner_one_description'); ?>  </h3>   
+					<h1 class="partner-one"> <?php the_field('partner_one'); ?>  </h1>   
+					<p class="partner-description"> <?php the_field('partner_one_description'); ?>  </p>   
 					<a class="partner-website" href="<?php the_field('projects_partner_website_one'); ?>" >www.pdl.smugmug.com</a>
 
 				</div>
 
 				<div class="partner-container">
-			     	<h2 class="partner-two"> <?php the_field('partner_two'); ?>  </h2>      
-					<h3 class="partner-description"> <?php the_field('partner_two_description'); ?>  </h3>   
+			     	<h1 class="partner-two"> <?php the_field('partner_two'); ?>  </h1>      
+					<p class="partner-description"> <?php the_field('partner_two_description'); ?>  </p>   
 					<a class="partner-website" href="<?php the_field('projects_partner_website_two'); ?>" > @hillseyed</a>
 
 				</div>
 				<div class="partner-container">
-			     	<h2 class="partner-two"> <?php the_field('partner_three'); ?>  </h2>      
-					<h3 class="partner-description"> <?php the_field('partner_three_description'); ?>  </h3>   
+			     	<h1 class="partner-two"> <?php the_field('partner_three'); ?>  </h1>      
+					<p class="partner-description"> <?php the_field('partner_three_description'); ?>  </p>   
 					<a class="partner-website" href="<?php the_field('projects_partner_website_three'); ?>" >www.banancampphoto.com</a>
 
 				</div>

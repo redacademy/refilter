@@ -1,0 +1,108 @@
+/* posts page */
+
+
+
+
+/* mobile */
+
+.blog-entry-content {
+    margin: 0 auto;
+    max-width: 80%;
+    
+    .overlapping-content {
+        
+        background-color: yellow;
+         .right-image {
+            position: relative;
+            left: 60px;
+            bottom: 20px;
+        }
+        img  {
+            max-width: 80%;
+            border-radius: 10px;
+       }
+}
+    .related-posts-wrapper {
+            .related-posts-title {
+                position: absolute;
+                margin: 0;
+                top: 40px;
+                left: 40px;
+                z-index: 1; 
+                color: white;
+            }
+
+            .read-more {
+                position: absolute;
+                margin: 0;
+                bottom: 40px;
+                left: 40px;
+                z-index: 1; 
+                color: white;
+            }
+        
+    
+        .related-posts-image-wrapper {
+            position: relative;
+            img { 
+                border-radius: 10px;
+            }
+    }
+    }
+}
+
+/* desktop */
+@media only screen and (min-width: 768px) {
+    .blog-entry-content {
+        background-color: blue;
+        max-width: 55%;
+        padding: 2rem;
+        .overlapping-content {
+            
+        position: relative;
+        background-color: yellow;
+             .right-image {
+                left: 170px;
+                bottom: 60px;
+            }
+            img  {
+                width: 67%;
+        
+           }
+    }
+        .related-posts-wrapper {
+            display: flex;
+    justify-content: center;
+                .related-posts-title {
+                    position: absolute;
+                    margin: 0;
+                    top: 40px;
+                    left: 30px;
+                    font-size: 1.5rem;
+                }
+    
+                .read-more {
+                    position: absolute;
+                    margin: 0;
+                    bottom: 40px;
+                    left: 40px;
+                    z-index: 1; 
+                    color: white;
+                    font-size: 1.5rem;
+                }
+            
+        
+            .related-posts-image-wrapper {
+                position: relative;
+                max-width: 400px;
+                
+                img { 
+                    border-radius: 10px;
+                    max-width: 97%; 
+                    
+                }
+        }
+        }
+    }
+    
+    }
