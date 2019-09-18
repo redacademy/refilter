@@ -2,6 +2,8 @@
 
 .page-id-16{
 
+    letter-spacing: 0.1rem;
+
     .landing{
         min-height: 1100px;
         @include desktop{
@@ -64,8 +66,8 @@
           margin-top: 0;
         }
 	.how-to-help-title{
-        font-family: $font__heading1;
-        font-size: 47px;
+        font-family: $font__heading2;
+        font-size: 31px;
         padding: 1rem;
         width: 100%;
         
@@ -76,6 +78,7 @@
     }
     .how-to-help-description{
         padding: 1rem;
+        line-height: 1.75rem;
         @include desktop {
             align-content: center;
             margin-bottom: 1rem;
@@ -106,6 +109,16 @@
         grid-gap: 1.5rem;
         padding: 0rem 1.5rem;
         width: 100%;
+
+        @include desktop{
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr; 
+            margin: 0;
+            grid-gap: 0;
+            padding: 0;
+            grid-gap: 1.5rem 0;
+            width: 85%;
+        }
         
         li{
             display: flex;
@@ -122,6 +135,11 @@
             font-size: 1.2rem;
             min-height: 200px;
             line-height: 2rem;
+
+            @include desktop{
+                margin: 0;
+                height: 200px;
+            }
         }
         .reshuffle-btn{
             display: flex;
@@ -157,17 +175,33 @@
 
 .help-spread{
     margin-top: 4rem;
+    @include desktop{
+        margin-bottom: 2rem;
+    }
+    h2{
+        font-family: $font__heading2;
+        font-size: 31px;
+        letter-spacing: 0.1rem;
+        font-weight: 200;
+        @include desktop{
+            font-size: 37px;
+        }
+    }
 }
 
 .help-spread-title{
-    margin-bottom: 2rem;
+    
+    margin-bottom: 1rem;
     @include desktop{
         text-align: center;
     }
 }
 
 .help-template-download{
-    text-align: center;  
+    text-align: center;
+    letter-spacing: 0.1rem;
+    font-size: 0.9rem;
+    padding: 1rem;
 }
 
 
@@ -177,6 +211,7 @@
 .template-download{
     height: 100%;
     color: $white;
+    line-height: 1.75rem;
 
     img{
         height: 20px;
@@ -184,9 +219,6 @@
         align-self: center;
         margin-bottom: 1rem;
     }
-    
-    
-
     .wallpaper {
         position: relative;
         display: flex;
@@ -220,8 +252,9 @@
     .learn-btn{
         padding: 12px 30px;
         letter-spacing: 0.1rem;
-        font-weight: 300;
-        font-size: 0.9rem;
+        font-weight: 500;
+        font-family: $font__hero-image-sub-heading-description;
+        font-size: 1rem;
         background-color: $light_green;
         border: $light_green;
         box-shadow: 0 4px 4px rgba(12, 11, 11, 0.45);
@@ -244,7 +277,7 @@
         font-family: $font__hero-image-heading;
         padding-left: 5rem;
         padding-right: 5rem;
-        letter-spacing: 0.2; 
+        letter-spacing: 0.1rem; 
     }
 }
 .template-download-question{
@@ -333,8 +366,9 @@
     .learn-btn{
         padding: 12px 30px;
         letter-spacing: 0.1rem;
-        font-weight: 300;
-        font-size: 0.9rem;
+        font-weight: 500;
+        font-family: $font__hero-image-sub-heading-description;
+        font-size: 1rem;
         background-color: $light_green;
         border: $light_green;
         box-shadow: 0 4px 4px rgba(14, 11, 11, 0.35);

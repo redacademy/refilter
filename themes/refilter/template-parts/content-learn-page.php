@@ -25,10 +25,17 @@
             
             <section class="shuffle-quotes-grid container container-fluid">			
                 <?php if( have_rows('quotes') ): ?>
-                    <ul class="quotes-grid">
+                    <ul class="quotes-grid container">
                         <?php while( have_rows('quotes') ): the_row();?>
-                            <li class="single-quote" style="background: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)), url('<?php the_sub_field('single_quote_image_background'); ?>') no-repeat center center/cover;">
-                                <?php the_sub_field('single_quote'); ?>
+                            <li class="single-quote container" style="background: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)), url('<?php the_sub_field('single_quote_image_background'); ?>') no-repeat center center/cover;">
+                            <style>
+                                @media only screen and (min-width: 768px) {
+                                    .single-quote{
+                                        min-width: 90%;
+                                    }
+                                }
+                            </style>    
+                            <?php the_sub_field('single_quote'); ?>
                             </li>
                         <?php endwhile; ?>
                         <button class="reshuffle-btn" type="submit"><i class="fas fa-random"></i>Reshuffle Cards</button>
@@ -45,7 +52,7 @@
                     @media only screen and (min-width: 768px) {
                     .wavy-quiz {
                     background: url('<?php the_field('wavy_quiz_image_desktop'); ?>') no-repeat center center/cover;
-                    background-size: 100% 100%;
+                    background-size: 120% 100%;
                     background-color: transparent;
                     }
 		            }
@@ -55,7 +62,7 @@
             </section>
 
             <section class="help-spread container container-content">
-					<h3 class="help-spread-title"><?php the_field('spread_title'); ?></h3>			
+					<h2 class="help-spread-title"><?php the_field('spread_title'); ?></h2>			
 					<p class="help-template-download"><?php the_field('template_download_description'); ?></p>	
             </section>
 
@@ -84,8 +91,21 @@
                 </span>
             </section>
 
-            <section class="wavy-newsletter container-fluid" style="background: url('<?php the_field('newsletter_image'); ?>') no-repeat center center/cover;">
-				<h1 class="wavy-newsletter-title"><?php the_field('newsletter_title'); ?></h1>										
+            <section class="wavy-newsletter container-fluid">
+            <style>
+                    .wavy-newsletter{
+                        background: url('<?php the_field('newsletter_image'); ?>') no-repeat center center/cover; 
+                        background-size: 100% 100%;
+                    }
+                    @media only screen and (min-width: 768px) {
+                    .wavy-newsletter {
+                    background: url('<?php the_field('newsletter_image_desktop'); ?>') no-repeat center center/cover;
+                    background-size: 120% 100%;
+                    background-color: transparent;
+                    }
+		            }
+                </style>
+                <h1 class="wavy-newsletter-title"><?php the_field('newsletter_title'); ?></h1>										
 				<form class="wavy-newsletter-form">
 				<input class="wavy-newsletter-name" type="text" placeholder="<?php the_field('newsletter_name'); ?>" />
 				<input class="wavy-newsletter-email" type="text" placeholder="<?php the_field('newsletter_email'); ?>" />													
