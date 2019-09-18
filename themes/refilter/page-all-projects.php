@@ -1,7 +1,6 @@
 <?php
 /**
  * The template for displaying all pages.
- * 
  *
  * @package Refilter
  */
@@ -20,7 +19,5 @@ get_header(); ?>
 		</section><!-- #main -->
 	</main><!-- #primary -->
 
-
-
-	
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
