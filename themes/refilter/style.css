@@ -271,7 +271,7 @@ html {
           box-sizing: inherit; }
 
 body {
-  background: url("http://refilter.van.cp.academy.red/wp-content/uploads/2019/09/pattern.jpg") no-repeat center bottom/cover;
+  background: url("http://refilter.van.cp.academy.red/wp-content/uploads/2019/09/pattern.jpg") repeat-y bottom/contain;
   color: #000;
   font-size: 14; }
 
@@ -778,7 +778,7 @@ textarea {
 
 /* Learn page */
 .page-id-16 .landing {
-  min-height: 1000px; }
+  min-height: 1100px; }
 
 .page-id-16 a {
   text-decoration: none;
@@ -787,10 +787,6 @@ textarea {
 .page-id-16 p {
   line-height: 1.75rem;
   letter-spacing: 0.1rem; }
-
-@media (min-width: 768px) {
-  .page-id-16 .landing {
-    background-position-x: 0; } }
 
 .page-id-16 .landing .learn-btn {
   padding: 15px 50px;
@@ -805,6 +801,9 @@ textarea {
   .page-id-16 .landing .learn-btn i {
     margin-left: 10px;
     font-size: 18px; }
+  @media (min-width: 768px) {
+    .page-id-16 .landing .learn-btn {
+      display: none; } }
 
 .page-id-16 .landing-wave {
   margin-top: 12rem; }
@@ -815,13 +814,16 @@ textarea {
 
 .page-id-16 .landing-question {
   margin-top: 10rem; }
+  @media (min-width: 768px) {
+    .page-id-16 .landing-question {
+      margin-top: 0; } }
 
 .page-id-16 .how-to-help {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem; }
   @media (min-width: 768px) {
     .page-id-16 .how-to-help {
-      margin-top: 3rem; } }
+      margin-top: 0; } }
   .page-id-16 .how-to-help .how-to-help-title {
     font-family: "MADEEvolveSans-Bold", sans-serif;
     font-size: 47px;
@@ -829,9 +831,15 @@ textarea {
     width: 100%; }
     @media (min-width: 768px) {
       .page-id-16 .how-to-help .how-to-help-title {
+        text-align: center;
         margin-bottom: 1rem; } }
   .page-id-16 .how-to-help .how-to-help-description {
     padding: 1rem; }
+    @media (min-width: 768px) {
+      .page-id-16 .how-to-help .how-to-help-description {
+        -ms-flex-line-pack: center;
+            align-content: center;
+        margin-bottom: 1rem; } }
 
 .page-id-16 .shuffle-quotes-grid {
   font-family: "MADEEvolveSans", sans-serif;

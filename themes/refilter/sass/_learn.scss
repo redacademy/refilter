@@ -3,7 +3,7 @@
 .page-id-16{
 
     .landing{
-        min-height: 1000px;
+        min-height: 1100px;
     }
 
     a{
@@ -21,23 +21,22 @@
     }
 
     .landing{
-        
+        .learn-btn{
+        padding: 15px 50px;
+        letter-spacing: 0.1rem;
+        font-weight: 500;
+        font-size: 1.2rem;
+        background-color: $light_green;
+        border: $light_green;
+        box-shadow: 0 4px 4px rgba(12, 11, 11, 0.45);
+        border-radius: 5px;
+        i{
+            margin-left: 10px;
+            font-size: 18px; 
+        }
         @include desktop {
-            background-position-x: 0;
-          }
-          .learn-btn{
-            padding: 15px 50px;
-            letter-spacing: 0.1rem;
-            font-weight: 500;
-            font-size: 1.2rem;
-            background-color: $light_green;
-            border: $light_green;
-            box-shadow: 0 4px 4px rgba(12, 11, 11, 0.45);
-            border-radius: 5px;
-            i{
-                margin-left: 10px;
-                font-size: 18px; 
-             }
+            display: none;  
+        }   
         }
     }
 
@@ -53,13 +52,16 @@
 
     .landing-question{
         margin-top: 10rem;
+        @include desktop {
+            margin-top: 0;  
+        }   
     }
     .how-to-help{
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
 
         @include desktop {
-          margin-top: 3rem;
+          margin-top: 0;
         }
 	.how-to-help-title{
         font-family: $font__heading1;
@@ -68,12 +70,16 @@
         width: 100%;
         
         @include desktop {
-            
+            text-align: center;
             margin-bottom: 1rem;
           }
     }
     .how-to-help-description{
         padding: 1rem;
+        @include desktop {
+            align-content: center;
+            margin-bottom: 1rem;
+          }
     }
 }
 
