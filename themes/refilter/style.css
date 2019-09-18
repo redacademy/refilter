@@ -271,7 +271,7 @@ html {
           box-sizing: inherit; }
 
 body {
-  background: url("http://refilter.van.cp.academy.red/wp-content/uploads/2019/09/pattern.jpg") no-repeat center bottom/cover;
+  background: url("http://refilter.van.cp.academy.red/wp-content/uploads/2019/09/pattern.jpg") repeat-y bottom/contain;
   color: #000;
   font-size: 14; }
 
@@ -403,7 +403,7 @@ textarea {
 
 .btn {
   text-decoration: none;
-  border: 2px solid #17cf54;
+  border: 2px solid #39A8AB;
   padding: 0.55rem 2rem;
   border-radius: 4px;
   font-size: 1rem;
@@ -411,16 +411,16 @@ textarea {
   display: inline-block; }
 
 .green-full {
-  color: #fff;
-  background: #0ed166; }
+  color: #F8F6F0;
+  background: #39A8AB; }
 
 .green-empty {
-  color: #17cf54;
+  color: #39A8AB;
   background: transparent; }
 
 .white-empty {
-  color: #17cf54;
-  background: #fff; }
+  color: #39A8AB;
+  background: #F8F6F0; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -777,36 +777,33 @@ textarea {
     font-size: 2.8rem; } }
 
 /* Learn page */
+.page-id-16 .landing {
+  min-height: 1100px; }
+
 .page-id-16 a {
   text-decoration: none;
   color: #F8F6F0; }
-
-.page-id-16 .wavy-quiz {
-  width: 100vh; }
 
 .page-id-16 p {
   line-height: 1.75rem;
   letter-spacing: 0.1rem; }
 
-.page-id-16 .landing {
-  background-position-y: 0rem;
-  background-position-x: -42rem; }
+.page-id-16 .landing .learn-btn {
+  padding: 15px 50px;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  background-color: #39A8AB;
+  border: #39A8AB;
+  -webkit-box-shadow: 0 4px 4px rgba(12, 11, 11, 0.45);
+          box-shadow: 0 4px 4px rgba(12, 11, 11, 0.45);
+  border-radius: 5px; }
+  .page-id-16 .landing .learn-btn i {
+    margin-left: 10px;
+    font-size: 18px; }
   @media (min-width: 768px) {
-    .page-id-16 .landing {
-      background-position-x: 0; } }
-  .page-id-16 .landing .learn-btn {
-    padding: 15px 50px;
-    letter-spacing: 0.1rem;
-    font-weight: 500;
-    font-size: 1.2rem;
-    background-color: #39A8AB;
-    border: #39A8AB;
-    -webkit-box-shadow: 0 4px 4px rgba(182, 182, 182, 0.75);
-            box-shadow: 0 4px 4px rgba(182, 182, 182, 0.75);
-    border-radius: 5px; }
-    .page-id-16 .landing .learn-btn i {
-      margin-left: 10px;
-      font-size: 18px; }
+    .page-id-16 .landing .learn-btn {
+      display: none; } }
 
 .page-id-16 .landing-wave {
   margin-top: 12rem; }
@@ -817,13 +814,16 @@ textarea {
 
 .page-id-16 .landing-question {
   margin-top: 10rem; }
+  @media (min-width: 768px) {
+    .page-id-16 .landing-question {
+      margin-top: 0; } }
 
 .page-id-16 .how-to-help {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem; }
   @media (min-width: 768px) {
     .page-id-16 .how-to-help {
-      margin-top: 3rem; } }
+      margin-top: 0; } }
   .page-id-16 .how-to-help .how-to-help-title {
     font-family: "MADEEvolveSans-Bold", sans-serif;
     font-size: 47px;
@@ -831,25 +831,95 @@ textarea {
     width: 100%; }
     @media (min-width: 768px) {
       .page-id-16 .how-to-help .how-to-help-title {
+        text-align: center;
         margin-bottom: 1rem; } }
   .page-id-16 .how-to-help .how-to-help-description {
     padding: 1rem; }
+    @media (min-width: 768px) {
+      .page-id-16 .how-to-help .how-to-help-description {
+        -ms-flex-line-pack: center;
+            align-content: center;
+        margin-bottom: 1rem; } }
 
-.page-id-16 .help-spread {
-  margin: 2rem 2rem; }
+.page-id-16 .shuffle-quotes-grid {
+  font-family: "MADEEvolveSans", sans-serif;
+  color: #F8F6F0; }
+  .page-id-16 .shuffle-quotes-grid ul {
+    margin: 0;
+    padding: 0; }
+  .page-id-16 .shuffle-quotes-grid .quotes-grid {
+    text-align: flex-start;
+    display: grid;
+    justify-items: center;
+    text-align: left;
+    margin: 0;
+    grid-template-columns: 1fr;
+    grid-gap: 1.5rem;
+    padding: 0rem 1.5rem;
+    width: 100%; }
+    .page-id-16 .shuffle-quotes-grid .quotes-grid li {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      border-radius: 5px;
+      margin: 0;
+      padding: 2rem;
+      font-size: 1.2rem;
+      list-style: none;
+      background-color: #39A8AB;
+      font-weight: bold;
+      display: flex;
+      font-size: 1.2rem;
+      min-height: 200px;
+      line-height: 2rem; }
+    .page-id-16 .shuffle-quotes-grid .quotes-grid .reshuffle-btn {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      width: 100%;
+      border-radius: 5px;
+      border: none;
+      font-size: 1.2rem;
+      list-style: none;
+      background-color: #39A8AB;
+      font-weight: bold;
+      -webkit-box-shadow: 0 4px 4px rgba(182, 182, 182, 0.75);
+              box-shadow: 0 4px 4px rgba(182, 182, 182, 0.75);
+      display: inline-block;
+      margin: 0;
+      padding: 1rem;
+      margin-bottom: 4rem; }
+    .page-id-16 .shuffle-quotes-grid .quotes-grid i {
+      margin-right: 1rem; }
+  .page-id-16 .shuffle-quotes-grid .single-quote {
+    -ms-flex-item-align: center;
+        align-self: center; }
 
-.page-id-16 .help-spread-title {
-  margin-left: 2rem; }
+.help-spread {
+  margin-top: 4rem; }
 
-.page-id-16 .help-template-download {
-  width: 300px;
-  text-align: center;
-  margin-left: 2rem; }
+.help-spread-title {
+  margin-bottom: 2rem; }
 
-.page-id-16 .template-download {
+.help-template-download {
+  text-align: center; }
+
+.template-download {
   height: 100%;
   color: #F8F6F0; }
-  .page-id-16 .template-download .wallpaper {
+  .template-download .wallpaper {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -865,7 +935,7 @@ textarea {
     background-size: 664px 1022px;
     border-radius: 5px;
     margin: 1.5rem; }
-  .page-id-16 .template-download .download-btn {
+  .template-download .download-btn {
     font-size: 1rem;
     background-color: #39A8AB;
     border: #39A8AB;
@@ -876,9 +946,9 @@ textarea {
     top: 10px;
     right: 10px;
     padding: 1rem 1.3rem; }
-    .page-id-16 .template-download .download-btn i {
+    .template-download .download-btn i {
       font-size: 35px; }
-  .page-id-16 .template-download .learn-btn {
+  .template-download .learn-btn {
     padding: 12px 30px;
     letter-spacing: 0.1rem;
     font-weight: 300;
@@ -891,27 +961,62 @@ textarea {
     margin-bottom: 5rem;
     -ms-flex-item-align: center;
         align-self: center; }
-    .page-id-16 .template-download .learn-btn i {
+    .template-download .learn-btn i {
       margin-left: 10px;
       font-size: 12px; }
-  .page-id-16 .template-download h2 {
+  .template-download h2 {
     font-family: "MADEEvolveSans-Medium", sans-serif;
     letter-spacing: 0; }
-  .page-id-16 .template-download p {
+  .template-download p {
     font-family: "MADEEvolveSans-Bold", sans-serif;
     padding-left: 5rem;
     padding-right: 5rem;
     letter-spacing: 0.2; }
 
-.page-id-16 .wavy-quiz {
+.wavy-newsletter {
+  width: 100%;
+  min-height: 560px; }
+  .wavy-newsletter .btn {
+    background-color: #F8F6F0;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    width: 230px; }
+
+.wavy-newsletter-title {
+  font-size: 2rem; }
+
+.wavy-newsletter-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.wavy-newsletter .wavy-newsletter-form {
+  width: 100%;
+  height: 150px;
+  margin: 10px;
+  text-align: center; }
+  .wavy-newsletter .wavy-newsletter-form .btn {
+    height: 50px; }
+
+.wavy-quiz {
   height: 450px;
   width: 100%;
   color: #F8F6F0; }
-  .page-id-16 .wavy-quiz h3 {
+  .wavy-quiz h3 {
     width: 300px; }
-  .page-id-16 .wavy-quiz a {
+  .wavy-quiz a {
     text-decoration: none; }
-  .page-id-16 .wavy-quiz .learn-btn {
+  .wavy-quiz .learn-btn {
     padding: 12px 30px;
     letter-spacing: 0.1rem;
     font-weight: 300;
@@ -921,7 +1026,7 @@ textarea {
     -webkit-box-shadow: 0 4px 4px rgba(14, 11, 11, 0.35);
             box-shadow: 0 4px 4px rgba(14, 11, 11, 0.35);
     border-radius: 5px; }
-    .page-id-16 .wavy-quiz .learn-btn i {
+    .wavy-quiz .learn-btn i {
       margin-left: 10px;
       font-size: 12px; }
 
