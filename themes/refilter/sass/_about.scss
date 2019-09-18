@@ -25,11 +25,9 @@
     }
 }
     .mission-title {
+        text-align: center;
         @include desktop {
-        
-        text-align: left;
         font-size: 2.5rem;
-       
         padding-top: 6%;
         padding-bottom: 3%;
         }
