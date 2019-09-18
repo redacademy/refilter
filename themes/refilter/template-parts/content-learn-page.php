@@ -23,12 +23,12 @@
 					<p class="how-to-help-description"><?php the_field('help_description'); ?></p>	
             </section>
             
-            <section class="shuffle-quotes-grid container container-fluid">			
+            <section class="shuffle-quotes-grid">			
                 <?php if( have_rows('quotes') ): ?>
                     <ul class="quotes-grid">
                         <?php while( have_rows('quotes') ): the_row();?>
-                            <li class="single-quote" style="background: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)), url('<?php the_sub_field('single_quote_image_background'); ?>') no-repeat center center/cover;">
-                                <?php the_sub_field('single_quote'); ?>
+                            <li class="single-quote " style="background: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)), url('<?php the_sub_field('single_quote_image_background'); ?>') no-repeat center center/cover;">   
+                            <?php the_sub_field('single_quote'); ?>
                             </li>
                         <?php endwhile; ?>
                         <button class="reshuffle-btn" type="submit"><i class="fas fa-random"></i>Reshuffle Cards</button>
@@ -36,13 +36,26 @@
                 <?php endif; ?>
             </section>
 
-            <section class="wavy-quiz container-fluid" style="background: url('<?php the_field('wavy_quiz_image_mobile'); ?>') no-repeat center center/cover; background-size: 100% 100%">
+            <section class="wavy-quiz container-fluid">
+                <style>
+                    .wavy-quiz{
+                        background: url('<?php the_field('wavy_quiz_image_mobile'); ?>') no-repeat center center/cover; 
+                        background-size: 100% 100%;
+                    }
+                    @media only screen and (min-width: 768px) {
+                    .wavy-quiz {
+                    background: url('<?php the_field('wavy_quiz_image_desktop'); ?>') no-repeat center center/cover;
+                    background-size: 120% 100%;
+                    background-color: transparent;
+                    }
+		            }
+                </style>
                 <h3 class="wavy-quiz-question"><?php the_field('wavy_quiz_question'); ?></h3>
                 <button class="learn-btn" type="submit">Take the Quiz <i class="fas fa-arrow-right"></i></button>
             </section>
 
             <section class="help-spread container container-content">
-					<h3 class="help-spread-title"><?php the_field('spread_title'); ?></h3>			
+					<h2 class="help-spread-title"><?php the_field('spread_title'); ?></h2>			
 					<p class="help-template-download"><?php the_field('template_download_description'); ?></p>	
             </section>
 
@@ -52,14 +65,14 @@
                     <h2 class="template-download-question"><?php the_field('wallpaper_1_question'); ?></h2>
                     <p class="template-download-description"><?php the_field('wallpaper_1_description'); ?></p>	
                     <a class="learn-btn"href="#">Learn More <i class="fas fa-arrow-right"></i></a>
-                    <span class="re-logo"><?php the_field('refilter_logo_1'); ?></span>	    
+                    <img class="re-logo" src="<?php the_field('refilter_logo_1'); ?>" >    
                 </span>
-                <span class="wallpaper" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('<?php the_field('wallpaper_2'); ?>') no-repeat center center/cover;">
+                    <span class="wallpaper" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('<?php the_field('wallpaper_2'); ?>') no-repeat center center/cover;">
                     <a class="download-btn" href="#"><i class="fas fa-file-download"></i></a>    
                     <h2 class="template-download-question"><?php the_field('wallpaper_2_question'); ?></h2>
                     <p class="template-download-description"><?php the_field('wallpaper_2_description'); ?></p>	
                     <a class="learn-btn" href="#">Learn More <i class="fas fa-arrow-right"></i></a>
-                    <p class="re-logo"><?php the_field('refilter_logo_2'); ?></p>	  
+                    <img class="re-logo" src="<?php the_field('refilter_logo_1'); ?>" >  
                 </span>
                 
                 <span class="wallpaper" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('<?php the_field('wallpaper_3'); ?>') no-repeat center center/cover;">
@@ -67,12 +80,25 @@
                     <h2 class="template-download-question"><?php the_field('wallpaper_3_question'); ?></h2>
                     <p class="template-download-description"><?php the_field('wallpaper_3_description'); ?></p>	
                     <a class="learn-btn" href="#">Learn More <i class="fas fa-arrow-right"></i></a>
-                    <img class="re-logo"><?php the_field('refilter_logo_3'); ?>  
+                    <img class="re-logo" src="<?php the_field('refilter_logo_1'); ?>" > 
                 </span>
             </section>
 
-            <section class="wavy-newsletter container-fluid" style="background: url('<?php the_field('newsletter_image'); ?>') no-repeat center center/cover;">
-				<h1 class="wavy-newsletter-title"><?php the_field('newsletter_title'); ?></h1>										
+            <section class="wavy-newsletter container-fluid">
+            <style>
+                    .wavy-newsletter{
+                        background: url('<?php the_field('newsletter_image'); ?>') no-repeat center center/cover; 
+                        background-size: 100% 100%;
+                    }
+                    @media only screen and (min-width: 768px) {
+                    .wavy-newsletter {
+                    background: url('<?php the_field('newsletter_image_desktop'); ?>') no-repeat center center/cover;
+                    background-size: 120% 100%;
+                    background-color: transparent;
+                    }
+		            }
+                </style>
+                <h1 class="wavy-newsletter-title"><?php the_field('newsletter_title'); ?></h1>										
 				<form class="wavy-newsletter-form">
 				<input class="wavy-newsletter-name" type="text" placeholder="<?php the_field('newsletter_name'); ?>" />
 				<input class="wavy-newsletter-email" type="text" placeholder="<?php the_field('newsletter_email'); ?>" />													
