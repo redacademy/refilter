@@ -4,6 +4,9 @@
 
     .landing{
         min-height: 1100px;
+        @include desktop{
+            min-height: 768px;
+        }
     }
 
     a{
@@ -161,6 +164,9 @@
 
 .help-spread-title{
     margin-bottom: 2rem;
+    @include desktop{
+        text-align: center;
+    }
 }
 
 .help-template-download{
@@ -170,9 +176,19 @@
 
 // Template Download Section
 
+
 .template-download{
     height: 100%;
     color: $white;
+
+    img{
+        height: 20px;
+        width: 114px;
+        align-self: center;
+        margin-bottom: 1rem;
+    }
+    
+    
 
     .wallpaper {
         position: relative;
@@ -183,6 +199,10 @@
         background-size: 664px 1022px; 
         border-radius: 5px;
         margin: 1.5rem;
+        @include desktop{
+           height: 650px;
+           width:450px;
+        }
     }
 
     .download-btn{
@@ -215,7 +235,8 @@
             margin-left: 10px;
             font-size: 12px; 
          }
-    }
+         }
+    
 
     h2{
         font-family: $font__hero-image-sub-heading-description;
@@ -236,6 +257,20 @@
 .template-download-description{
    
 }
+
+.template-download .learn-btn{
+    @include desktop{
+        display: none;
+    }
+}
+
+.template-download{
+    @include desktop{
+        flex-direction: row;
+    }
+}
+
+
 
 // Wavy Newsletter Section
 

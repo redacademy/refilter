@@ -13,7 +13,7 @@
 			
 			<section class="footer-contact">
 					<p> Contact Us
-					<span><i class="fab fa-facebook-f"></i></span>
+					<span><i class="fab fa-facebook-square"></i></span>
 					<span><i class="fab fa-instagram"></i></span>
 					</p>
 				</section>

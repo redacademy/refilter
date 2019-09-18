@@ -36,7 +36,20 @@
                 <?php endif; ?>
             </section>
 
-            <section class="wavy-quiz container-fluid" style="background: url('<?php the_field('wavy_quiz_image_mobile'); ?>') no-repeat center center/cover; background-size: 100% 100%">
+            <section class="wavy-quiz container-fluid">
+                <style>
+                    .wavy-quiz{
+                        background: url('<?php the_field('wavy_quiz_image_mobile'); ?>') no-repeat center center/cover; 
+                        background-size: 100% 100%;
+                    }
+                    @media only screen and (min-width: 768px) {
+                    .wavy-quiz {
+                    background: url('<?php the_field('wavy_quiz_image_desktop'); ?>') no-repeat center center/cover;
+                    background-size: 100% 100%;
+                    background-color: transparent;
+                    }
+		            }
+                </style>
                 <h3 class="wavy-quiz-question"><?php the_field('wavy_quiz_question'); ?></h3>
                 <button class="learn-btn" type="submit">Take the Quiz <i class="fas fa-arrow-right"></i></button>
             </section>
@@ -52,14 +65,14 @@
                     <h2 class="template-download-question"><?php the_field('wallpaper_1_question'); ?></h2>
                     <p class="template-download-description"><?php the_field('wallpaper_1_description'); ?></p>	
                     <a class="learn-btn"href="#">Learn More <i class="fas fa-arrow-right"></i></a>
-                    <span class="re-logo"><?php the_field('refilter_logo_1'); ?></span>	    
+                    <img class="re-logo" src="<?php the_field('refilter_logo_1'); ?>" >    
                 </span>
-                <span class="wallpaper" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('<?php the_field('wallpaper_2'); ?>') no-repeat center center/cover;">
+                    <span class="wallpaper" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('<?php the_field('wallpaper_2'); ?>') no-repeat center center/cover;">
                     <a class="download-btn" href="#"><i class="fas fa-file-download"></i></a>    
                     <h2 class="template-download-question"><?php the_field('wallpaper_2_question'); ?></h2>
                     <p class="template-download-description"><?php the_field('wallpaper_2_description'); ?></p>	
                     <a class="learn-btn" href="#">Learn More <i class="fas fa-arrow-right"></i></a>
-                    <p class="re-logo"><?php the_field('refilter_logo_2'); ?></p>	  
+                    <img class="re-logo" src="<?php the_field('refilter_logo_1'); ?>" >  
                 </span>
                 
                 <span class="wallpaper" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('<?php the_field('wallpaper_3'); ?>') no-repeat center center/cover;">
@@ -67,7 +80,7 @@
                     <h2 class="template-download-question"><?php the_field('wallpaper_3_question'); ?></h2>
                     <p class="template-download-description"><?php the_field('wallpaper_3_description'); ?></p>	
                     <a class="learn-btn" href="#">Learn More <i class="fas fa-arrow-right"></i></a>
-                    <img class="re-logo"><?php the_field('refilter_logo_3'); ?>  
+                    <img class="re-logo" src="<?php the_field('refilter_logo_1'); ?>" > 
                 </span>
             </section>
 
