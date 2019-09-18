@@ -23,18 +23,11 @@
 					<p class="how-to-help-description"><?php the_field('help_description'); ?></p>	
             </section>
             
-            <section class="shuffle-quotes-grid container container-fluid">			
+            <section class="shuffle-quotes-grid">			
                 <?php if( have_rows('quotes') ): ?>
-                    <ul class="quotes-grid container">
+                    <ul class="quotes-grid">
                         <?php while( have_rows('quotes') ): the_row();?>
-                            <li class="single-quote container" style="background: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)), url('<?php the_sub_field('single_quote_image_background'); ?>') no-repeat center center/cover;">
-                            <style>
-                                @media only screen and (min-width: 768px) {
-                                    .single-quote{
-                                        min-width: 90%;
-                                    }
-                                }
-                            </style>    
+                            <li class="single-quote " style="background: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)), url('<?php the_sub_field('single_quote_image_background'); ?>') no-repeat center center/cover;">   
                             <?php the_sub_field('single_quote'); ?>
                             </li>
                         <?php endwhile; ?>
