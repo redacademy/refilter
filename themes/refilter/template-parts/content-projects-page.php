@@ -26,11 +26,11 @@
 
 		
 			<div class="slide-container">
-            <button class="tab-one" onclick="openTab('One')">London</button>
-			<button class="tab-two" onclick="openTab('Two')">assdasd</button>
+            <button class="tabs" data-tab="one">London</button>
+			<button class="tabs" data-tab="two">assdasd</button>
 			
             </div>
-			<div id="One" class="tab-container" style="display:none">
+			<div id="one" class="tab-container">
 
 			<?php
 
@@ -53,7 +53,7 @@
 		
             </div>
 
-			<div id="Two" class="tab-container" style="display:none">
+			<div id="two" class="tab-container" style="display:none">
 			<?php
 
 $loop = new WP_Query( array(

@@ -1064,81 +1064,13 @@ textarea {
 .slide-container {
   text-align: center; }
 
-.tab-one {
-  z-index: 1;
-  position: relative;
-  font-size: inherit;
-  font-family: inherit;
-  color: white;
-  padding: 0.5em 1em;
-  outline: none;
+.tabs {
+  background: transparent;
   border: none;
-  background-color: #00849F; }
+  font-size: 1.5rem; }
 
-.tab-one::before {
-  content: '';
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #39A8AB;
-  -webkit-transform-origin: center top;
-          transform-origin: center top;
-  -webkit-transform: scaleY(0);
-          transform: scaleY(0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out;
-  transition: -webkit-transform 0.25s ease-in-out;
-  transition: transform 0.25s ease-in-out;
-  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out; }
-
-.tab-one:hover {
-  cursor: pointer; }
-
-.tab-one:hover::before {
-  -webkit-transform-origin: center bottom;
-          transform-origin: center bottom;
-  -webkit-transform: scaleY(1);
-          transform: scaleY(1); }
-
-.tab-two {
-  z-index: 1;
-  position: relative;
-  font-size: inherit;
-  font-family: inherit;
-  color: white;
-  padding: 0.5em 1em;
-  outline: none;
-  border: none;
-  background-color: #00849F; }
-
-.tab-two::before {
-  content: '';
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #39A8AB;
-  -webkit-transform-origin: center top;
-          transform-origin: center top;
-  -webkit-transform: scaleY(0);
-          transform: scaleY(0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out;
-  transition: -webkit-transform 0.25s ease-in-out;
-  transition: transform 0.25s ease-in-out;
-  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out; }
-
-.tab-two:hover {
-  cursor: pointer; }
-
-.tab-two:hover::before {
-  -webkit-transform-origin: center bottom;
-          transform-origin: center bottom;
-  -webkit-transform: scaleY(1);
-          transform: scaleY(1); }
+.active {
+  border-bottom: 2px solid #000; }
 
 /* about page */
 .about-content-area {
