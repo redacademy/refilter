@@ -787,10 +787,6 @@ textarea {
   text-decoration: none;
   color: #F8F6F0; }
 
-.page-id-16 p {
-  line-height: 1.75rem;
-  letter-spacing: 0.1rem; }
-
 .page-id-16 .landing .learn-btn {
   padding: 15px 50px;
   letter-spacing: 0.1rem;
@@ -1413,13 +1409,18 @@ textarea {
       padding-top: 4%; }
 
 .site-footer {
-  padding: 2em 0 0.5rem 0;
+  padding: 2rem 0 0.5rem 0;
   font-weight: 200;
   letter-spacing: 0.05rem;
-  text-align: center; }
+  text-align: center;
+  color: #565E5C;
+  line-height: 0.5rem; }
+  .site-footer p {
+    font-size: 1rem; }
+  .site-footer i {
+    font-size: 1.8rem; }
   @media (min-width: 768px) {
     .site-footer {
-      width: 60%;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
@@ -1456,4 +1457,4 @@ textarea {
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%; } }
   .site-footer .footer-copyright p:first-child {
-    padding-right: 1rem; }
+    /* padding-right: 1rem; */ }

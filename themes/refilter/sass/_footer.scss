@@ -1,11 +1,20 @@
 .site-footer {
-  padding: 2em 0 0.5rem 0;
+  padding: 2rem 0 0.5rem 0;
   font-weight: 200;
   letter-spacing: 0.05rem;
   text-align: center;
+  color: $grey;
+  line-height: 0.5rem;
+  
+  p{
+    font-size: 1rem;
+  }
+
+  i{
+    font-size: 1.8rem;
+  }
 
   @include desktop {
-    width: 60%;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -31,7 +40,7 @@
       flex-basis: 50%;
     }
     p:first-child {
-      padding-right: 1rem;
+      /* padding-right: 1rem; */
     }
   }
 }
