@@ -14,7 +14,7 @@
 				<h1 class="landing-title"><?php the_field('landing_title'); ?></h1>
 				<h2 class="landing-question"><?php the_field('landing_question'); ?></h2>
 				<h3 class="landing-quote"><?php the_field('landing_quote'); ?></h3>
-				<a class="btn green-full" href="#">Learn More</a>
+				<a class="btn green-full" href="<?php echo site_url('learn'); ?>">Learn More</a>
 			</section>
 
 				<section class="our-purpose container container-content">
@@ -28,7 +28,7 @@
 					<section class="overlapping-text">
 					<p class="what-we-do-description"><?php the_field('what_we_do_description'); ?></p>	
 					<p class="what-we-do-description"><?php the_field('what_we_do_description_2'); ?></p>				
-					<a class="btn green-empty" href="#">Learn More</a>					
+				<a class="btn green-empty" href="<?php echo site_url('get-involved'); ?>">Learn More</a>					
 				</section>	
 
 					<section class="overlapping-image">

@@ -341,7 +341,7 @@ img {
     margin-bottom: 2rem; }
 
 .wavy-newsletter {
-  margin: 4rem auto;
+  margin: 5rem auto;
   padding: 5rem 0;
   color: #fff;
   line-height: 1.5; }
@@ -651,7 +651,7 @@ textarea {
     border-radius: 4px;
     -webkit-transform: translateX(65px) translateY(65px);
             transform: translateX(65px) translateY(65px);
-    z-index: -1; }
+    z-index: 1; }
     .what-we-do .overlapping-content .overlapping-text p {
       margin: 0; } }
 
@@ -777,18 +777,15 @@ textarea {
     font-size: 2.8rem; } }
 
 /* Learn page */
-.page-id-16 .landing {
-  min-height: 1100px; }
-
-.page-id-16 a {
+.learn a {
   text-decoration: none;
   color: #F8F6F0; }
 
-.page-id-16 p {
+.learn p {
   line-height: 1.75rem;
   letter-spacing: 0.1rem; }
 
-.page-id-16 .landing .learn-btn {
+.learn .landing .learn-btn {
   padding: 15px 50px;
   letter-spacing: 0.1rem;
   font-weight: 500;
@@ -798,56 +795,56 @@ textarea {
   -webkit-box-shadow: 0 4px 4px rgba(12, 11, 11, 0.45);
           box-shadow: 0 4px 4px rgba(12, 11, 11, 0.45);
   border-radius: 5px; }
-  .page-id-16 .landing .learn-btn i {
+  .learn .landing .learn-btn i {
     margin-left: 10px;
     font-size: 18px; }
   @media (min-width: 768px) {
-    .page-id-16 .landing .learn-btn {
+    .learn .landing .learn-btn {
       display: none; } }
 
-.page-id-16 .landing-wave {
+.learn .landing-wave {
   margin-top: 12rem; }
 
-.page-id-16 .landing-title {
+.learn .landing-title {
   font-size: 3rem;
   font-weight: 300; }
 
-.page-id-16 .landing-question {
+.learn .landing-question {
   margin-top: 10rem; }
   @media (min-width: 768px) {
-    .page-id-16 .landing-question {
+    .learn .landing-question {
       margin-top: 0; } }
 
-.page-id-16 .how-to-help {
+.learn .how-to-help {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem; }
   @media (min-width: 768px) {
-    .page-id-16 .how-to-help {
+    .learn .how-to-help {
       margin-top: 0; } }
-  .page-id-16 .how-to-help .how-to-help-title {
+  .learn .how-to-help .how-to-help-title {
     font-family: "MADEEvolveSans-Bold", sans-serif;
     font-size: 47px;
     padding: 1rem;
     width: 100%; }
     @media (min-width: 768px) {
-      .page-id-16 .how-to-help .how-to-help-title {
+      .learn .how-to-help .how-to-help-title {
         text-align: center;
         margin-bottom: 1rem; } }
-  .page-id-16 .how-to-help .how-to-help-description {
+  .learn .how-to-help .how-to-help-description {
     padding: 1rem; }
     @media (min-width: 768px) {
-      .page-id-16 .how-to-help .how-to-help-description {
+      .learn .how-to-help .how-to-help-description {
         -ms-flex-line-pack: center;
             align-content: center;
         margin-bottom: 1rem; } }
 
-.page-id-16 .shuffle-quotes-grid {
+.learn .shuffle-quotes-grid {
   font-family: "MADEEvolveSans", sans-serif;
   color: #F8F6F0; }
-  .page-id-16 .shuffle-quotes-grid ul {
+  .learn .shuffle-quotes-grid ul {
     margin: 0;
     padding: 0; }
-  .page-id-16 .shuffle-quotes-grid .quotes-grid {
+  .learn .shuffle-quotes-grid .quotes-grid {
     text-align: flex-start;
     display: grid;
     justify-items: center;
@@ -857,7 +854,7 @@ textarea {
     grid-gap: 1.5rem;
     padding: 0rem 1.5rem;
     width: 100%; }
-    .page-id-16 .shuffle-quotes-grid .quotes-grid li {
+    .learn .shuffle-quotes-grid .quotes-grid li {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -878,7 +875,7 @@ textarea {
       font-size: 1.2rem;
       min-height: 200px;
       line-height: 2rem; }
-    .page-id-16 .shuffle-quotes-grid .quotes-grid .reshuffle-btn {
+    .learn .shuffle-quotes-grid .quotes-grid .reshuffle-btn {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -901,9 +898,9 @@ textarea {
       margin: 0;
       padding: 1rem;
       margin-bottom: 4rem; }
-    .page-id-16 .shuffle-quotes-grid .quotes-grid i {
+    .learn .shuffle-quotes-grid .quotes-grid i {
       margin-right: 1rem; }
-  .page-id-16 .shuffle-quotes-grid .single-quote {
+  .learn .shuffle-quotes-grid .single-quote {
     -ms-flex-item-align: center;
         align-self: center; }
 
@@ -972,63 +969,6 @@ textarea {
     padding-left: 5rem;
     padding-right: 5rem;
     letter-spacing: 0.2; }
-
-.wavy-newsletter {
-  width: 100%;
-  min-height: 560px; }
-  .wavy-newsletter .btn {
-    background-color: #F8F6F0;
-    font-size: 1rem;
-    letter-spacing: 0.1rem;
-    width: 230px; }
-
-.wavy-newsletter-title {
-  font-size: 2rem; }
-
-.wavy-newsletter-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-
-.wavy-newsletter .wavy-newsletter-form {
-  width: 100%;
-  height: 150px;
-  margin: 10px;
-  text-align: center; }
-  .wavy-newsletter .wavy-newsletter-form .btn {
-    height: 50px; }
-
-.wavy-quiz {
-  height: 450px;
-  width: 100%;
-  color: #F8F6F0; }
-  .wavy-quiz h3 {
-    width: 300px; }
-  .wavy-quiz a {
-    text-decoration: none; }
-  .wavy-quiz .learn-btn {
-    padding: 12px 30px;
-    letter-spacing: 0.1rem;
-    font-weight: 300;
-    font-size: 0.9rem;
-    background-color: #39A8AB;
-    border: #39A8AB;
-    -webkit-box-shadow: 0 4px 4px rgba(14, 11, 11, 0.35);
-            box-shadow: 0 4px 4px rgba(14, 11, 11, 0.35);
-    border-radius: 5px; }
-    .wavy-quiz .learn-btn i {
-      margin-left: 10px;
-      font-size: 12px; }
 
 .projects-title {
   text-align: left;
