@@ -4,58 +4,94 @@
  *
  * @package Refilter
  */
-
 ?>
 
 <main id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( 'large' ); ?>
-		<?php endif; ?>
-
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-			<?php refilter_posted_on(); ?> / <?php refilter_comment_count(); ?> / <?php refilter_posted_by(); ?>
 	</header><!-- .entry-header -->
-
-	<section class="entry-content">
+	
+<style> 
+@media only screen and (min-width: 768px) {
+		.full-background {
+		background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25));	
+		background: url('<?php the_field('landing_blog_post_image_desktop'); ?>') no-repeat center center/cover;
+		}
 		
-
-		<?php 
-
-$fields = get_fields();
-$image = get_field('image'); // assigns the image field to the variable of $image
-
-
-if( $fields ): ?>
-    <ul>
-		<?php foreach( $fields as $name => $value
 		
-		): ?>
-		<?php the_content(); ?>
-            <li><?php echo $value; ?></li>
-        <?php endforeach; ?>
-    </ul>
-<?php endif; ?>
+		}
 
+		@media only screen and (max-width: 767px) {
+		.landing {
+		background: url('<?php the_field('landing_blog_post_image_mobile'); ?>') no-repeat center center/cover;
+		}	
+		
+		}
+</style> 	
 
+<section class="mobile landing container-fluid">
+			<section class="landing-wave"></section>
+				<h2><?php the_field('blog_post_title'); ?></h2>
+				<p><?php the_field('blog_post_description'); ?></p>
+</section>		
 
-<?php 
-$image = get_field('image'); // assigns the image field to the variable of $image
-if( !empty($image) ){ ?> <!-- if the $image variable isn't empty, display the following: -->
+<section class="blog-entry-content">
+	<p><?php the_field('blog_post_content'); ?></p>
+	<div class="overlapping-content">
+		<div class="left-image">	
+			<img src="<?php the_field('blog_post_content_left_image'); ?>" />
+		</div>	
+		<div class="right-image">
+			<img src="<?php the_field('blog_post_content_right_image'); ?>" />
+		</div>	 
+	</div>
 
-    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /> <!--displays the URL for the image variable and also the alt tag which is entered in the WordPress media library-->
+	<h2>Related Posts</h2>
+	<div class="related-posts-wrapper">
+			
+<?php
+// Default arguments
+$args = array(
+	'posts_per_page' => 2, // How many items to display
+	'post__not_in'   => array( get_the_ID() ), // Exclude current post
+	'no_found_rows'  => true, // We don't ned pagination so this speeds up the query
+);
 
-<?php }; ?> <!--ends the if statement -->
+// Check for current post category and add tax_query to the query arguments
+$cats = wp_get_post_terms( get_the_ID(), 'category' ); 
+$cats_ids = array();  
+foreach( $cats as $wpex_related_cat ) {
+	$cats_ids[] = $wpex_related_cat->term_id; 
+}
+if ( ! empty( $cats_ids ) ) {
+	$args['category__in'] = $cats_ids;
+}
 
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</section><!-- .entry-content -->
+// Query posts
+$wpex_query = new wp_query( $args );
 
-	<footer class="entry-footer">
-		<?php refilter_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+// Loop through posts
+foreach( $wpex_query->posts as $post ) : setup_postdata( $post ); ?>
+	
+		
+			<div class="related-posts-image-wrapper">
+			<div class="related-posts-text">
+			<h3 class="related-posts-title"><?php the_title(); ?></h3>
+			<h3 class="read-more">Read More -></h3>
+			</div>
+			<a href="<?php the_permalink(); ?>"><img src="<?php the_field('landing_blog_post_image_desktop'); ?>" /></a>
+		</div>
+<?php
+// End loop
+endforeach;
+
+// Reset post data
+wp_reset_postdata(); ?></div>
+
+</section>
+
+		
+<footer class="entry-footer">
+	<?php refilter_entry_footer(); ?>
+</footer><!-- .entry-footer -->
+
 </main><!-- #post-## -->

@@ -11,16 +11,17 @@
 	
     <section class="wave"></section>
         <div class="about-title">
-            <?php the_title( '<h1 class="about-entry-title">', '</h1>' ); ?>
+            
         </div>
         <?php the_content(); ?>
 
         <section class="landing container-fluid">
-			<section class="landing-wave"></section>				
+            <section class="landing-wave"></section>
+                <h1 class="landing-title"><?php the_field('who_we_are_page_title'); ?></h1>		
 	        	<h2 class="landing-question"><?php the_field('who_we_are_page_question'); ?></h2>
 				<h3 class="landing-quote"><?php the_field('who_we_are_page_quote'); ?></h3>
 				<a class="btn green-full" href="#">Learn More</a>
-            </section>
+        </section>
             
             <h2 class="mission-title"><?php the_field('mission_title'); ?></h2>
 
@@ -210,12 +211,15 @@
             </div>
            
         </section>
-        <form class="wavy-newsletter container-fluid">
+
+        <section class="wavy-newsletter container-fluid">
 				<h1 class="wavy-newsletter-title"><?php the_field('newsletter_title'); ?></h1>										
+				<form class="wavy-newsletter-form">
 				<input class="wavy-newsletter-name" type="text" placeholder="<?php the_field('newsletter_name'); ?>" />
 				<input class="wavy-newsletter-email" type="text" placeholder="<?php the_field('newsletter_email'); ?>" />													
 				<button class="btn green-empty" type="submit">Join Mailing List</button>
-		</form>
+			</form>
+		</section>
 
 		<?php
 			wp_link_pages( array(
