@@ -343,38 +343,64 @@ img {
 .wavy-newsletter {
   margin: 4rem auto;
   padding: 5rem 0;
-  color: #fff;
+  color: #F8F6F0;
   line-height: 1.5; }
   .wavy-newsletter .wavy-newsletter-title {
     font-weight: 300;
-    width: 80%; }
+    width: 80%;
+    font-size: 2.5rem; }
     @media (min-width: 768px) {
       .wavy-newsletter .wavy-newsletter-title {
-        font-weight: 600; } }
+        font-weight: 600;
+        font-size: 3.5rem; } }
   .wavy-newsletter .wavy-newsletter-form {
-    width: 70%; }
+    margin-bottom: 6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 80%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
     @media (min-width: 768px) {
       .wavy-newsletter .wavy-newsletter-form {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
         -webkit-box-pack: space-evenly;
             -ms-flex-pack: space-evenly;
-                justify-content: space-evenly; } }
+                justify-content: space-evenly;
+        width: 70%;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; } }
     .wavy-newsletter .wavy-newsletter-form input {
-      width: 80%;
-      padding: 0.75rem;
-      margin: 0.8rem 0; }
+      width: 100%;
+      padding: 1rem;
+      margin: 0.8rem 0;
+      font-size: 1rem; }
       @media (min-width: 768px) {
         .wavy-newsletter .wavy-newsletter-form input {
-          width: 25%; } }
-    @media (min-width: 768px) {
-      .wavy-newsletter .wavy-newsletter-form button {
-        background: #fff;
-        color: #17cf54; } }
+          width: 30%; } }
+    .wavy-newsletter .wavy-newsletter-form button {
+      background: #F8F6F0;
+      color: #39A8AB;
+      padding: .8rem 4rem;
+      -ms-flex-item-align: inherit;
+          align-self: inherit;
+      margin-top: 0.75rem; }
+      @media (min-width: 768px) {
+        .wavy-newsletter .wavy-newsletter-form button {
+          padding: 13px 70px;
+          margin: 0.8rem 0; } }
 
 /*--------------------------------------------------------------
 # Forms
@@ -1042,50 +1068,6 @@ textarea {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row; } }
-
-.wavy-newsletter {
-  width: 100%;
-  min-height: 560px; }
-  .wavy-newsletter .btn {
-    background-color: #F8F6F0;
-    font-size: 1rem;
-    letter-spacing: 0.1rem;
-    width: 230px; }
-
-.wavy-newsletter-title {
-  font-size: 2rem; }
-
-.wavy-newsletter-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-
-.wavy-newsletter .wavy-newsletter-form {
-  width: 100%;
-  height: 150px;
-  margin: 10px;
-  text-align: center; }
-  @media (min-width: 768px) {
-    .wavy-newsletter .wavy-newsletter-form {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row; } }
-  .wavy-newsletter .wavy-newsletter-form .btn {
-    height: 50px; }
 
 .wavy-quiz {
   height: 450px;

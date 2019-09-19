@@ -123,44 +123,61 @@ img {
   }
 }
 
+// Wavy Newsletter Section
+
 .wavy-newsletter {
   margin: 4rem auto;
   padding: 5rem 0;
-  color: #fff;
+  color: $white;
   line-height: 1.5;
 
   .wavy-newsletter-title {
     font-weight: 300;
     width: 80%;
+    font-size: 2.5rem;
 
     @include desktop {
       font-weight: 600;
+      font-size: 3.5rem;
     }
   }
 
   .wavy-newsletter-form {
-    width: 70%;
+    margin-bottom: 6rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 80%;
+    flex-direction: column;
 
     @include desktop {
-      display: flex;
       align-items: center;
       justify-content: space-evenly;
+      width: 70%;
+      flex-direction: row;
     }
 
     input {
-      width: 80%;
-      padding: 0.75rem;
+      width: 100%;
+      padding: 1rem;
       margin: 0.8rem 0;
+      font-size: 1rem;
 
       @include desktop {
-        width: 25%;
+        width: 30%;
       }
     }
 
     button {
+      background: $white;
+      color: $light_green;
+      padding: .8rem 4rem;
+      align-self: inherit;
+      margin-top: 0.75rem;
+
       @include desktop {
-        background: #fff;
-        color: #17cf54;
+        padding: 13px 70px;
+        margin: 0.8rem 0;
       }
     }
   }
