@@ -8,7 +8,7 @@
 ?>
 
 <main id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<section class="entry-content">
+	<section class="entry-content learn">
 
     <section class="landing container-fluid">
             <section class="landing-wave"></section>
