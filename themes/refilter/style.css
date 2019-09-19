@@ -1591,3 +1591,13 @@ textarea {
     @media (min-width: 768px) {
       .page-id-20 .member-image {
         display: inline; } }
+  .page-id-20 .support-our-cause {
+    line-height: 1.75rem; }
+    .page-id-20 .support-our-cause p {
+      margin-top: 0.3rem; }
+  .page-id-20 .support-our-cause h3 {
+    font-family: "MADEEvolveSans-Bold", sans-serif;
+    margin-bottom: 0;
+    margin-left: 0;
+    font-weight: 300;
+    width: 100%; }

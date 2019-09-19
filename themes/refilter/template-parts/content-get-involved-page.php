@@ -40,13 +40,11 @@
     </section> -->
 
     <section class="become-a-member" id="become-a-member">
-        <h1 class="become-a-member-title"><?php the_field('become_a_member_title'); ?></h1>
+        
         
         <section class="member-options">
-
-     
-
-        <section class="member-description">
+        <section class="member-description container">
+        <h1 class="become-a-member-title"><?php the_field('become_a_member_title'); ?></h1>
             <section class="member-image">
                 <img src="<?php the_field('become_a_member_image'); ?>" alt="member" />
             </section>
@@ -77,7 +75,7 @@
         </section>
 
         <section class="support-our-cause container">
-            <h1 class="support-our-cause-title"><?php the_field('support_our_cause_title'); ?></h1>
+            <h3 class="support-our-cause-title"><?php the_field('support_our_cause_title'); ?></h3>
             <p class="support-our-cause-description"><?php the_field('support_our_cause_description'); ?></p>
         </section>
 
