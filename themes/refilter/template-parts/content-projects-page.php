@@ -4,7 +4,6 @@
  *
  * @package Refilter
  */
-
 ?>
 
 <main id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -33,7 +32,6 @@
 			<div id="one" class="tab-container">
 
 			<?php
-
              $loop = new WP_Query( array(
              'post_type' => 'projects',
 			//   'posts_per_page' => 2,
@@ -55,7 +53,6 @@
 
 			<div id="two" class="tab-container" style="display:none">
 			<?php
-
 $loop = new WP_Query( array(
 'post_type' => 'projects',
 //   'posts_per_page' => 2,
@@ -100,6 +97,14 @@ $loop = new WP_Query( array(
 				</div>
 			</div>
 			</section>
+			<section class="wavy-newsletter container-fluid">
+				<h1 class="wavy-newsletter-title"><?php the_field('newsletter_title'); ?></h1>										
+				<form class="wavy-newsletter-form">
+				<input class="wavy-newsletter-name" type="text" placeholder="<?php the_field('newsletter_name'); ?>" />
+				<input class="wavy-newsletter-email" type="text" placeholder="<?php the_field('newsletter_email'); ?>" />													
+				<button class="btn green-empty" type="submit">Join Mailing List</button>
+			</form>
+		</section>
 
 
 
@@ -108,4 +113,3 @@ $loop = new WP_Query( array(
 
 	</section><!-- .entry-content -->
 </main><!-- #post-## -->
-
