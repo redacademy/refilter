@@ -26,7 +26,7 @@
                     </style>			
                     <h1 class="landing-title"><?php the_field('get_involved_landing_title'); ?></h1>
                     <h3 class="landing-description"><?php the_field('get_involved_landing_description'); ?></h3>
-                    <span><i class="fas fa-sort-down"></i></span> 
+                    <a href="#become-a-member"><i class="fas fa-sort-down"></i></a> 
                 </section>
  
         
@@ -39,57 +39,71 @@
         </ul>
     </section> -->
 
-    <section class="become-a-member">
+    <section class="become-a-member" id="become-a-member">
         <h1 class="become-a-member-title"><?php the_field('become_a_member_title'); ?></h1>
         
         <section class="member-options">
 
-        <section class="member-image">
-            <img src="<?php the_field('become_a_member_image'); ?>" alt="member" />
-        </section>
+     
 
         <section class="member-description">
+            <section class="member-image">
+                <img src="<?php the_field('become_a_member_image'); ?>" alt="member" />
+            </section>
             <p class="member-description"><?php the_field('become_a_member_description'); ?></p>
-        
+            <h4 class="standard-class-title"><?php the_field('standard_class_title'); ?></h4>
             <ul>
-                <h2 class="standard-class-title"><?php the_field('stardard_class_title'); ?></h2>
-                <li>
-                <?php
-                    if( have_rows('standard_class_bullet_points') ):
-                        while ( have_rows('standard_class_bullet_points') ) : the_row();
-                            the_sub_field('standard_class_bullet_point');
-                        endwhile;
-                    else :
-    
-                    endif;
-                    ?>
-                </li>
-
-                <h2 class="voting-class-title"><?php the_field('voting_class_title'); ?></h2>
-          
-                <li>
-                <?php
-                    if( have_rows('voting_class_bullet_points') ):
-                        while ( have_rows('voting_class_bullet_points') ) : the_row();
-                            the_sub_field('voting_class_bullet_point');
-                        endwhile;
-                    else :
-                        
-                    endif;
-                    ?>
-                </li>
+             <?php if( have_rows('standard_class_bullet_points') ): ?>
+                    
+                        <?php while( have_rows('standard_class_bullet_points') ): the_row();?>
+                            <li>
+                                <?php the_sub_field('standard_class_bullet_point'); ?>
+                            </li>
+                     <?php endwhile; else:?>
+                     
+                     <?php endif; ?>
+            </ul>
+            <h4 class="voting-class-title"><?php the_field('voting_class_title'); ?></h4>
+            <ul>
+             <?php if( have_rows('voting_class_bullet_points') ): ?>
+                    
+                        <?php while( have_rows('voting_class_bullet_points') ): the_row();?>
+                            <li>
+                                <?php the_sub_field('voting_class_bullet_point'); ?>
+                            </li>
+                     <?php endwhile; else: ?>
+                     <?php endif; ?>
             </ul>
         </section>
 
-        <section class="support-our-cause">
+        <section class="support-our-cause container">
             <h1 class="support-our-cause-title"><?php the_field('support_our_cause_title'); ?></h1>
             <p class="support-our-cause-description"><?php the_field('support_our_cause_description'); ?></p>
         </section>
 
     </section>
+    <section class="wavy-newsletter container-fluid">
+            <style>
+                    .wavy-newsletter{
+                        background: url('<?php the_field('newsletter_image_mobile'); ?>') no-repeat center center/cover; 
+                        background-size: 100% 100%;
+                    }
+                    @media only screen and (min-width: 768px) {
+                    .wavy-newsletter {
+                    background: url('<?php the_field('newsletter_image_desktop'); ?>') no-repeat center center/cover;
+                    background-size: 120% 100%;
+                    background-color: transparent;
+                    }
+		            }
+                </style>
+                <h1 class="wavy-newsletter-title"><?php the_field('newsletter_title'); ?></h1>										
+				<form class="wavy-newsletter-form">
+				<input class="wavy-newsletter-name" type="text" placeholder="<?php the_field('newsletter_name'); ?>" />
+				<input class="wavy-newsletter-email" type="text" placeholder="<?php the_field('newsletter_email'); ?>" />													
+				<button class="btn green-empty" type="submit">Join Mailing List</button>
+			</form>
+		</section>
 </section>
-
-
 	</section><!-- .entry-content -->
 </main><!-- #post-## -->
 

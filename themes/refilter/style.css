@@ -1584,4 +1584,10 @@ textarea {
         display: inline; } }
   .page-id-20 .landing i {
     font-size: 5rem;
-    opacity: 0.5; }
+    opacity: 0.5;
+    color: #F8F6F0; }
+  .page-id-20 .member-image {
+    display: none; }
+    @media (min-width: 768px) {
+      .page-id-20 .member-image {
+        display: inline; } }
