@@ -6,7 +6,25 @@
  */
 ?>
 
-<main id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<main id="post-<?php the_ID(); ?>" <?php post_class(); ?>>]
+
+<style> 
+        @media only screen and (min-width: 768px) {
+            .landing {
+		background: url('<?php the_field('about_page_landing_image_desktop'); ?>') no-repeat center center/cover;
+		}	
+		
+		}
+
+		@media only screen and (max-width: 767px) {
+		.landing {
+		background: url('<?php the_field('about_page_landing_image_mobile'); ?>') no-repeat center center/cover;
+		}	
+		
+		}
+</style>
+
+
 	<article class="entry-content">
 	
     <section class="wave"></section>
@@ -15,7 +33,9 @@
         </div>
         <?php the_content(); ?>
 
-        <section class="landing container-fluid">
+        
+
+        <section class="about landing container-fluid">
             <section class="landing-wave"></section>
                 <h1 class="landing-title"><?php the_field('who_we_are_page_title'); ?></h1>		
 	        	<h2 class="landing-question"><?php the_field('who_we_are_page_question'); ?></h2>

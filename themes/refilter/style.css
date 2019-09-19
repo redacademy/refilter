@@ -1286,6 +1286,8 @@ textarea {
   max-width: 480px;
   margin: 0 auto;
   background-color: green; }
+  .home-content-area .content-space {
+    padding-bottom: 6.5rem; }
   @media (min-width: 768px) {
     .home-content-area {
       max-width: 100%; } }
