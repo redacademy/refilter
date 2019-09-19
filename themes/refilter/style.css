@@ -1569,3 +1569,19 @@ textarea {
           flex-basis: 50%; } }
   .site-footer .footer-copyright p:first-child {
     /* padding-right: 1rem; */ }
+
+/* Get-involved page */
+.page-id-20 {
+  letter-spacing: 0.1rem; }
+  .page-id-20 .landing h1 {
+    margin-top: 15rem; }
+  .page-id-20 .landing-title {
+    font-size: 3rem; }
+  .page-id-20 .landing-description {
+    display: none; }
+    @media (min-width: 768px) {
+      .page-id-20 .landing-description {
+        display: inline; } }
+  .page-id-20 .landing i {
+    font-size: 5rem;
+    opacity: 0.5; }

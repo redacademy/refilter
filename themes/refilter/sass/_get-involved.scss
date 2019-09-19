@@ -1,0 +1,40 @@
+/* Get-involved page */
+
+.page-id-20{
+
+// Get-involved Global Styles
+
+letter-spacing: 0.1rem;
+    
+// Landing Section
+
+.landing{
+    h1{
+        margin-top: 15rem;
+    }
+}
+
+.landing-title{
+    font-size: 3rem;
+    
+}
+
+.landing-description{
+    display: none;
+
+    @include desktop{
+        display: inline;
+    }
+}
+
+.landing{
+    i{
+        font-size: 5rem;
+        opacity: 0.5;    
+    }
+}
+
+
+
+
+}
