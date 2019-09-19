@@ -11,7 +11,19 @@
 	<section class="entry-content">
 
     <section class="landing container-fluid">
-			<section class="landing-wave"></section>				
+            <section class="landing-wave"></section>
+                <style>
+                    .landing{
+                        background: url('<?php the_field('landing_image_mobile'); ?>') no-repeat center center/cover; 
+                        background-size: 100% 100%;
+                    }
+                    @media only screen and (min-width: 768px) {
+                    .landing {
+                    background: url('<?php the_field('landing_image_desktop'); ?>') no-repeat center center/cover;
+                    background-size: 100% 100%;
+                    }
+		            }
+                </style>			
 				<h1 class="landing-title"><?php the_field('learn_landing_title'); ?></h1>
 				<h2 class="landing-question"><?php the_field('learn_landing_question'); ?></h2>
                 <h3 class="landing-quote"><?php the_field('learn_landing_quote'); ?></h3>
@@ -24,16 +36,28 @@
             </section>
             
             <section class="shuffle-quotes-grid">			
-                <?php if( have_rows('quotes') ): ?>
+            <?php if(have_rows('quotes')) :
+                 $i = 0;    
+                    ?>
                     <ul class="quotes-grid">
-                        <?php while( have_rows('quotes') ): the_row();?>
-                            <li class="single-quote " style="background: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)), url('<?php the_sub_field('single_quote_image_background'); ?>') no-repeat center center/cover;">   
+                        <?php while( have_rows('quotes')) : the_row();
+                            $i++;
+                            if( $i > 8 )
+                            {
+                                break;
+                            }
+                    
+                            ?>
+                            <li class="single-quote"style="background: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)), url('<?php the_sub_field('single_quote_image_background'); ?>') no-repeat center center/cover;">   
                             <?php the_sub_field('single_quote'); ?>
-                            </li>
+                            </li>              
                         <?php endwhile; ?>
                         <button class="reshuffle-btn" type="submit"><i class="fas fa-random"></i>Reshuffle Cards</button>
-                    </ul>
+                    </ul>  
+                <?php else: ?>
+                    <p>Show dates to be announced soon.</p>
                 <?php endif; ?>
+                    </ul>
             </section>
 
             <section class="wavy-quiz container-fluid">

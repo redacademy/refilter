@@ -860,7 +860,7 @@ textarea {
           padding: 0;
           grid-gap: 1.8rem;
           margin-bottom: 5rem;
-          width: 85%; } }
+          width: 65%; } }
       .page-id-16 .shuffle-quotes-grid .quotes-grid li {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -880,12 +880,11 @@ textarea {
         font-weight: bold;
         display: flex;
         font-size: 1.2rem;
-        min-height: 200px;
-        line-height: 2rem; }
+        min-height: 250px;
+        line-height: 1.75rem; }
         @media (min-width: 768px) {
           .page-id-16 .shuffle-quotes-grid .quotes-grid li {
-            margin: 0;
-            height: 200px; } }
+            margin: 0; } }
       .page-id-16 .shuffle-quotes-grid .quotes-grid .reshuffle-btn {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -913,10 +912,20 @@ textarea {
           margin-right: 1rem; }
         @media (min-width: 768px) {
           .page-id-16 .shuffle-quotes-grid .quotes-grid .reshuffle-btn {
-            height: 200px;
+            height: 250px;
             margin: 0;
             padding: 1rem;
-            display: inline; }
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            grid-row: 2;
+            grid-column: 2; }
+            .page-id-16 .shuffle-quotes-grid .quotes-grid .reshuffle-btn li {
+              font-size: 0.9rem; }
             .page-id-16 .shuffle-quotes-grid .quotes-grid .reshuffle-btn i {
               margin-right: 1rem;
               font-size: 2.8rem; } }
@@ -1066,6 +1075,15 @@ textarea {
   height: 150px;
   margin: 10px;
   text-align: center; }
+  @media (min-width: 768px) {
+    .wavy-newsletter .wavy-newsletter-form {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
   .wavy-newsletter .wavy-newsletter-form .btn {
     height: 50px; }
 
