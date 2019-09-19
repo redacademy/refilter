@@ -8,12 +8,25 @@
 ?>
 
 <main id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<section class="entry-content">
-    
+	<section class="entry-content-get-involved">
     <section class="landing container-fluid">
-			<h1 class="landing-title"><?php the_field('landing_title'); ?></h1>
-			<p class="landing-description"><?php the_field('landing_description'); ?></p>
-        </section>
+            <section class="landing-wave"></section>
+                <style>
+                    .landing{
+                        background: url('<?php the_field('get_involved_landing_image_mobile'); ?>') no-repeat center center/cover; 
+                        background-size: 100% 100%;
+                    }
+                    @media only screen and (min-width: 768px) {
+                    .landing {
+                    background: url('<?php the_field('get_involved_landing_image_desktop'); ?>') no-repeat center center/cover;
+                    background-size: 100% 100%;
+                    }
+		            }
+                </style>			
+				<h1 class="landing-title"><?php the_field('get_involved_landing_title'); ?></h1>
+                <h3 class="landing-description"><?php the_field('get_involved_landing_description'); ?></h3>
+			</section>
+ 
         
     <!-- <section class="upcoming-events">
         <h1 class="upcoming-events-title"></h1>
