@@ -421,6 +421,18 @@ textarea {
 
 .membership-form {
   width: 100%; }
+  @media (min-width: 768px) {
+    .membership-form input[type="text"] {
+      padding: 0.8rem 0.5rem 0.8rem !important; } }
+  @media (min-width: 768px) {
+    .membership-form select {
+      padding: 0.9rem !important; } }
+  @media (min-width: 768px) {
+    .membership-form .ginput_container_email input, .membership-form .ginput_container_phone input {
+      width: 100% !important; } }
+  @media (min-width: 768px) {
+    .membership-form .address_city {
+      width: 100% !important; } }
   .membership-form .gf_step_label {
     display: none !important; }
   .membership-form .gf_page_steps {
@@ -443,6 +455,12 @@ textarea {
     text-align: center;
     opacity: 1 !important;
     width: 25% !important; }
+    @media (min-width: 768px) {
+      .membership-form .gf_step.gf_step_active.gf_step_first,
+      .membership-form .gf_step_previous,
+      .membership-form .gf_step_last,
+      .membership-form .gf_step.gf_step.gf_step_last.gf_step_next.gf_step_pending {
+        width: 10% !important; } }
   .membership-form .gf_step_number {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -457,6 +475,11 @@ textarea {
     text-align: center; }
   .membership-form p {
     text-align: center; }
+    @media (min-width: 768px) {
+      .membership-form p {
+        width: 80%;
+        margin: 0 auto;
+        line-height: 1.5; } }
   .membership-form .gfield_required {
     display: none; }
   .membership-form label {
@@ -478,6 +501,13 @@ textarea {
       border: none;
       background: #39A8AB;
       padding: 0.3rem; }
+      @media (min-width: 768px) {
+        .membership-form .gform_page_footer .gform_next_button,
+        .membership-form .gform_page_footer .gform_button,
+        .membership-form .gform_page_footer .gform_previous_button {
+          width: 20% !important;
+          padding: 0.5rem;
+          font-size: 1.2rem !important; } }
   .membership-form .gfield_checkbox {
     padding: 0; }
     .membership-form .gfield_checkbox li {
@@ -497,17 +527,32 @@ textarea {
     font-weight: 200;
     color: gray;
     font-size: 0.95rem !important; }
+    @media (min-width: 768px) {
+      .membership-form .gfield_description {
+        text-align: left;
+        padding-left: 2rem !important; } }
   .membership-form .gform_confirmation_message_1.gform_confirmation_message h1 {
     font-size: 2.3rem;
     margin: 1rem 0 0 0; }
+    @media (min-width: 768px) {
+      .membership-form .gform_confirmation_message_1.gform_confirmation_message h1 {
+        text-align: center; } }
   .membership-form .gform_confirmation_message_1.gform_confirmation_message p {
     margin: 0;
     line-height: 1.6;
     text-align: center; }
+    @media (min-width: 768px) {
+      .membership-form .gform_confirmation_message_1.gform_confirmation_message p {
+        line-height: 1.9; } }
   .membership-form .gform_confirmation_message_1.gform_confirmation_message span {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+    @media (min-width: 768px) {
+      .membership-form .gform_confirmation_message_1.gform_confirmation_message span {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
     .membership-form .gform_confirmation_message_1.gform_confirmation_message span a {
       padding-left: 1rem;
       color: #39A8AB; }
@@ -520,7 +565,11 @@ textarea {
     border: none;
     background: #39A8AB;
     padding: 1rem;
-    text-decoration: none; }
+    text-decoration: none;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .membership-form .gform_confirmation_message_1.gform_confirmation_message .back-home {
+        width: 25% !important; } }
 
 .btn {
   text-decoration: none;
@@ -1245,7 +1294,9 @@ textarea {
     .partners-container {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; } }
+      display: flex; }
+      .partners-container .partner-container {
+        margin-right: 20px; } }
 
 .project-partner-title {
   padding-top: 40px;
