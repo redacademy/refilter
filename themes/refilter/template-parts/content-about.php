@@ -7,6 +7,24 @@
 ?>
 
 <main id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+<style> 
+        @media only screen and (min-width: 768px) {
+        .landing {
+		background: url('<?php the_field('about_page_landing_image_desktop'); ?>') no-repeat center center/cover;
+		}	
+		
+		}
+
+		@media only screen and (max-width: 767px) {
+		.landing {
+		background: url('<?php the_field('about_page_landing_image_mobile'); ?>') no-repeat center center/cover;
+		}	
+		
+		}
+</style>
+
+
 	<article class="entry-content">
 	
     <section class="wave"></section>
@@ -15,7 +33,7 @@
         </div>
         <?php the_content(); ?>
 
-        <section class="landing container-fluid">
+        <section class="about landing container-fluid">
             <section class="landing-wave"></section>
                 <h1 class="landing-title"><?php the_field('who_we_are_page_title'); ?></h1>		
 	        	<h2 class="landing-question"><?php the_field('who_we_are_page_question'); ?></h2>
@@ -54,162 +72,51 @@
         <h2 class="who-we-are-header"><?php the_field('who_we_are_header'); ?></h2>
 
         <section class="who-we-are-container">
+        <?php
 
-        <div class="staff-member-profile-wrapper"> 
-            <div class="staff-member-1-image-wrapper">
-                <?php 
-                    $image_member1 = get_field('staff_member_1_picture'); // assigns the image field to the variable of $image
-                    if( !empty($image_member1) ){ ?> <!-- if the $image variable isn't empty, display the following: -->
-                    <img src="<?php echo $image_member1['url']; ?>" alt="<?php echo $image_member1['alt']; ?>" /> <!--displays the URL for the image variable and also the alt tag which is entered in the WordPress media library-->
-                <?php }; ?> <!--ends the if statement -->
-            </div>
-            <div class="social-media-icon-container">
-                <div class="ln-icon-wrapper"><i class="fab fa-linkedin-in fa-3x"></i></div>
-                <div class="ig-icon-wrapper"><i class="fab fa-instagram fa-3x"></i></div>
-                <div class="fb-icon-wrapper"><i class="fab fa-facebook-square fa-3x"></i></div>
-            </div>
+/*
+* Loop through a repeater field
+*/        
 
-            <div class="down-arrow-1" id="down-arrow-1">......</div>
-            <div class="up-arrow" style="display:none;"> ////// </div>
-                
+            if(get_field('members')): ?>
+
+    <?php while(the_repeater_field('members')): ?>
+    <div class="staff-member-profile-wrapper">
+        <div class="staff-member-image-wrapper">                  
+            <img src="<?php the_sub_field('staff_member_picture'); ?>" alt="<?php the_sub_field('alt'); ?>" />
         </div>
-            <div class="staff-member-text-1-wrapper">      
-                <h2 class="staff-member-name-1"><?php the_field('staff_member_1_name'); ?></h2>
-                <h3 class="staff-member-title-1"><?php the_field('staff_member_1_title'); ?></h3>
-                <!-- displays the following content only on mobile arrow click -->         
-            <div class="staff-member-1-mobile-description" style="display:none;"><?php the_field('staff_member_1_description'); ?></div>
-            <div class="mobile-fun-fact-header" style="display:none;"><h3>Planet Practice</h3></div> 
-            <div class="staff-member-1-mobile-fun-fact" style="display:none;"><?php the_field('staff_member_1_fun_fact'); ?></div>
-                <!-- end mobile content --> 
-                <p class="staff-member-1-description"><?php the_field('staff_member_1_description'); ?></p>
-            <div class="staff-member-1-fun-fact-container">
-                <div class="staff-member-1-fun-fact-icon-wrapper">
-                <?php 
-                    $image_fun_fact1 = get_field('staff_member_1_fun_fact_icon'); // assigns the image field to the variable of $image
-                    if( !empty($image_fun_fact1) ){ ?> <!-- if the $image variable isn't empty, display the following: -->
-                    <img src="<?php echo $image_fun_fact1['url']; ?>" alt="<?php echo $image_fun_fact1['alt']; ?>" /> <!--displays the URL for the image variable and also the alt tag which is entered in the WordPress media library-->
-                <?php }; ?> <!--ends the if statement -->
-                </div>   
-                <p class="staff-member-1-fun-fact"><?php the_field('staff_member_1_fun_fact'); ?></p>
-            </div>
-            </div>
+        <div class="social-media-icon-container">
+            <div class="ln-icon-wrapper"><i class="fab fa-linkedin-in fa-3x"></i></div>
+            <div class="ig-icon-wrapper"><i class="fab fa-instagram fa-3x"></i></div>
+            <div class="fb-icon-wrapper"><i class="fab fa-facebook-square fa-3x"></i></div>
+        </div>
 
+        <div class="down-arrow-1" id="down-arrow-1"><i class="fas fa-chevron-down"></i></div>
+        <div class="up-arrow" style="display:none;"><i class="fas fa-chevron-up"></i></div>
+    </div>
+        <div class="staff-member-text-wrapper">       
+        <h2 class="staff-member-name"><?php the_sub_field('staff_member_name'); ?></h2>
+        <h3 class="staff-member-title"><?php the_sub_field('staff_member_title'); ?></h3>
+        <!-- displays the following content only on mobile arrow click -->         
+            <div class="staff-member-mobile-description" style="display:none;"><?php the_sub_field('staff_member_description'); ?></div>
+            <div class="mobile-fun-fact-header" style="display:none;"><h3>Planet Practice</h3></div> 
+            <div class="staff-member-mobile-fun-fact" style="display:none;"><?php the_sub_field('staff_member_fun_fact'); ?></div>
+        <!-- end mobile content --> 
+        <p class="staff-member-description"><?php the_sub_field('staff_member_description'); ?></p>
+        
+        <div class="staff-member-fun-fact-container">
+            <div class="staff-member-fun-fact-icon-wrapper">
+                <img src="<?php the_sub_field('staff_member_fun_fact_icon'); ?>" alt="<?php the_sub_field('alt'); ?>" />
+            </div>   
+                <p class="staff-member-fun-fact"><?php the_sub_field('staff_member_fun_fact'); ?></p>
+            </div>
+        
+        </div>
+        
+    <?php endwhile; ?>
 
-                       
-
-        <div class="staff-member-profile-wrapper">     
-           <div class="staff-member-2-image-wrapper">
-                <?php 
-                    $image_member2 = get_field('staff_member_2_picture'); // assigns the image field to the variable of $image
-                    if( !empty($image_member2) ){ ?> <!-- if the $image variable isn't empty, display the following: -->
-                    <img src="<?php echo $image_member2['url']; ?>" alt="<?php echo $image_member2['alt']; ?>" /> <!--displays the URL for the image variable and also the alt tag which is entered in the WordPress media library-->
-                <?php }; ?> <!--ends the if statement -->
-            </div>
-            <div class="social-media-icon-container">
-                <div class="ln-icon-wrapper"><i class="fab fa-linkedin-in fa-3x"></i></div>
-                <div class="ig-icon-wrapper"><i class="fab fa-instagram fa-3x"></i></div>
-                <div class="fb-icon-wrapper"><i class="fab fa-facebook-square fa-3x"></i></div>
-            </div>
-            <div class="down-arrow-2" id="down-arrow-2">......</div>
-            <div class="up-arrow-2" style="display:none;"> ////// </div>
-                
-        </div>     
-            <div class="staff-member-text-2-wrapper">
-                <h2 class="staff-member-name-2"><?php the_field('staff_member_2_name'); ?></h2>
-                <h3 class="staff-member-title-2"><?php the_field('staff_member_2_title'); ?></h3>
-                <!-- displays the following content only on mobile arrow click -->         
-            <div class="staff-member-2-mobile-description" style="display:none;"><?php the_field('staff_member_2_description'); ?></div>
-            <div class="mobile-fun-fact-header" style="display:none;"><h3>Planet Practice</h3></div> 
-            <div class="staff-member-2-mobile-fun-fact" style="display:none;"><?php the_field('staff_member_2_fun_fact'); ?></div>
-                <!-- end mobile content --> 
-                <p class="staff-member-2-description"><?php the_field('staff_member_2_description'); ?></p>
-            <div class="staff-member-2-fun-fact-container">
-                <div class="staff-member-2-fun-fact-icon-wrapper">
-                <?php 
-                    $image_fun_fact2 = get_field('staff_member_2_fun_fact_icon'); // assigns the image field to the variable of $image
-                    if( !empty($image_fun_fact2) ){ ?> <!-- if the $image variable isn't empty, display the following: -->
-                    <img src="<?php echo $image_fun_fact2['url']; ?>" alt="<?php echo $image_fun_fact2['alt']; ?>" /> <!--displays the URL for the image variable and also the alt tag which is entered in the WordPress media library-->
-                <?php }; ?> <!--ends the if statement -->
-                </div>   
-                <p class="staff-member-2-fun-fact"><?php the_field('staff_member_2_fun_fact'); ?></p>
-            </div>  
-            </div>
-        <div class="staff-member-profile-wrapper">       
-            <div class="staff-member-3-image-wrapper">
-                <?php 
-                    $image_member3 = get_field('staff_member_3_picture'); // assigns the image field to the variable of $image
-                    if( !empty($image_member3) ){ ?> <!-- if the $image variable isn't empty, display the following: -->
-                    <img src="<?php echo $image_member3['url']; ?>" alt="<?php echo $image_member3['alt']; ?>" /> <!--displays the URL for the image variable and also the alt tag which is entered in the WordPress media library-->
-                <?php }; ?> <!--ends the if statement -->
-                
-            </div>
-            <div class="social-media-icon-container">
-                <div class="ln-icon-wrapper"><i class="fab fa-linkedin-in fa-3x"></i></div>
-                <div class="ig-icon-wrapper"><i class="fab fa-instagram fa-3x"></i></div>
-                <div class="fb-icon-wrapper"><i class="fab fa-facebook-square fa-3x"></i></div>
-            </div>
-            <div class="down-arrow-3" id="down-arrow-3">......</div>
-            <div class="up-arrow-3" style="display:none;"> ////// </div>
-                
-        </div>    
-            <div class="staff-member-text-3-wrapper">
-                <h2 class="staff-member-name-3"><?php the_field('staff_member_3_name'); ?></h2>
-                <h3 class="staff-member-title-3"><?php the_field('staff_member_3_title'); ?></h3>
-                <!-- displays the following content only on mobile arrow click -->         
-            <div class="staff-member-3-mobile-description" style="display:none;"><?php the_field('staff_member_3_description'); ?></div>
-            <div class="mobile-fun-fact-header" style="display:none;"><h3>Planet Practice</h3></div> 
-            <div class="staff-member-3-mobile-fun-fact" style="display:none;"><?php the_field('staff_member_3_fun_fact'); ?></div>
-                <!-- end mobile content --> 
-                <p class="staff-member-3-description"><?php the_field('staff_member_3_description'); ?></p>
-            <div class="staff-member-3-fun-fact-container">
-                <div class="staff-member-3-fun-fact-icon-wrapper">
-                    <?php 
-                        $image_fun_fact3 = get_field('staff_member_3_fun_fact_icon'); // assigns the image field to the variable of $image
-                        if( !empty($image_fun_fact3) ){ ?> <!-- if the $image variable isn't empty, display the following: -->
-                        <img src="<?php echo $image_fun_fact3['url']; ?>" alt="<?php echo $image_fun_fact3['alt']; ?>" /> <!--displays the URL for the image variable and also the alt tag which is entered in the WordPress media library-->
-                    <?php }; ?> <!--ends the if statement -->
-                </div>   
-                <p class="staff-member-3-fun-fact"><?php the_field('staff_member_3_fun_fact'); ?></p>
-            </div>             
-            </div>
-        <div class="staff-member-profile-wrapper">      
-            <div class="staff-member-4-image-wrapper">
-                <?php 
-                    $image_member4 = get_field('staff_member_4_picture'); // assigns the image field to the variable of $image
-                    if( !empty($image_member4) ){ ?> <!-- if the $image variable isn't empty, display the following: -->
-                    <img src="<?php echo $image_member4['url']; ?>" alt="<?php echo $image_member4['alt']; ?>" /> <!--displays the URL for the image variable and also the alt tag which is entered in the WordPress media library-->
-                <?php }; ?> <!--ends the if statement -->               
-            </div>
-            <div class="social-media-icon-container">
-                <div class="ln-icon-wrapper"><i class="fab fa-linkedin-in fa-3x"></i></div>
-                <div class="ig-icon-wrapper"><i class="fab fa-instagram fa-3x"></i></div>
-                <div class="fb-icon-wrapper"><i class="fab fa-facebook-square fa-3x"></i></div>
-            </div>
-            <div class="down-arrow-4" id="down-arrow-4">......</div>
-            <div class="up-arrow-4" style="display:none;"> ////// </div>
-              
-        </div>    
-            <div class="staff-member-text-4-wrapper">
-                <h2 class="staff-member-name-4"><?php the_field('staff_member_4_name'); ?></h2>
-                <h3 class="staff-member-title-4"><?php the_field('staff_member_4_title'); ?></h3>
-                  <!-- displays the following content only on mobile arrow click -->         
-            <div class="staff-member-4-mobile-description" style="display:none;"><?php the_field('staff_member_4_description'); ?></div>
-            <div class="mobile-fun-fact-header" style="display:none;"><h3>Planet Practice</h3></div> 
-            <div class="staff-member-4-mobile-fun-fact" style="display:none;"><?php the_field('staff_member_4_fun_fact'); ?></div>
-                <!-- end mobile content --> 
-                <p class="staff-member-4-description"><?php the_field('staff_member_4_description'); ?></p>
-            <div class="staff-member-4-fun-fact-container">
-                <div class="staff-member-4-fun-fact-icon-wrapper">
-                    <?php 
-                        $image_fun_fact4 = get_field('staff_member_4_fun_fact_icon'); // assigns the image field to the variable of $image
-                        if( !empty($image_fun_fact4) ){ ?> <!-- if the $image variable isn't empty, display the following: -->
-                        <img src="<?php echo $image_fun_fact4['url']; ?>" alt="<?php echo $image_fun_fact4['alt']; ?>" /> <!--displays the URL for the image variable and also the alt tag which is entered in the WordPress media library-->
-                    <?php }; ?> <!--ends the if statement -->
-                </div>   
-                <p class="staff-member-4-fun-fact"><?php the_field('staff_member_4_fun_fact'); ?></p>
-            </div>          
-            </div>
-           
+ <?php endif; ?>
+                            
         </section>
 
         <section class="wavy-newsletter container-fluid">

@@ -5,6 +5,10 @@
     max-width: 480px;
     margin: 0 auto;
     background-color: green;
+    .content-space {
+       padding-bottom: 6.5rem;
+    }
+
     @include desktop {
         max-width: 100%;       
     }
