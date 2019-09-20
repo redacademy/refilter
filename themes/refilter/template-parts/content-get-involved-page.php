@@ -28,38 +28,24 @@
                     <h3 class="landing-description"><?php the_field('get_involved_landing_description'); ?></h3>
                     <a href="#become-a-member"><i class="fas fa-sort-down"></i></a> 
                 </section>
-    
-        
-
-  <!--   <section class="upcoming-events container">
-        <h3 class="upcoming-events-title"><?php the_field('upcoming_events_title'); ?></h3>
-        <?php if( have_rows('events') ): ?>
-        <ul class="upcoming-events-list">
-            <?php while( have_rows('events') ): the_row();?>
-                <li class="upcoming-event-content" style="background: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)), url('<?php the_sub_field('upcoming_events_background_image'); ?>') no-repeat center center/cover;">
-                    <?php the_sub_field("<p>",'upcoming_events_date',"</p>"); ?>
-                    <?php the_sub_field('upcoming_events_description'); ?>
-                    <a class="learn-btn"href="#">Learn More <i class="fas fa-arrow-right"></i></a>
-                </li>
-            <?php endwhile; ?>  
-            <?php endif; ?>
-        </ul>  
-    </section> -->
 
     <section class="upcoming-events container">
         <h3 class="upcoming-events-title"><?php the_field('upcoming_events_title'); ?></h3>
         <span class="event-wallpaper" style="background: url('<?php the_field('upcoming_events_background_image_1'); ?>') no-repeat center center/cover; background-size: 100% 50%; background-position-y: top; background-color: #94c8c0;">
-            <p class="upcoming-date"><?php the_field('upcoming_events_date_1'); ?></p>    
+            <p class="upcoming-date"><?php the_field('upcoming_events_date_number_1'); ?></p>
+            <p class="upcoming-date"><?php the_field('upcoming_events_month_1'); ?></p>    
             <p class="template-download"><?php the_field('upcoming_events_description_1'); ?></p>	
             <a class="learn-btn"href="#">Learn More <i class="fas fa-arrow-right"></i></a>  
         </span>
         <span class="event-wallpaper" style="background: url('<?php the_field('upcoming_events_background_image_2'); ?>') no-repeat center center/cover; background-size: 100% 50%; background-position-y: top; background-color: #94c8c0">
-            <p class="upcoming-date"><?php the_field('upcoming_events_date_2'); ?></p>    
+            <p class="upcoming-date"><?php the_field('upcoming_events_date_number_2'); ?></p>
+            <p class="upcoming-date"><?php the_field('upcoming_events_month_2'); ?></p>   
             <p class="template-download"><?php the_field('upcoming_events_description_2'); ?></p>	
             <a class="learn-btn"href="#">Learn More <i class="fas fa-arrow-right"></i></a>  
         </span>
         <span class="event-wallpaper" style="background: url('<?php the_field('upcoming_events_background_image_3'); ?>') no-repeat center center/cover; background-size: 100% 50%; background-position-y: top; background-color: #94c8c0">
-            <p class="upcoming-date"><?php the_field('upcoming_events_date_3'); ?></p>    
+        <p class="upcoming-date"><?php the_field('upcoming_events_date_number_3'); ?></p>
+            <p class="upcoming-date"><?php the_field('upcoming_events_month_3'); ?></p>     
             <p class="template-download"><?php the_field('upcoming_events_description_3'); ?></p>	
             <a class="learn-btn"href="#">Learn More <i class="fas fa-arrow-right"></i></a>  
         </span>
