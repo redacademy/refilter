@@ -1292,34 +1292,26 @@ textarea {
         font-size: 2.5rem;
         padding-top: 6%;
         padding-bottom: 3%; } }
-  .about-content-area .mission {
-    background-color: black; }
-    @media (min-width: 768px) {
-      .about-content-area .mission {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        max-width: 55%; } }
+  @media (min-width: 768px) {
+    .about-content-area .mission {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      max-width: 55%; } }
+  @media (min-width: 768px) {
     .about-content-area .mission .mission-1-wrapper {
-      background-color: green; }
-      @media (min-width: 768px) {
-        .about-content-area .mission .mission-1-wrapper {
-          height: 27rem; } }
-      .about-content-area .mission .mission-1-wrapper .icon-1-image-wrapper {
-        max-width: 20%;
-        background-color: blue; }
+      height: 27rem; } }
+  .about-content-area .mission .mission-1-wrapper .icon-1-image-wrapper {
+    max-width: 20%; }
+  @media (min-width: 768px) {
     .about-content-area .mission .mission-2-wrapper {
-      background-color: red; }
-      @media (min-width: 768px) {
-        .about-content-area .mission .mission-2-wrapper {
-          height: 27rem; } }
-      .about-content-area .mission .mission-2-wrapper .icon-2-image-wrapper {
-        max-width: 20%;
-        background-color: yellow; }
+      height: 27rem; } }
+  .about-content-area .mission .mission-2-wrapper .icon-2-image-wrapper {
+    max-width: 20%; }
   .about-content-area .who-we-are-header {
     text-align: center; }
     @media (min-width: 768px) {
@@ -1359,144 +1351,40 @@ textarea {
       @media (min-width: 768px) {
         .about-content-area .who-we-are-container .staff-member-profile-wrapper .down-arrow-1 {
           display: none; } }
+    .about-content-area .who-we-are-container .staff-member-profile-wrapper .up-arrow {
+      text-align: center; }
+      @media (min-width: 768px) {
+        .about-content-area .who-we-are-container .staff-member-profile-wrapper .up-arrow {
+          display: none; } }
     @media (min-width: 768px) {
-      .about-content-area .who-we-are-container .staff-member-profile-wrapper .staff-member-1-mobile-description {
+      .about-content-area .who-we-are-container .staff-member-profile-wrapper .staff-member-mobile-description {
         display: none; } }
     @media (min-width: 768px) {
       .about-content-area .who-we-are-container .staff-member-profile-wrapper {
-        height: 33rem;
-        background-color: #077007; } }
-    .about-content-area .who-we-are-container .staff-member-profile-wrapper .staff-member-1-image-wrapper {
+        height: 33rem; } }
+    .about-content-area .who-we-are-container .staff-member-profile-wrapper .staff-member-image-wrapper {
       max-width: 70%;
       margin: 0 auto;
       padding-top: 5%; }
       @media (min-width: 768px) {
-        .about-content-area .who-we-are-container .staff-member-profile-wrapper .staff-member-1-image-wrapper {
+        .about-content-area .who-we-are-container .staff-member-profile-wrapper .staff-member-image-wrapper {
           max-width: 80%; } }
     @media (min-width: 768px) {
-      .about-content-area .who-we-are-container .staff-member-text-1-wrapper {
-        height: 33rem;
-        background-color: yellow; }
-        .about-content-area .who-we-are-container .staff-member-text-1-wrapper .staff-member-1-description {
+      .about-content-area .who-we-are-container .staff-member-text-wrapper {
+        height: 33rem; }
+        .about-content-area .who-we-are-container .staff-member-text-wrapper .staff-member-1-description {
           line-height: 2rem; } }
-    .about-content-area .who-we-are-container .staff-member-text-1-wrapper .staff-member-1-fun-fact-container {
-      display: none;
-      background-color: #39a8ab; }
+    .about-content-area .who-we-are-container .staff-member-text-wrapper .staff-member-fun-fact-container {
+      display: none; }
       @media (min-width: 768px) {
-        .about-content-area .who-we-are-container .staff-member-text-1-wrapper .staff-member-1-fun-fact-container {
+        .about-content-area .who-we-are-container .staff-member-text-wrapper .staff-member-fun-fact-container {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex; } }
-      .about-content-area .who-we-are-container .staff-member-text-1-wrapper .staff-member-1-fun-fact-container .staff-member-1-fun-fact {
+      .about-content-area .who-we-are-container .staff-member-text-wrapper .staff-member-fun-fact-container .staff-member-fun-fact {
         padding: 1rem; }
       @media (min-width: 768px) {
-        .about-content-area .who-we-are-container .staff-member-text-1-wrapper .staff-member-1-fun-fact-container .staff-member-1-fun-fact-icon-wrapper {
-          max-width: 10%;
-          padding-top: 1rem;
-          padding-bottom: 1rem; } }
-    .about-content-area .who-we-are-container .staff-member-profile-wrapper .down-arrow-2 {
-      text-align: center;
-      max-width: 480px; }
-      @media (min-width: 768px) {
-        .about-content-area .who-we-are-container .staff-member-profile-wrapper .down-arrow-2 {
-          display: none; } }
-    @media (min-width: 768px) {
-      .about-content-area .who-we-are-container .staff-member-profile-wrapper {
-        height: 33rem; } }
-    .about-content-area .who-we-are-container .staff-member-profile-wrapper .staff-member-2-image-wrapper {
-      max-width: 70%;
-      margin: 0 auto; }
-      @media (min-width: 768px) {
-        .about-content-area .who-we-are-container .staff-member-profile-wrapper .staff-member-2-image-wrapper {
-          max-width: 80%; } }
-    @media (min-width: 768px) {
-      .about-content-area .who-we-are-container .staff-member-text-2-wrapper {
-        height: 33rem;
-        background-color: red; }
-        .about-content-area .who-we-are-container .staff-member-text-2-wrapper .staff-member-2-description {
-          line-height: 2rem; } }
-    .about-content-area .who-we-are-container .staff-member-text-2-wrapper .staff-member-2-fun-fact-container {
-      display: none;
-      background-color: #39a8ab; }
-      @media (min-width: 768px) {
-        .about-content-area .who-we-are-container .staff-member-text-2-wrapper .staff-member-2-fun-fact-container {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex; } }
-      .about-content-area .who-we-are-container .staff-member-text-2-wrapper .staff-member-2-fun-fact-container .staff-member-2-fun-fact {
-        padding: 1rem; }
-      @media (min-width: 768px) {
-        .about-content-area .who-we-are-container .staff-member-text-2-wrapper .staff-member-2-fun-fact-container .staff-member-2-fun-fact-icon-wrapper {
-          max-width: 10%;
-          padding-top: 1rem;
-          padding-bottom: 1rem; } }
-    .about-content-area .who-we-are-container .down-arrow-3 {
-      text-align: center;
-      max-width: 480px; }
-      @media (min-width: 768px) {
-        .about-content-area .who-we-are-container .down-arrow-3 {
-          display: none; } }
-    .about-content-area .who-we-are-container .staff-member-3-image-wrapper {
-      max-width: 70%;
-      margin: 0 auto; }
-      @media (min-width: 768px) {
-        .about-content-area .who-we-are-container .staff-member-3-image-wrapper {
-          max-width: 80%; } }
-    @media (min-width: 768px) {
-      .about-content-area .who-we-are-container .staff-member-text-3-wrapper {
-        height: 33rem;
-        background-color: yellow; }
-        .about-content-area .who-we-are-container .staff-member-text-3-wrapper .staff-member-3-description {
-          line-height: 2rem; } }
-    .about-content-area .who-we-are-container .staff-member-text-3-wrapper .staff-member-3-fun-fact-container {
-      display: none;
-      background-color: #39a8ab; }
-      @media (min-width: 768px) {
-        .about-content-area .who-we-are-container .staff-member-text-3-wrapper .staff-member-3-fun-fact-container {
-          max-width: 100%;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex; }
-          .about-content-area .who-we-are-container .staff-member-text-3-wrapper .staff-member-3-fun-fact-container .staff-member-3-fun-fact {
-            padding: 1rem; } }
-      @media (min-width: 768px) {
-        .about-content-area .who-we-are-container .staff-member-text-3-wrapper .staff-member-3-fun-fact-container .staff-member-3-fun-fact-icon-wrapper {
-          max-width: 10%;
-          padding-top: 1rem;
-          padding-bottom: 1rem; } }
-    .about-content-area .who-we-are-container .down-arrow-4 {
-      text-align: center;
-      max-width: 480px; }
-      @media (min-width: 768px) {
-        .about-content-area .who-we-are-container .down-arrow-4 {
-          display: none; } }
-    .about-content-area .who-we-are-container .staff-member-4-image-wrapper {
-      max-width: 70%;
-      margin: 0 auto; }
-      @media (min-width: 768px) {
-        .about-content-area .who-we-are-container .staff-member-4-image-wrapper {
-          max-width: 80%; } }
-    @media (min-width: 768px) {
-      .about-content-area .who-we-are-container .staff-member-text-4-wrapper {
-        height: 33rem;
-        background-color: red; }
-        .about-content-area .who-we-are-container .staff-member-text-4-wrapper .staff-member-4-description {
-          line-height: 2rem;
-          padding-left: 1rem;
-          padding-right: 1rem; } }
-    .about-content-area .who-we-are-container .staff-member-text-4-wrapper .staff-member-4-fun-fact-container {
-      display: none;
-      background-color: #39a8ab; }
-      @media (min-width: 768px) {
-        .about-content-area .who-we-are-container .staff-member-text-4-wrapper .staff-member-4-fun-fact-container {
-          max-width: 100%;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex; }
-          .about-content-area .who-we-are-container .staff-member-text-4-wrapper .staff-member-4-fun-fact-container .staff-member-4-fun-fact {
-            padding: 1rem; } }
-      @media (min-width: 768px) {
-        .about-content-area .who-we-are-container .staff-member-text-4-wrapper .staff-member-4-fun-fact-container .staff-member-4-fun-fact-icon-wrapper {
+        .about-content-area .who-we-are-container .staff-member-text-wrapper .staff-member-fun-fact-container .staff-member-fun-fact-icon-wrapper {
           max-width: 10%;
           padding-top: 1rem;
           padding-bottom: 1rem; } }
@@ -1516,6 +1404,8 @@ textarea {
   max-width: 480px;
   margin: 0 auto;
   background-color: green; }
+  .home-content-area .content-space {
+    padding-bottom: 6.5rem; }
   @media (min-width: 768px) {
     .home-content-area {
       max-width: 100%; } }

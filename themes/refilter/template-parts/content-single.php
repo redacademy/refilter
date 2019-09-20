@@ -28,6 +28,7 @@
 		}
 </style> 	
 
+
 <section class="mobile landing container-fluid">
 			<section class="landing-wave"></section>
 				<h2><?php the_field('blog_post_title'); ?></h2>

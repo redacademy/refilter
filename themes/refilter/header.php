@@ -17,6 +17,10 @@
 	<style>
 		.landing {
 			background: url('<?php the_field('landing_image_mobile'); ?>') no-repeat center center/cover;
+		}
+
+		.about .landing {
+			background: url('<?php the_field('about_page_landing_image_mobile'); ?>') no-repeat center center/cover;
 			/* background: url('<?php the_field('about_page_landing_image_mobile'); ?>') no-repeat center center/cover; */
 			
 		}
