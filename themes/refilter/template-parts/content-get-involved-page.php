@@ -40,38 +40,43 @@
     </section> -->
 
     <section class="become-a-member" id="become-a-member">
-        
-        
-        <section class="member-options">
+
         <section class="member-description container">
-        <h1 class="become-a-member-title"><?php the_field('become_a_member_title'); ?></h1>
-            <section class="member-image">
-                <img src="<?php the_field('become_a_member_image'); ?>" alt="member" />
-            </section>
-            <p class="member-description"><?php the_field('become_a_member_description'); ?></p>
-            <h4 class="standard-class-title"><?php the_field('standard_class_title'); ?></h4>
-            <ul>
-             <?php if( have_rows('standard_class_bullet_points') ): ?>
-                    
-                        <?php while( have_rows('standard_class_bullet_points') ): the_row();?>
-                            <li>
-                                <?php the_sub_field('standard_class_bullet_point'); ?>
-                            </li>
-                     <?php endwhile; else:?>
-                     
-                     <?php endif; ?>
-            </ul>
-            <h4 class="voting-class-title"><?php the_field('voting_class_title'); ?></h4>
-            <ul>
-             <?php if( have_rows('voting_class_bullet_points') ): ?>
-                    
-                        <?php while( have_rows('voting_class_bullet_points') ): the_row();?>
-                            <li>
-                                <?php the_sub_field('voting_class_bullet_point'); ?>
-                            </li>
-                     <?php endwhile; else: ?>
-                     <?php endif; ?>
-            </ul>
+            <h3 class="become-a-member-title"><?php the_field('become_a_member_title'); ?></h3>
+                <section class="member-image">
+                    <img src="<?php the_field('become_a_member_image'); ?>" alt="member" />
+                </section>
+                
+                <p class="member-description"><?php the_field('become_a_member_description'); ?></p>
+                <h4 class="standard-class-title"><?php the_field('standard_class_title'); ?></h4>
+                
+                <ul class="standard-class">
+                <?php if( have_rows('standard_class_bullet_points') ): ?>
+                        
+                            <?php while( have_rows('standard_class_bullet_points') ): the_row();?>
+                                <li>
+                                    <?php the_sub_field('standard_class_bullet_point'); ?>
+                                </li>
+                        <?php endwhile; else:?>
+                        <?php endif; ?>
+                </ul>
+
+                <a class="join-btn" href="#">Join As Standard Class<i class="fas fa-arrow-right"></i></a>
+                
+                <h4 class="voting-class-title"><?php the_field('voting_class_title'); ?></h4>
+                
+                <ul class="voting-class">
+                <?php if( have_rows('voting_class_bullet_points') ): ?>
+                        
+                            <?php while( have_rows('voting_class_bullet_points') ): the_row();?>
+                                <li>
+                                    <?php the_sub_field('voting_class_bullet_point'); ?>
+                                </li>
+                        <?php endwhile; else: ?>
+                        <?php endif; ?>  
+                </ul>
+
+                <a class="join-btn" href="#">Join As Voting Class <i class="fas fa-arrow-right"></i></a>
         </section>
 
         <section class="support-our-cause container">
@@ -80,6 +85,7 @@
         </section>
 
     </section>
+
     <section class="wavy-newsletter container-fluid">
             <style>
                     .wavy-newsletter{

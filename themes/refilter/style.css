@@ -1573,6 +1573,18 @@ textarea {
 /* Get-involved page */
 .page-id-20 {
   letter-spacing: 0.1rem; }
+  .page-id-20 h3 {
+    font-family: "MADEEvolveSans-Bold", sans-serif;
+    margin-bottom: 0;
+    margin-left: 0;
+    font-weight: 300;
+    width: 100%; }
+  .page-id-20 h4 {
+    font-family: "MADEEvolveSans-Bold", sans-serif;
+    font-weight: 300;
+    line-height: 1.75rem; }
+  .page-id-20 li {
+    margin-bottom: 0.75rem; }
   .page-id-20 .landing h1 {
     margin-top: 15rem; }
   .page-id-20 .landing-title {
@@ -1591,11 +1603,53 @@ textarea {
     @media (min-width: 768px) {
       .page-id-20 .member-image {
         display: inline; } }
+  .page-id-20 .member-description {
+    font-family: "MADEEvolveSans", sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .page-id-20 .member-description p {
+      line-height: 1.75rem;
+      margin-bottom: 0; }
+    .page-id-20 .member-description ul {
+      margin: 0;
+      padding: 1rem; }
+    .page-id-20 .member-description a {
+      padding: 12px 30px;
+      letter-spacing: 0.1rem;
+      font-weight: 500;
+      font-family: "MADEEvolveSans-Medium", sans-serif;
+      font-size: 1rem;
+      color: #39A8AB;
+      background-color: transparent;
+      border: #39A8AB;
+      border: solid #39A8AB 2px;
+      border-radius: 5px;
+      text-decoration: none;
+      -ms-flex-item-align: inherit;
+          align-self: inherit; }
+      .page-id-20 .member-description a i {
+        margin-left: 10px;
+        font-size: 15px; }
+    .page-id-20 .member-description h4 {
+      padding-top: 2rem;
+      border-top: solid #565E5C 1px;
+      width: 100%; }
+  .page-id-20 .standard-class {
+    margin-top: 2rem; }
+  .page-id-20 .voting-class {
+    margin-top: 2rem; }
+  .page-id-20 .voting-class-title {
+    margin-top: 1.5rem; }
   .page-id-20 .support-our-cause {
     line-height: 1.75rem; }
     .page-id-20 .support-our-cause p {
       margin-top: 0.3rem; }
-  .page-id-20 .support-our-cause h3 {
+  .page-id-20 s
+.support-our-cause h3 {
     font-family: "MADEEvolveSans-Bold", sans-serif;
     margin-bottom: 0;
     margin-left: 0;
