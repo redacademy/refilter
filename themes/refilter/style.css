@@ -1599,9 +1599,6 @@ textarea {
     font-size: 5rem;
     opacity: 0.5;
     color: #F8F6F0; }
-  .page-id-20 .upcoming-events .upcoming-event-content {
-    height: 350px;
-    list-style: none; }
   .page-id-20 .upcoming-events .event-wallpaper {
     position: relative;
     display: -webkit-box;
@@ -1614,7 +1611,7 @@ textarea {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 400px;
+    height: 350px;
     background-size: 664px 1022px;
     border-radius: 5px;
     margin: 1.5rem;
@@ -1624,7 +1621,6 @@ textarea {
       .page-id-20 .upcoming-events .event-wallpaper {
         width: 450px; } }
     .page-id-20 .upcoming-events .event-wallpaper .upcoming-date {
-      font-size: 1.5rem;
       background-color: #94c8c0;
       border: #39A8AB;
       -webkit-box-shadow: 0 4px 4px rgba(12, 11, 11, 0.1);
@@ -1632,53 +1628,55 @@ textarea {
       border-radius: 50%;
       position: absolute;
       top: 10px;
-      right: 10px;
-      padding: 1rem 1.3rem;
-      text-transform: uppercase;
-      font-weight: bold;
-      font-family: "MADEEvolveSans-Medium", sans-serif; }
-  .page-id-20 .upcoming-events .upcoming-events {
-    height: 100%;
+      right: 255px;
+      padding: 1rem 1.4rem; }
+      .page-id-20 .upcoming-events .event-wallpaper .upcoming-date .bold-date {
+        font-weight: 600;
+        font-family: "MADEEvolveSans-Medium", sans-serif;
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 0;
+        text-align: center; }
+      .page-id-20 .upcoming-events .event-wallpaper .upcoming-date .upper-month {
+        text-transform: uppercase;
+        font-family: "MADEEvolveSans", sans-serif;
+        font-weight: 300;
+        margin: 0;
+        padding: 0;
+        text-align: center; }
+  .page-id-20 .upcoming-events .event-description-1 {
+    font-family: "MADEEvolveSans-Bold", sans-serif;
+    text-align: flex-start;
+    margin-left: 1.5rem;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin-bottom: 3.5rem;
+    font-size: 1.5rem; }
+  .page-id-20 .upcoming-events .event-description {
+    font-family: "MADEEvolveSans-Bold", sans-serif;
+    text-align: flex-start;
+    margin-left: 1.5rem;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin-bottom: 2rem;
+    font-size: 1.5rem; }
+  .page-id-20 .upcoming-events .learn-btn-events {
+    padding: 12px 45px;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+    font-family: "MADEEvolveSans-Medium", sans-serif;
+    font-size: 1.1rem;
+    border: #39A8AB;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    text-decoration: none;
     color: #F8F6F0;
-    line-height: 1.75rem; }
-    .page-id-20 .upcoming-events .upcoming-events .learn-btn {
-      padding: 12px 45px;
-      letter-spacing: 0.1rem;
-      font-weight: 500;
-      font-family: "MADEEvolveSans-Medium", sans-serif;
-      font-size: 1rem;
-      background-color: #39A8AB;
-      border: #39A8AB;
-      -webkit-box-shadow: 0 4px 4px rgba(12, 11, 11, 0.45);
-              box-shadow: 0 4px 4px rgba(12, 11, 11, 0.45);
-      border-radius: 5px;
-      margin-bottom: 3rem;
-      -ms-flex-item-align: center;
-          align-self: center; }
-      .page-id-20 .upcoming-events .upcoming-events .learn-btn i {
-        margin-left: 10px;
-        font-size: 12px; }
-    .page-id-20 .upcoming-events .upcoming-events h2 {
-      font-family: "MADEEvolveSans-Medium", sans-serif;
-      letter-spacing: 0; }
-    .page-id-20 .upcoming-events .upcoming-events p {
-      font-family: "MADEEvolveSans-Bold", sans-serif;
-      padding-left: 5rem;
-      padding-right: 5rem;
-      letter-spacing: 0.1rem;
-      margin-top: 0; }
-      @media (min-width: 768px) {
-        .page-id-20 .upcoming-events .upcoming-events p {
-          margin-bottom: 5rem; } }
-  @media (min-width: 768px) {
-    .page-id-20 .upcoming-events .template-download .learn-btn {
-      display: none; } }
-  @media (min-width: 768px) {
-    .page-id-20 .upcoming-events .template-download {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row; } }
+    margin-bottom: 1rem;
+    margin-left: 0;
+    padding-left: 1.5rem; }
+    .page-id-20 .upcoming-events .learn-btn-events i {
+      margin-left: 10px;
+      font-size: 18px; }
   .page-id-20 .member-image {
     display: none; }
     @media (min-width: 768px) {
