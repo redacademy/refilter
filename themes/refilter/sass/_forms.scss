@@ -29,6 +29,32 @@ textarea {
 .membership-form {
   width: 100%;
 
+  input[type="text"] {
+    @include desktop {
+      padding: 0.8rem 0.5rem 0.8rem !important;
+    }
+  }
+
+  select {
+    @include desktop {
+      padding: 0.9rem !important;
+    }
+  }
+
+  .ginput_container_email, .ginput_container_phone {
+    input {
+      @include desktop {
+        width: 100% !important;
+      }
+    }
+  }
+
+  .address_city {
+    @include desktop {
+    width: 100% !important;
+    }
+  }
+
   .gf_step_label {
     display: none !important;
   }
@@ -49,6 +75,10 @@ textarea {
     text-align: center;
     opacity: 1 !important;
     width: 25% !important;
+
+    @include desktop {
+      width: 10% !important;
+    }
   }
 
   .gf_step_number {
@@ -67,6 +97,12 @@ textarea {
 
   p {
     text-align: center;
+
+    @include desktop {
+      width: 80%;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
   }
 
   .gfield_required {
@@ -93,6 +129,12 @@ textarea {
       border: none;
       background: $light_green;
       padding: 0.3rem;
+
+      @include desktop {
+        width: 20% !important;
+        padding: 0.5rem;
+        font-size: 1.2rem !important;
+      }
     }
   }
 
@@ -119,22 +161,39 @@ textarea {
     font-weight: 200;
     color: gray;
     font-size: 0.95rem !important;
+
+    @include desktop {
+      text-align: left;
+      padding-left: 2rem !important;
+    }
   }
 
   .gform_confirmation_message_1.gform_confirmation_message {
     h1 {
       font-size: 2.3rem;
       margin: 1rem 0 0 0;
+
+      @include desktop {
+        text-align: center;
+      }
     }
 
     p {
       margin: 0;
       line-height: 1.6;
       text-align: center;
+
+      @include desktop {
+        line-height: 1.9;
+      }
     }
 
     span {
       display: flex;
+
+      @include desktop {
+        justify-content: center;
+      }
 
       a {
         padding-left: 1rem;
@@ -152,6 +211,11 @@ textarea {
       background: $light_green;
       padding: 1rem;
       text-decoration: none;
+      text-align: center;
+
+      @include desktop {
+        width: 25% !important;
+      }
     }
   }
 }
