@@ -21,13 +21,20 @@
 
 		.about .landing {
 			background: url('<?php the_field('about_page_landing_image_mobile'); ?>') no-repeat center center/cover;
+			/* background: url('<?php the_field('about_page_landing_image_mobile'); ?>') no-repeat center center/cover; */
+			
 		}
 
 		@media only screen and (min-width: 768px) {
 			.landing {
 			background: url('<?php the_field('landing_image_desktop'); ?>') no-repeat center center/cover;
+			/* background: url('<?php the_field('about_page_landing_image_desktop'); ?>') no-repeat center center/cover; */
 			
 			}
+
+			.wavy-newsletter {
+			background: url('<?php the_field('newsletter_image_mobile'); ?>') no-repeat center center/cover;
+		}	
 		}
 		
 		.wavy-testimonial {
@@ -35,7 +42,7 @@
 		}	
 		
 		.wavy-newsletter {
-			background: url('<?php the_field('newsletter_image'); ?>') no-repeat center center/cover;
+			background: url('<?php the_field('newsletter_image_desktop'); ?>') no-repeat center center/cover;
 		}		
 	</style>
 	</head>
@@ -47,12 +54,12 @@
 			<header id="masthead" class="site-header" role="banner">
 				<nav id="site-navigation" class="main-navigation container" role="navigation">
 					<section class="site-branding">
-						<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+						<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="http://refilter.van.cp.academy.red/wp-content/uploads/2019/09/refilter-logo-2.png" /></a></h1>
 						<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 					</section><!-- .site-branding -->
 					<section class="nav-right">
 					<section class="navbar-btn">
-					<a class="btn green-full" href="#">Get Involved</a>	
+					<a class="btn green-full" href="<?php echo site_url('get-involved'); ?>">Get Involved</a>	
 					</section>			
 						<button class="menu-toggle navbar-hamburger" aria-controls="primary-menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>

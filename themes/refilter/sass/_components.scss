@@ -1,6 +1,6 @@
 .btn {
   text-decoration: none;
-  border: 2px solid #17cf54;
+  border: 2px solid $light_green;
   padding: 0.55rem 2rem;
   border-radius: 4px;
   font-size: 1rem;
@@ -9,16 +9,16 @@
 }
 
 .green-full {
-  color: #fff;
-  background: #0ed166;
+  color: $white;
+  background: $light_green;
 }
 
 .green-empty {
-  color: #17cf54;
+  color: $light_green;
   background: transparent;
 }
 
 .white-empty {
-  color: #17cf54;
-  background: #fff;
+  color: $light_green;
+  background: $white;
 }
