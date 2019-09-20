@@ -23,3 +23,135 @@ textarea {
   padding-left: 3px;
   width: 100%;
 }
+
+// Multi page forms
+
+.membership-form {
+  width: 100%;
+
+  .gf_step_label {
+    display: none !important;
+  }
+
+  .gf_page_steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none !important;
+  }
+
+  .gf_step.gf_step_active.gf_step_first,
+  .gf_step_previous,
+  .gf_step_last,
+  .gf_step.gf_step.gf_step_last.gf_step_next.gf_step_pending {
+    margin: 0 !important;
+    padding: 0;
+    text-align: center;
+    opacity: 1 !important;
+    width: 25% !important;
+  }
+
+  .gf_step_number {
+    order: 2;
+    background: $light_green;
+    padding: 0.5rem 0.85rem;
+    color: #fff;
+    border-radius: 50%;
+  }
+
+  h3 {
+    padding-top: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .gfield_required {
+    display: none;
+  }
+
+  label {
+    font-size: 1.1rem !important;
+    padding: 0.5rem 0;
+  }
+
+  .gform_page_footer {
+    display: flex;
+    border-top: none !important;
+
+    .gform_next_button,
+    .gform_button,
+    .gform_previous_button {
+      width: 45% !important;
+      border-radius: 4px;
+      color: #fff;
+      font-size: 1.1rem !important;
+      margin: 0 auto !important;
+      border: none;
+      background: $light_green;
+      padding: 0.3rem;
+    }
+  }
+
+  .gfield_checkbox {
+    padding: 0;
+
+    li {
+      display: flex !important;
+      align-items: baseline !important;
+
+      input {
+        padding: 0.5rem;
+      }
+    }
+
+    label {
+      padding-left: 1rem !important;
+      letter-spacing: 0.06rem !important;
+    }
+  }
+
+  .gfield_description {
+    text-align: center;
+    font-weight: 200;
+    color: gray;
+    font-size: 0.95rem !important;
+  }
+
+  .gform_confirmation_message_1.gform_confirmation_message {
+    h1 {
+      font-size: 2.3rem;
+      margin: 1rem 0 0 0;
+    }
+
+    p {
+      margin: 0;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    span {
+      display: flex;
+
+      a {
+        padding-left: 1rem;
+        color: $light_green;
+      }
+    }
+
+    .back-home {
+      width: 40% !important;
+      border-radius: 4px;
+      color: #fff;
+      font-size: 1.1rem !important;
+      margin: 0 auto !important;
+      border: none;
+      background: $light_green;
+      padding: 1rem;
+      text-decoration: none;
+    }
+  }
+}
