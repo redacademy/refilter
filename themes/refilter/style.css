@@ -321,7 +321,7 @@ img {
     width: 80%; }
   .landing .landing-title {
     padding-bottom: 1rem;
-    margin-bottom: 0; }
+    margin: 0; }
   .landing .landing-question {
     text-transform: uppercase;
     font-weight: 200;
