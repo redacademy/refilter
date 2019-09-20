@@ -56,7 +56,32 @@
 
     // Upcoming Events Section
 
-    .upcoming-events{          
+    .upcoming-events-content{
+        .upcoming-events-title{
+            padding: 1rem 0rem;
+            @include desktop{
+                padding: 1rem 6.3rem;
+            }
+        }
+    }
+    
+    .upcoming-events{  
+        display: flex;
+        
+        @include desktop{
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;  
+            -moz-box-orient: vertical;
+            flex-wrap: wrap;      
+        }
+        
+       
+
+        .upcoming-events-title{
+            width: 100%;
+            margin-left: 0;
+        }
 
         .event-wallpaper {
             position: relative;
@@ -70,7 +95,8 @@
             width: 350px;
             color: $white;
             @include desktop{
-               width: 450px;
+               width: 300px;
+               flex-wrap: nowrap;
             }
 
             .upcoming-date{
@@ -83,6 +109,10 @@
                 top: 10px;
                 right: 255px;
                 padding: 1rem 1.4rem;
+
+                @include desktop{
+                    right: 200px;
+                }
                 
 
                 .bold-date{
@@ -151,16 +181,21 @@
 
         @include desktop{
             display: inline;
+            height: auto;
+            width: 45%;
         }
     }
 
     .member-description{
-       font-family: $font__body;
-       display: flex;
-       align-items: flex-start;
+        font-family: $font__body;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
         p{
             line-height: 1.75rem;
             margin-bottom: 0;
+            
         }
         ul{
             margin: 0;
@@ -201,9 +236,7 @@
     }
 
     .voting-class-title{
-        
         margin-top: 1.5rem;
-        
     }
     
 
@@ -215,7 +248,10 @@
         p{
             margin-top: 0.3rem;
         }
-    }s
+        @include desktop{
+            width: 40%;
+        }
+    }
 
     .support-our-cause h3{
         font-family: $font__heading3;

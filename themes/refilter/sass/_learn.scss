@@ -139,6 +139,7 @@
 
             @include desktop{
                 margin: 0;
+                height: 250px;
                 
             }
         }
@@ -176,11 +177,9 @@
                 }
                 i{
                     margin-right: 1rem;
-                    font-size: 2.8rem;
-                    
+                    font-size: 2.8rem;    
                 }    
             }
-
             }
         
     }
