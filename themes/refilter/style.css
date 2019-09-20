@@ -1598,6 +1598,9 @@ textarea {
     font-size: 5rem;
     opacity: 0.5;
     color: #F8F6F0; }
+  .page-id-20 .upcoming-events .upcoming-event-content {
+    height: 400px;
+    list-style: none; }
   .page-id-20 .member-image {
     display: none; }
     @media (min-width: 768px) {

@@ -28,16 +28,21 @@
                     <h3 class="landing-description"><?php the_field('get_involved_landing_description'); ?></h3>
                     <a href="#become-a-member"><i class="fas fa-sort-down"></i></a> 
                 </section>
- 
-        
-    <!-- <section class="upcoming-events">
-        <h1 class="upcoming-events-title"></h1>
+    
+    <section class="upcoming-events container">
+        <h3 class="upcoming-events-title"><?php the_field('upcoming_events_title'); ?></h3>
+        <?php if( have_rows('events') ): ?>
         <ul class="upcoming-events-list">
-            <li class="upcoming-event"></li>
-            <li class="upcoming-event"></li>
-            <li class="upcoming-event"></li>
-        </ul>
-    </section> -->
+            <?php while( have_rows('events') ): the_row();?>
+                <li class="upcoming-event-content" style="background: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)), url('<?php the_sub_field('upcoming_events_background_image'); ?>') no-repeat center center/cover;">
+                    <?php the_sub_field("<p>",'upcoming_events_date',"</p>"); ?>
+                    <?php the_sub_field('upcoming_events_description'); ?>
+                    <a class="learn-btn"href="#">Learn More <i class="fas fa-arrow-right"></i></a>
+                </li>
+            <?php endwhile; ?>  
+            <?php endif; ?>
+        </ul>  
+    </section>
 
     <section class="become-a-member" id="become-a-member">
 
