@@ -1094,6 +1094,9 @@ textarea {
       margin-left: 10px;
       font-size: 12px; }
 
+.page-template-page-all-projects {
+  background-repeat: repeat; }
+
 .projects-title {
   text-align: left;
   margin-top: 20px;
@@ -1116,7 +1119,9 @@ textarea {
     .partners-container {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; } }
+      display: flex; }
+      .partners-container .partner-container {
+        margin-right: 20px; } }
 
 .project-partner-title {
   padding-top: 40px;
