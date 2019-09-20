@@ -10,7 +10,7 @@
 
 .our-purpose,
 .what-we-do {
-  padding: 1.5rem 0;
+  padding: 2rem 0;
 
   @include desktop {
     line-height: 1.6;
@@ -20,10 +20,10 @@
   .what-we-do-title {
     font-size: 2rem;
     width: 100%;
+    margin-bottom: 1rem;
 
     @include desktop {
       font-size: 2.5rem;
-      margin-bottom: 1rem;
     }
   }
 
@@ -71,8 +71,8 @@
 
     .overlapping-text {
       @include desktop {
-        background: #17cf54;
-        padding: 0.65rem;
+        background: $light_green;
+        padding: 2rem;
         flex-basis: 50%;
         display: flex;
         justify-content: center;
@@ -99,7 +99,7 @@
 
   .btn {
     @include desktop {
-      color: #17cf54;
+      color: $light_green;
       margin-top: 1.5rem;
       background: #fff;
     }
@@ -113,6 +113,8 @@
   font-weight: 300;
 
   @include desktop {
+    margin: 6rem auto;
+    padding: 6rem 0;
     text-align: center;
     align-items: flex-start;
   }
@@ -157,15 +159,18 @@
 
   .contribute-title {
     width: 100%;
+    margin: 2rem 0 1rem 0;
+    font-size: 2.3rem;
 
     @include desktop {
       margin-bottom: 2rem;
+      font-size: 2.8rem;
     }
   }
 }
 
 .contribute-types {
-  margin: 0;
+  margin: 2rem 0 0 0;
   padding: 0;
   list-style-type: none;
 
@@ -174,19 +179,37 @@
     grid-gap: 5rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
 
   li {
-    padding: 0.5rem 0;
+    padding: 1rem 0;
 
     @include desktop {
+      padding: 0;
+    }
+
+    .contribute-logo {
+      height: 70px;
+    }
+
+    h3 {
+      font-size: 1.6rem;
+      margin: 0;
+    }
+
+    p {
+      margin-top: 0.3rem;
+    }
+
+    a {
+      margin-top: 1rem;
     }
   }
 }
 
 .butt-count {
-  padding: 2rem 0;
+  padding: 0 0 2rem 0;
   text-align: center;
 
   .butt-count-content {
@@ -201,7 +224,7 @@
 
   .butt-count-left {
     @include desktop {
-      border-right: 3px solid #17cf54;
+      border-right: 3px solid $light_green;
       border-right-width: 60%;
       padding-right: 2.3rem;
     }
@@ -212,14 +235,15 @@
     padding: 0.5rem 0;
 
     @include desktop {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
     }
   }
 
   .butt-count-text,
   .waste-count-text {
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-weight: 100;
+    font-size: 1.6rem;
     text-transform: uppercase;
 
     @include desktop {
@@ -231,6 +255,10 @@
 
   .butt-count-number,
   .waste-count-number {
+    font-size: 2.6rem;
+    margin-bottom: 0;
+    font-weight: 800;
+
     @include desktop {
       font-size: 3.5rem;
       margin-top: 0;
@@ -240,8 +268,17 @@
 
 .instagram-feed {
   .instagram-feed-title {
+    font-size: 2rem;
+    line-height: 1.6;
+    text-align: center;
+
     @include desktop {
+      margin-bottom: 0;
       font-size: 2.8rem;
     }
+  }
+
+  .sbi_load_btn {
+    background: $light_green !important;
   }
 }
