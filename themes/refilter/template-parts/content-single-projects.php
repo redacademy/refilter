@@ -27,7 +27,11 @@
 		}	
 		
 		}
-</style> 	
+</style> 
+
+		   
+		<div> <?php the_title(); ?></div>
+
 
 <section class="mobile landing container-fluid">
 			<section class="landing-wave"></section>

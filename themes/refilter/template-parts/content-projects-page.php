@@ -9,7 +9,6 @@
 
 <section id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<style>
-		
 			.landing {
 				background: url('<?php the_field('projects_page_landing_image_mobile'); ?>') no-repeat center center/cover;
 			}   
@@ -56,10 +55,17 @@
 		     	));
 		 								?>
 			   <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-			   <div> <?php the_title(); ?></div>
-				<img src="<?php the_field('single_project_background_image', get_the_id()); ?>">
-				<a href="<?php the_permalink(); ?>">permalink</a>
+			   <article class="single-projects-container"
+			   style="background: url('<?php the_field('single_project_background_image'); ?>')"
+			   >
+			   
+					     <div> <?php the_title(); ?></div>
+						
+						<a href="<?php the_permalink(); ?>">Read More</a>
 				
+			   
+			   
+			   </article>
                  <!-- do stuff -->
               <?php endwhile; wp_reset_query(); ?>
 		

@@ -1131,7 +1131,8 @@ textarea {
   text-decoration: none; }
 
 .slide-container {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 30px; }
 
 .tabs {
   background: transparent;
@@ -1140,6 +1141,11 @@ textarea {
 
 .active {
   border-bottom: 2px solid #000; }
+
+.single-projects-container {
+  padding: 30vh;
+  background-size: cover !important;
+  margin-bottom: 2rem; }
 
 /* about page */
 .about-content-area {
