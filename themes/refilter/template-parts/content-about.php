@@ -11,14 +11,16 @@
 <style> 
         @media only screen and (min-width: 768px) {
         .landing {
-		background: url('<?php the_field('about_page_landing_image_desktop'); ?>') no-repeat center center/cover;
+        background: url('<?php the_field('about_page_landing_image_desktop'); ?>') no-repeat center center/cover;
+        background-size: 100% 100%;
 		}	
 		
 		}
 
 		@media only screen and (max-width: 767px) {
 		.landing {
-		background: url('<?php the_field('about_page_landing_image_mobile'); ?>') no-repeat center center/cover;
+        background: url('<?php the_field('about_page_landing_image_mobile'); ?>') no-repeat center center/cover;
+        background-size: 100% 100%;
 		}	
 		
 		}
