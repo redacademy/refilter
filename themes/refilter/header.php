@@ -59,7 +59,7 @@
 					</section><!-- .site-branding -->
 					<section class="nav-right">
 					<section class="navbar-btn">
-					<a class="btn green-full" href="<?php echo site_url('get-involved'); ?>">Get Involved</a>	
+					<a class="btn green-full get-involved-link" href="<?php echo site_url('get-involved'); ?>">Get Involved</a>	
 					</section>			
 						<button class="menu-toggle navbar-hamburger" aria-controls="primary-menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
@@ -68,4 +68,3 @@
 				</header><!-- #masthead -->
 
 			<main id="content" class="site-content">
-				<p class="work-in-progress">Work in progress!</p> <!-- do not remove this line!-->
