@@ -1362,7 +1362,6 @@ textarea {
       .about-content-area .about-site-main {
         max-width: 100%; } }
     .about-content-area .about-site-main .about-entry-title {
-      color: white;
       position: absolute;
       top: 40vh; }
       @media (min-width: 768px) {
@@ -1485,8 +1484,7 @@ textarea {
 /* blog page */
 .home-content-area {
   max-width: 480px;
-  margin: 0 auto;
-  background-color: green; }
+  margin: 0 auto; }
   .home-content-area .content-space {
     padding-bottom: 6.5rem; }
   @media (min-width: 768px) {
@@ -1496,7 +1494,6 @@ textarea {
     .home-content-area {
       background-color: yellow; } }
   .home-content-area .blog-banner {
-    background-color: orange;
     max-width: 90%;
     margin: 0 auto;
     position: relative; }
@@ -1509,8 +1506,7 @@ textarea {
       @media (min-width: 768px) {
         .home-content-area .blog-banner img {
           width: 100%;
-          height: 75vh;
-          border-radius: 0px; } }
+          height: 75vh; } }
   .home-content-area .blog-post-title-wrapper {
     color: white;
     position: absolute;
@@ -1525,11 +1521,11 @@ textarea {
       .home-content-area .blog-post-title-wrapper {
         top: 15vh; } }
   .home-content-area .blog-post-description-wrapper {
-    display: none; }
+    display: none;
+    color: white; }
     @media (min-width: 768px) {
       .home-content-area .blog-post-description-wrapper {
         display: block;
-        color: white;
         position: absolute;
         top: 30vh;
         left: 4vw; } }
@@ -1538,9 +1534,20 @@ textarea {
     color: white;
     position: absolute;
     top: 35vh;
-    left: 4vw; }
+    left: 4vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0; }
     .home-content-area .read-more-wrapper p {
       font-weight: bold; }
+    .home-content-area .read-more-wrapper .arrow-right {
+      font-size: .5rem;
+      height: 5px;
+      position: absolute;
+      left: 95px;
+      bottom: 30px;
+      font-size: 12px; }
     @media (min-width: 768px) {
       .home-content-area .read-more-wrapper {
         top: 56vh;
@@ -1618,8 +1625,7 @@ textarea {
         position: relative;
         max-width: 400px; }
         .blog-entry-content .related-posts-wrapper .related-posts-image-wrapper img {
-          border-radius: 10px;
-          max-width: 97%; } }
+          border-radius: 10px; } }
 
 .site-footer {
   padding: 2rem 0 0.5rem 0;
