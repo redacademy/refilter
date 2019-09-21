@@ -54,12 +54,37 @@
 
 
 
-
-
-
-
 .single-projects-container{
-    padding: 30vh;
-    background-size: cover !important;
+    height: 30vh;
     margin-bottom: 2rem;
+    margin: 14px;
+    border-radius: 5px;
+
+      
+}
+
+
+.content-container-info{
+
+}
+
+
+.the-tittle-post{
+    color: $white;
+}
+
+.readmore-link{
+    text-decoration: none;
+     color: $white;
+    
+}
+
+
+
+.learn-more-arrow{
+      position: relative;
+     top: 65px;
+     left: 20px;
+    
+
 }

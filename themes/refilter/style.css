@@ -1331,9 +1331,23 @@ textarea {
   border-bottom: 2px solid #000; }
 
 .single-projects-container {
-  padding: 30vh;
-  background-size: cover !important;
-  margin-bottom: 2rem; }
+  height: 30vh;
+  margin-bottom: 2rem;
+  margin: 14px;
+  border-radius: 5px; }
+
+.the-tittle-post {
+  color: #F8F6F0; }
+
+.readmore-link {
+  text-decoration: none;
+  color: #F8F6F0; }
+
+.learn-more-arrow {
+  position: relative;
+  top: 65px;
+  left: 20px; }
+
 .page-id-727,
 .page-id-731 {
   background-size: cover !important; }

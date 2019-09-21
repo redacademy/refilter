@@ -38,8 +38,8 @@
 
 		
 			<div class="slide-container">
-            	<button class="tabs" data-tab="one">London</button>
-				<button class="tabs" data-tab="two">assdasd</>
+            	<button class="tabs" data-tab="one">Current</button>
+				<button class="tabs" data-tab="two">Past</button>
 			</div>
 			
 			<div id="one" class="tab-container">
@@ -55,17 +55,29 @@
 		     	));
 		 								?>
 			   <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-			   <article class="single-projects-container"
-			   style="background: url('<?php the_field('single_project_background_image'); ?>')"
+			   <a  class ="readmore-link"  href="<?php the_permalink(); ?>">
+			   <div class="single-projects-container"
+			   style="background: url('<?php the_field('single_project_background_image'); ?>') no-repeat center center/cover"
 			   >
 			   
-					     <div> <?php the_title(); ?></div>
-						
-						<a href="<?php the_permalink(); ?>">Read More</a>
+						<div class="content-container-info">
+							
+							
+							<h3 class="the-tittle-post"> <?php the_title(); ?></h3>
+
+
+
+							<h4 class="learn-more-arrow"> Learn More <i class="fas fa-arrow-right"></i> </h4>
+
+						</div>
+
+
 				
 			   
 			   
-			   </article>
+			</div>
+			</a>
+
                  <!-- do stuff -->
               <?php endwhile; wp_reset_query(); ?>
 		
