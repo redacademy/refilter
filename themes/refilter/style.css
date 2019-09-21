@@ -1092,9 +1092,15 @@ textarea {
         font-size: 1.2rem;
         min-height: 250px;
         line-height: 1.75rem; }
+        .page-id-16 .shuffle-quotes-grid .quotes-grid li:nth-child(n + 4) {
+          display: none; }
         @media (min-width: 768px) {
           .page-id-16 .shuffle-quotes-grid .quotes-grid li {
-            margin: 0; } }
+            margin: 0; }
+            .page-id-16 .shuffle-quotes-grid .quotes-grid li:nth-child(n + 4) {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex; } }
       .page-id-16 .shuffle-quotes-grid .quotes-grid .reshuffle-btn {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1337,6 +1343,10 @@ textarea {
       .page-id-727 .membership .gf_step.gf_step_next.gf_step_pending .gf_step_number,
       .page-id-731 .membership .gf_step.gf_step_next.gf_step_pending .gf_step_number {
         margin: 0 0 0 2.3rem !important; }
+    .page-id-727 .membership .gf_step.gf_step_first.gf_step_completed,
+    .page-id-731 .membership .gf_step.gf_step_first.gf_step_completed {
+      margin: 0 1rem;
+      opacity: 1; }
 
 /* about page */
 .about-content-area {
