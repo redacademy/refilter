@@ -993,7 +993,9 @@ textarea {
     min-height: 1100px; }
     @media (min-width: 768px) {
       .page-id-16 .landing {
-        min-height: 768px; } }
+        min-height: 768px; }
+        .page-id-16 .landing .landing-question {
+          margin-top: 6rem; } }
   .page-id-16 a {
     text-decoration: none;
     color: #F8F6F0; }
@@ -1013,11 +1015,18 @@ textarea {
     @media (min-width: 768px) {
       .page-id-16 .landing .learn-btn {
         display: none; } }
+  @media (min-width: 768px) {
+    .page-id-16 .landing .landing-quote {
+      margin-bottom: 16rem; } }
   .page-id-16 .landing-wave {
     margin-top: 12rem; }
   .page-id-16 .landing-title {
     font-size: 3rem;
     font-weight: 300; }
+    @media (min-width: 768px) {
+      .page-id-16 .landing-title {
+        font-weight: 600;
+        font-size: 4rem; } }
   .page-id-16 .landing-question {
     margin-top: 10rem; }
     @media (min-width: 768px) {
@@ -1070,39 +1079,109 @@ textarea {
           padding: 0;
           grid-gap: 1.8rem;
           margin-bottom: 5rem;
-          width: 50%; } }
-      .page-id-16 .shuffle-quotes-grid .quotes-grid li {
+          width: 50%; }
+          .page-id-16 .shuffle-quotes-grid .quotes-grid .quotes-grid {
+            text-align: flex-start;
+            display: grid;
+            justify-items: center;
+            text-align: left;
+            grid-template-columns: 1fr;
+            grid-gap: 1.5rem;
+            padding: 0rem 1.5rem;
+            width: 100%;
+            margin: 0 auto; } }
+    @media (min-width: 768px) and (min-width: 768px) {
+      .page-id-16 .shuffle-quotes-grid .quotes-grid .quotes-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 0;
+        padding: 0;
+        grid-gap: 1.8rem;
+        margin-bottom: 5rem;
+        width: 65%; } }
+      @media (min-width: 768px) {
+            .page-id-16 .shuffle-quotes-grid .quotes-grid .quotes-grid li {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-align: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                      justify-content: center;
+              border-radius: 5px;
+              margin: 0;
+              padding: 2rem;
+              font-size: 1.2rem;
+              list-style: none;
+              background-color: #39A8AB;
+              font-weight: bold;
+              display: flex;
+              font-size: 1.2rem;
+              min-height: 250px;
+              line-height: 1.75rem; }
+              .page-id-16 .shuffle-quotes-grid .quotes-grid .quotes-grid li:nth-child(n + 4) {
+                display: none; } }
+      @media (min-width: 768px) and (min-width: 768px) {
+        .page-id-16 .shuffle-quotes-grid .quotes-grid .quotes-grid li {
+          margin: 0; }
+          .page-id-16 .shuffle-quotes-grid .quotes-grid .quotes-grid li:nth-child(n + 4) {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            font-size: 1.2rem;
+            min-height: 250px;
+            line-height: 1.75rem; } }
+    @media (min-width: 768px) and (min-width: 768px) and (min-width: 768px) {
+      .page-id-16 .shuffle-quotes-grid .quotes-grid .quotes-grid li:nth-child(n + 4) {
+        margin: 0;
+        height: 250px; } }
+      @media (min-width: 768px) and (min-width: 768px) {
+          .page-id-16 .shuffle-quotes-grid .quotes-grid .quotes-grid li .reshuffle-btn {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            width: 100%;
+            border-radius: 5px;
+            border: none;
+            font-size: 1.2rem;
+            list-style: none;
+            background-color: #39A8AB;
+            font-weight: bold;
+            -webkit-box-shadow: 0 4px 4px rgba(182, 182, 182, 0.75);
+                    box-shadow: 0 4px 4px rgba(182, 182, 182, 0.75);
+            display: inline-block;
+            margin: 0;
+            padding: 1rem;
+            margin-bottom: 4rem; }
+            .page-id-16 .shuffle-quotes-grid .quotes-grid .quotes-grid li .reshuffle-btn i {
+              margin-right: 1rem; } }
+    @media (min-width: 768px) and (min-width: 768px) and (min-width: 768px) {
+      .page-id-16 .shuffle-quotes-grid .quotes-grid .quotes-grid li .reshuffle-btn {
+        height: 250px;
+        margin: 0;
+        padding: 1rem;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        border-radius: 5px;
-        margin: 0;
-        padding: 2rem;
-        font-size: 1.2rem;
-        list-style: none;
-        background-color: #39A8AB;
-        font-weight: bold;
-        display: flex;
-        font-size: 1.2rem;
-        min-height: 250px;
-        line-height: 1.75rem; }
-        .page-id-16 .shuffle-quotes-grid .quotes-grid li:nth-child(n + 4) {
-          display: none; }
-        @media (min-width: 768px) {
-          .page-id-16 .shuffle-quotes-grid .quotes-grid li {
-            margin: 0;
-            height: 250px; } }
-            margin: 0; }
-            .page-id-16 .shuffle-quotes-grid .quotes-grid li:nth-child(n + 4) {
-              display: -webkit-box;
-              display: -ms-flexbox;
-              display: flex; } }
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        grid-row: 2;
+        grid-column: 2; }
+        .page-id-16 .shuffle-quotes-grid .quotes-grid .quotes-grid li .reshuffle-btn li {
+          font-size: 0.9rem; }
+        .page-id-16 .shuffle-quotes-grid .quotes-grid .quotes-grid li .reshuffle-btn i {
+          margin-right: 1rem;
+          font-size: 2.8rem; } }
       .page-id-16 .shuffle-quotes-grid .quotes-grid .reshuffle-btn {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1336,6 +1415,7 @@ textarea {
   padding: 30vh;
   background-size: cover !important;
   margin-bottom: 2rem; }
+
 .page-id-727,
 .page-id-731 {
   background-size: cover !important; }
