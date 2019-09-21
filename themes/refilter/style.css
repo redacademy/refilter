@@ -1320,6 +1320,24 @@ textarea {
 .active {
   border-bottom: 2px solid #000; }
 
+.page-id-727,
+.page-id-731 {
+  background-size: cover !important; }
+  .page-id-727 .membership,
+  .page-id-731 .membership {
+    margin-top: 3rem; }
+    .page-id-727 .membership h1,
+    .page-id-731 .membership h1 {
+      margin: 6rem 0 1rem 0;
+      font-size: 2.55rem;
+      font-weight: 200; }
+    .page-id-727 .membership .gf_step.gf_step_next.gf_step_pending,
+    .page-id-731 .membership .gf_step.gf_step_next.gf_step_pending {
+      opacity: 1; }
+      .page-id-727 .membership .gf_step.gf_step_next.gf_step_pending .gf_step_number,
+      .page-id-731 .membership .gf_step.gf_step_next.gf_step_pending .gf_step_number {
+        margin: 0 0 0 2.3rem !important; }
+
 /* about page */
 .about-content-area {
   max-width: 480px;
