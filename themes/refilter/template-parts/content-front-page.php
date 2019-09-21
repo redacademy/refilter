@@ -8,6 +8,27 @@
 ?>
 
 <main id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+<style>
+		.wavy-testimonial {
+			background: url('<?php the_field('wavy_testimonial_image_mobile'); ?>') no-repeat center center/cover;
+		}		
+
+		.landing {
+			background: url('<?php the_field('landing_image_mobile'); ?>') no-repeat center center/cover;
+		}
+
+		@media only screen and (min-width: 768px) {
+			.wavy-testimonial {
+				background: url('<?php the_field('wavy_testimonial_image_desktop'); ?>') no-repeat center center/cover;
+			}
+
+			.landing {
+				background: url('<?php the_field('landing_image_desktop'); ?>') no-repeat center center/cover;
+			}
+		}
+		</style>
+
 	<section class="entry-content">
 
 		<section class="landing container-fluid">

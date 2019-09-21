@@ -52,7 +52,7 @@
                             <?php the_sub_field('single_quote'); ?>
                             </li>              
                         <?php endwhile; ?>
-                        <button class="reshuffle-btn" type="submit"><i class="fas fa-random"></i>Reshuffle Cards</button>
+                        <button id="reshuffle-btn" class="reshuffle-btn" type="submit"><i class="fas fa-random"></i>Reshuffle Cards</button>
                     </ul>  
                 <?php else: ?>
                     <p>Show dates to be announced soon.</p>
