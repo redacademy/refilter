@@ -1,4 +1,8 @@
 
+
+.page-template-page-all-projects{
+    background-repeat: repeat;
+}
 .projects-title{
     text-align: left;
     margin-top: 20px;
@@ -18,6 +22,9 @@
     display: inline;
  @include desktop{
      display: flex;
+     .partner-container{
+         margin-right: 20px;
+     }
  }
     justify-content: space-between;
 }
@@ -32,6 +39,7 @@
 
 .slide-container{
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .tabs {
@@ -42,4 +50,16 @@
 
 .active {
   border-bottom: 2px solid #000;
+}
+
+
+
+
+
+
+
+.single-projects-container{
+    padding: 30vh;
+    background-size: cover !important;
+    margin-bottom: 2rem;
 }

@@ -28,6 +28,7 @@
 		}
 </style> 	
 
+
 <section class="mobile landing container-fluid">
 			<section class="landing-wave"></section>
 				<h2><?php the_field('blog_post_title'); ?></h2>
@@ -76,7 +77,7 @@ foreach( $wpex_query->posts as $post ) : setup_postdata( $post ); ?>
 			<div class="related-posts-image-wrapper">
 			<div class="related-posts-text">
 			<h3 class="related-posts-title"><?php the_title(); ?></h3>
-			<h3 class="read-more">Read More -></h3>
+			<div class="read-wrapper"><h3 class="read-more">Read More </h3></div>
 			</div>
 			<a href="<?php the_permalink(); ?>"><img src="<?php the_field('landing_blog_post_image_desktop'); ?>" /></a>
 		</div>
