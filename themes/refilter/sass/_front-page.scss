@@ -78,7 +78,7 @@
         justify-content: center;
         flex-direction: column;
         align-items: flex-start;
-        color: #fff;
+        color: $white;
         border-radius: 4px;
         transform: translateX(65px) translateY(65px);
         z-index: 1;
@@ -101,13 +101,15 @@
     @include desktop {
       color: $light_green;
       margin-top: 1.5rem;
-      background: #fff;
+      padding: 0.6rem 2.8rem;
+      border: 1px solid $blue;
+      background: $white;
     }
   }
 }
 
 .wavy-testimonial {
-  color: #fff;
+  color: $white;
   padding: 2rem 0;
   line-height: 1.5;
   font-weight: 300;
@@ -204,6 +206,7 @@
 
     a {
       margin-top: 1rem;
+      padding: 0.5rem 2.8rem;
     }
   }
 }
@@ -279,6 +282,7 @@
   }
 
   .sbi_load_btn {
-    background: $light_green !important;
+    background: transparent !important;
+    color: $light_green !important;
   }
 }
