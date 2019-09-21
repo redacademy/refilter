@@ -7,6 +7,9 @@
     min-height: 1100px;
     @include desktop {
       min-height: 768px;
+      .landing-question{
+        margin-top: 6rem;
+      }
     }
   }
 
@@ -38,6 +41,12 @@
     }
   }
 
+  .landing .landing-quote{
+    @include desktop{
+      margin-bottom: 16rem;
+    }
+  }
+
   .landing-wave {
     margin-top: 12rem;
   }
@@ -45,6 +54,10 @@
   .landing-title {
     font-size: 3rem;
     font-weight: 300;
+    @include desktop{
+      font-weight: 600;
+      font-size: 4rem;
+    }
   }
 
   .landing-question {
