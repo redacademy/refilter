@@ -1282,6 +1282,9 @@ textarea {
       margin-left: 10px;
       font-size: 12px; }
 
+.page-template-page-all-projects {
+  background-repeat: repeat; }
+
 .projects-title {
   text-align: left;
   margin-top: 20px;
@@ -1316,7 +1319,8 @@ textarea {
   text-decoration: none; }
 
 .slide-container {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 30px; }
 
 .tabs {
   background: transparent;
@@ -1326,6 +1330,10 @@ textarea {
 .active {
   border-bottom: 2px solid #000; }
 
+.single-projects-container {
+  padding: 30vh;
+  background-size: cover !important;
+  margin-bottom: 2rem; }
 .page-id-727,
 .page-id-731 {
   background-size: cover !important; }
