@@ -12,15 +12,15 @@
 			<footer id="colophon" class="site-footer container" role="contentinfo">	
 			
 			<section class="footer-contact">
-					<p> Contact Us
+					<p><?php the_field('footer_contact'); ?>
 					<span><i class="fab fa-facebook-square"></i></span>
 					<span><i class="fab fa-instagram"></i></span>
 					</p>
 				</section>
 					
 				<section class="footer-copyright">
-					<p>&copy; 2018 - 2019 re:FILTER, Inc.</p>
-					<p>Non-profit # 1065546-5</p>
+					<p>&copy; <?php the_field('footer_copyright'); ?></p>
+					<p><?php the_field('footer_non_profit'); ?></p>
 				</section>			
 				</div><!-- .site-info -->
 				</footer><!-- #colophon -->

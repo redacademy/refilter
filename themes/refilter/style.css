@@ -822,7 +822,7 @@ textarea {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    color: #fff;
+    color: #F8F6F0;
     border-radius: 4px;
     -webkit-transform: translateX(65px) translateY(65px);
             transform: translateX(65px) translateY(65px);
@@ -840,10 +840,12 @@ textarea {
   .what-we-do .btn {
     color: #39A8AB;
     margin-top: 1.5rem;
-    background: #fff; } }
+    padding: 0.6rem 2.8rem;
+    border: 1px solid #00849F;
+    background: #F8F6F0; } }
 
 .wavy-testimonial {
-  color: #fff;
+  color: #F8F6F0;
   padding: 2rem 0;
   line-height: 1.5;
   font-weight: 300; }
@@ -918,7 +920,8 @@ textarea {
     .contribute-types li p {
       margin-top: 0.3rem; }
     .contribute-types li a {
-      margin-top: 1rem; }
+      margin-top: 1rem;
+      padding: 0.5rem 2.8rem; }
 
 .butt-count {
   padding: 0 0 2rem 0;
@@ -980,7 +983,8 @@ textarea {
       font-size: 2.8rem; } }
 
 .instagram-feed .sbi_load_btn {
-  background: #39A8AB !important; }
+  background: transparent !important;
+  color: #39A8AB !important; }
 
 /* Learn page */
 .page-id-16 {
@@ -1460,7 +1464,7 @@ textarea {
   @media (min-width: 768px) {
     .home-content-area {
       max-width: 100%; } }
-  @media (min-width: 481px) and (max-width: 767px) {
+  @media (min-width: 402px) and (max-width: 767px) {
     .home-content-area {
       background-color: yellow; } }
   .home-content-area .blog-banner {
