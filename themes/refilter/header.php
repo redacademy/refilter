@@ -15,35 +15,15 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<?php wp_head(); ?>
 	<style>
-		.landing {
-			background: url('<?php the_field('landing_image_mobile'); ?>') no-repeat center center/cover;
-		}
-
-		.about .landing {
-			background: url('<?php the_field('about_page_landing_image_mobile'); ?>') no-repeat center center/cover;
-			/* background: url('<?php the_field('about_page_landing_image_mobile'); ?>') no-repeat center center/cover; */
-			
-		}
-
-		@media only screen and (min-width: 768px) {
-			.landing {
-			background: url('<?php the_field('landing_image_desktop'); ?>') no-repeat center center/cover;
-			/* background: url('<?php the_field('about_page_landing_image_desktop'); ?>') no-repeat center center/cover; */
-			
-			}
-
-			.wavy-newsletter {
+		.wavy-newsletter {
 			background: url('<?php the_field('newsletter_image_mobile'); ?>') no-repeat center center/cover;
 		}	
+
+		@media only screen and (min-width: 768px) {
+			.wavy-newsletter {
+				background: url('<?php the_field('newsletter_image_desktop'); ?>') no-repeat center center/cover;
+			}	
 		}
-		
-		.wavy-testimonial {
-			background: url('<?php the_field('wavy_testimonial_image'); ?>') no-repeat center center/cover;
-		}	
-		
-		.wavy-newsletter {
-			background: url('<?php the_field('newsletter_image_desktop'); ?>') no-repeat center center/cover;
-		}		
 	</style>
 	</head>
 

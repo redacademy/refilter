@@ -1416,25 +1416,27 @@ textarea {
   background-size: cover !important;
   margin-bottom: 2rem; }
 
+.page-standard-class,
+.page-voting-class {
 .page-id-727,
 .page-id-731 {
   background-size: cover !important; }
-  .page-id-727 .membership,
-  .page-id-731 .membership {
+  .page-standard-class .membership,
+  .page-voting-class .membership {
     margin-top: 3rem; }
-    .page-id-727 .membership h1,
-    .page-id-731 .membership h1 {
+    .page-standard-class .membership h1,
+    .page-voting-class .membership h1 {
       margin: 6rem 0 1rem 0;
       font-size: 2.55rem;
       font-weight: 200; }
-    .page-id-727 .membership .gf_step.gf_step_next.gf_step_pending,
-    .page-id-731 .membership .gf_step.gf_step_next.gf_step_pending {
+    .page-standard-class .membership .gf_step.gf_step_next.gf_step_pending,
+    .page-voting-class .membership .gf_step.gf_step_next.gf_step_pending {
       opacity: 1; }
-      .page-id-727 .membership .gf_step.gf_step_next.gf_step_pending .gf_step_number,
-      .page-id-731 .membership .gf_step.gf_step_next.gf_step_pending .gf_step_number {
+      .page-standard-class .membership .gf_step.gf_step_next.gf_step_pending .gf_step_number,
+      .page-voting-class .membership .gf_step.gf_step_next.gf_step_pending .gf_step_number {
         margin: 0 0 0 2.3rem !important; }
-    .page-id-727 .membership .gf_step.gf_step_first.gf_step_completed,
-    .page-id-731 .membership .gf_step.gf_step_first.gf_step_completed {
+    .page-standard-class .membership .gf_step.gf_step_first.gf_step_completed,
+    .page-voting-class .membership .gf_step.gf_step_first.gf_step_completed {
       margin: 0 1rem;
       opacity: 1; }
 
