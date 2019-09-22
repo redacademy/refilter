@@ -10,8 +10,13 @@ const quotes =
 fetch(quotes)
   .then(quotes => quotes.json())
   .then(data => {
-    console.log();
-    data.quotes.forEach((quote, i) => {
-      console.log(quote, i);
+    // const final = [];
+    data.quotes.forEach(quote => {
+      console.log(quote);
+      const random = quote[Math.floor(Math.random() * quote.length)];
+      //   const rand = Math.floor(Math.random() * i);
+      //   final[rand] = quote;
+      console.log(random);
     });
+    // console.log(final);
   });
