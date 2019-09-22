@@ -2,6 +2,7 @@
 
 .page-template-page-all-projects{
     background-repeat: repeat;
+    
 }
 .projects-title{
     text-align: left;
@@ -20,7 +21,7 @@
 
 .partners-container{
     display: inline;
- @include desktop{
+ @include desktop{  
      display: flex;
      .partner-container{
          margin-right: 20px;
@@ -40,6 +41,10 @@
 .slide-container{
     text-align: center;
     margin-bottom: 30px;
+    @include desktop{
+         margin-right: 600px;
+
+    }
 }
 
 .tabs {
@@ -70,6 +75,11 @@
 
 
 .content-container-info{
+    position: relative;
+    top: 150px;
+    @include tablet{
+        position: unset;
+    }
 
 }
 
@@ -90,6 +100,7 @@
       position: relative;
      top: 65px;
      left: 20px;
+     
     
 
 }
@@ -107,5 +118,23 @@
     display: none;
     @include desktop{
         display: block;
+        max-width: 565px;
+        line-height: 1.9;
+        margin-left: 60px;
     }
+}
+
+
+.title-post-container{
+    margin-left: 20px;
+    @include tablet {
+        padding-top: 10px;
+    }
+
+}
+
+
+.projects-template-default.single-projects{
+    background-attachment: fixed;
+
 }

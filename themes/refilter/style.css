@@ -1321,6 +1321,9 @@ textarea {
 .slide-container {
   text-align: center;
   margin-bottom: 30px; }
+  @media (min-width: 768px) {
+    .slide-container {
+      margin-right: 600px; } }
 
 .tabs {
   background: transparent;
@@ -1341,6 +1344,13 @@ textarea {
       height: 50vh;
       margin: 0 auto; } }
 
+.content-container-info {
+  position: relative;
+  top: 150px; }
+  @media (min-width: 402px) and (max-width: 767px) {
+    .content-container-info {
+      position: unset; } }
+
 .the-tittle-post {
   color: #F8F6F0; }
 
@@ -1357,7 +1367,19 @@ textarea {
   display: none; }
   @media (min-width: 768px) {
     .single-page-excerpt {
-      display: block; } }
+      display: block;
+      max-width: 565px;
+      line-height: 1.9;
+      margin-left: 60px; } }
+
+.title-post-container {
+  margin-left: 20px; }
+  @media (min-width: 402px) and (max-width: 767px) {
+    .title-post-container {
+      padding-top: 10px; } }
+
+.projects-template-default.single-projects {
+  background-attachment: fixed; }
 
 .page-id-727,
 .page-id-731 {
