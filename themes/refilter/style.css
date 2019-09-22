@@ -1462,14 +1462,8 @@ textarea {
 .projects-template-default.single-projects {
   background-attachment: fixed; }
 
-  padding: 30vh;
-  background-size: cover !important;
-  margin-bottom: 2rem; }
-
 .page-standard-class,
 .page-voting-class {
-.page-id-727,
-.page-id-731 {
   background-size: cover !important; }
   .page-standard-class .membership,
   .page-voting-class .membership {
