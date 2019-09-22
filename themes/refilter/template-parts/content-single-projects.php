@@ -49,7 +49,7 @@
 </section>
 
 		
-<footer class="entry-footer">
+	<footer class="entry-footer">
 	<?php refilter_entry_footer(); ?>
 </footer><!-- .entry-footer -->
 

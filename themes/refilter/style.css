@@ -1335,6 +1335,11 @@ textarea {
   margin-bottom: 2rem;
   margin: 14px;
   border-radius: 5px; }
+  @media (min-width: 768px) {
+    .single-projects-container {
+      width: 100vh;
+      height: 50vh;
+      margin: 0 auto; } }
 
 .the-tittle-post {
   color: #F8F6F0; }
@@ -1347,6 +1352,12 @@ textarea {
   position: relative;
   top: 65px;
   left: 20px; }
+
+.single-page-excerpt {
+  display: none; }
+  @media (min-width: 768px) {
+    .single-page-excerpt {
+      display: block; } }
 
 .page-id-727,
 .page-id-731 {

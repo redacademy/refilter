@@ -59,8 +59,13 @@
     margin-bottom: 2rem;
     margin: 14px;
     border-radius: 5px;
+    @include desktop {
+        width: 100vh;
+        
+        height: 50vh;
+        margin: 0 auto;
+    }
 
-      
 }
 
 
@@ -87,4 +92,20 @@
      left: 20px;
     
 
+}
+
+.tab-container{
+
+    @include desktop{
+        
+    }
+
+}
+
+
+.single-page-excerpt{
+    display: none;
+    @include desktop{
+        display: block;
+    }
 }
