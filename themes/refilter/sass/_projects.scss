@@ -54,12 +54,58 @@
 
 
 
-
-
-
-
 .single-projects-container{
-    padding: 30vh;
-    background-size: cover !important;
+    height: 30vh;
     margin-bottom: 2rem;
+    margin: 14px;
+    border-radius: 5px;
+    @include desktop {
+        width: 100vh;
+        
+        height: 50vh;
+        margin: 0 auto;
+    }
+
+}
+
+
+.content-container-info{
+
+}
+
+
+.the-tittle-post{
+    color: $white;
+}
+
+.readmore-link{
+    text-decoration: none;
+     color: $white;
+    
+}
+
+
+
+.learn-more-arrow{
+      position: relative;
+     top: 65px;
+     left: 20px;
+    
+
+}
+
+.tab-container{
+
+    @include desktop{
+        
+    }
+
+}
+
+
+.single-page-excerpt{
+    display: none;
+    @include desktop{
+        display: block;
+    }
 }
