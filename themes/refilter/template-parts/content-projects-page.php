@@ -63,7 +63,7 @@
 						<div class="content-container-info">
 							
 							
-							<h3 class="the-tittle-post"> <?php the_title(); ?></h3>
+							<div class="title-post-container"><h3 class="the-tittle-post"> <?php the_title(); ?></h3></div>
 
 
 							<p class="single-page-excerpt"><?php the_field('single_project_description'); ?></p>
@@ -85,20 +85,20 @@
 			//   'posts_per_page' => 2,
 			  'date_query'    => array(
 				'column'  => 'post_date',
-				'after'   => '- 30 days'
+				'after'   => '- 365 days'
 		     	)
 		     	));
 		 								?>
 			   <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 			   <a  class ="readmore-link"  href="<?php the_permalink(); ?>">
 			   <div class="single-projects-container"
-			   style="background: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)), url('<?php the_field('single_project_background_image'); ?>') no-repeat center center/cover"
+			   style="background: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)), url('<?php the_field('single_project_background_image'); ?>') no-repeat  center center/cover "
 			   >
 			   
 						<div class="content-container-info">
 							
 							
-							<h3 class="the-tittle-post"> <?php the_title(); ?></h3>
+							<div class="title-post-container"><h3 class="the-tittle-post"> <?php the_title(); ?></h3></div>
 
 
 							<p class="single-page-excerpt"><?php the_field('single_project_description'); ?></p>
