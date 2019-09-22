@@ -38,8 +38,8 @@
 
 		
 			<div class="slide-container">
-            	<button class="tabs" data-tab="one">London</button>
-				<button class="tabs" data-tab="two">assdasd</>
+            	<button class="tabs" data-tab="one">Current</button>
+				<button class="tabs" data-tab="two">Past</button>
 			</div>
 			
 			<div id="one" class="tab-container">
@@ -55,37 +55,62 @@
 		     	));
 		 								?>
 			   <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-			   <article class="single-projects-container"
-			   style="background: url('<?php the_field('single_project_background_image'); ?>')"
+			   <a  class ="readmore-link"  href="<?php the_permalink(); ?>">
+			   <div class="single-projects-container"
+			   style="background: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)), url('<?php the_field('single_project_background_image'); ?>') no-repeat center center/cover"
 			   >
 			   
-					     <div> <?php the_title(); ?></div>
-						
-						<a href="<?php the_permalink(); ?>">Read More</a>
-				
-			   
-			   
-			   </article>
+						<div class="content-container-info">
+							
+							
+							<div class="title-post-container"><h3 class="the-tittle-post"> <?php the_title(); ?></h3></div>
+
+
+							<p class="single-page-excerpt"><?php the_field('single_project_description'); ?></p>
+
+							<h4 class="learn-more-arrow"> Learn More <i class="fas fa-arrow-right"></i> </h4>
+
+						</div>
+			  </div></a>
+
                  <!-- do stuff -->
               <?php endwhile; wp_reset_query(); ?>
 		
             </div>
 
 			<div id="two" class="tab-container" style="display:none">
-			
 			<?php
-				$loop = new WP_Query( array(
-				'post_type' => 'projects',
-				//   'posts_per_page' => 2,
-				'date_query'    => array(
+             $loop = new WP_Query( array(
+             'post_type' => 'projects',
+			//   'posts_per_page' => 2,
+			  'date_query'    => array(
 				'column'  => 'post_date',
-				'after'   => '- 30 days'
-				)
-				));
-						   ?>
-	<?php while ( $loop->have_posts() ) : $loop->the_post(); the_title(); ?>
-	<!-- do stuff -->
-	<?php endwhile; wp_reset_query(); ?>
+				'after'   => '- 365 days'
+		     	)
+		     	));
+		 								?>
+			   <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+			   <a  class ="readmore-link"  href="<?php the_permalink(); ?>">
+			   <div class="single-projects-container"
+			   style="background: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)), url('<?php the_field('single_project_background_image'); ?>') no-repeat  center center/cover "
+			   >
+			   
+						<div class="content-container-info">
+							
+							
+							<div class="title-post-container"><h3 class="the-tittle-post"> <?php the_title(); ?></h3></div>
+
+
+							<p class="single-page-excerpt"><?php the_field('single_project_description'); ?></p>
+
+							<h4 class="learn-more-arrow"> Learn More <i class="fas fa-arrow-right"></i> </h4>
+
+						</div>
+			  </div></a>
+
+                 <!-- do stuff -->
+              <?php endwhile; wp_reset_query(); ?>
+			
 				
 		</div>
 

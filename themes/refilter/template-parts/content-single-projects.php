@@ -29,11 +29,9 @@
 		}
 </style> 
 
-		   
-		<div> <?php the_title(); ?></div>
-
 
 <section class="mobile landing container-fluid">
+		<h1> <?php the_title(); ?></h1>
 			<section class="landing-wave"></section>
 				<h2><?php the_field('single_project_description'); ?></h2>
 				
@@ -51,7 +49,7 @@
 </section>
 
 		
-<footer class="entry-footer">
+	<footer class="entry-footer">
 	<?php refilter_entry_footer(); ?>
 </footer><!-- .entry-footer -->
 

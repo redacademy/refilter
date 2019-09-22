@@ -1402,6 +1402,9 @@ textarea {
 .slide-container {
   text-align: center;
   margin-bottom: 30px; }
+  @media (min-width: 768px) {
+    .slide-container {
+      margin-right: 600px; } }
 
 .tabs {
   background: transparent;
@@ -1412,6 +1415,53 @@ textarea {
   border-bottom: 2px solid #000; }
 
 .single-projects-container {
+  height: 30vh;
+  margin-bottom: 2rem;
+  margin: 14px;
+  border-radius: 5px; }
+  @media (min-width: 768px) {
+    .single-projects-container {
+      width: 100vh;
+      height: 50vh;
+      margin: 0 auto; } }
+
+.content-container-info {
+  position: relative;
+  top: 150px; }
+  @media (min-width: 402px) and (max-width: 767px) {
+    .content-container-info {
+      position: unset; } }
+
+.the-tittle-post {
+  color: #F8F6F0; }
+
+.readmore-link {
+  text-decoration: none;
+  color: #F8F6F0; }
+
+.learn-more-arrow {
+  position: relative;
+  top: 65px;
+  left: 20px; }
+
+.single-page-excerpt {
+  display: none; }
+  @media (min-width: 768px) {
+    .single-page-excerpt {
+      display: block;
+      max-width: 565px;
+      line-height: 1.9;
+      margin-left: 60px; } }
+
+.title-post-container {
+  margin-left: 20px; }
+  @media (min-width: 402px) and (max-width: 767px) {
+    .title-post-container {
+      padding-top: 10px; } }
+
+.projects-template-default.single-projects {
+  background-attachment: fixed; }
+
   padding: 30vh;
   background-size: cover !important;
   margin-bottom: 2rem; }
