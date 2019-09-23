@@ -1,107 +1,97 @@
 .single.single-events{
     
+    //Global Elements for Single Events
 
-    .blog-entry-content {
-        margin: 0 auto;
-        max-width: 80%;
-        
-        .overlapping-content {
+    letter-spacing: 0.1rem;
+    
+    // Landing Section
+
+    .landing-single-event{
+
+        color:$white;
+        padding: 1rem;
+        height: 100vh;
+
+        h1{
+            font-size: 2.5rem;
             
-            background-color: orange;
-            .right-image {
-                position: relative;
-                left: 60px;
-                bottom: 20px;
-            }
-            img  {
-                max-width: 80%;
-                border-radius: 10px;
+        }
+        
+        h3{
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin: 0;
+            line-height: 3rem;
+        }
+        
+
+
+        @include desktop{
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: 800px;
         }
     }
-        .related-posts-wrapper {
-                .related-posts-title {
-                    position: absolute;
-                    margin: 0;
-                    top: 40px;
-                    left: 40px;
-                    z-index: 1; 
-                    color: white;
-                }
-
-                .read-more {
-                    position: absolute;
-                    margin: 0;
-                    bottom: 40px;
-                    left: 40px;
-                    z-index: 1; 
-                    color: white;
-                }
-            
-        
-            .related-posts-image-wrapper {
-                position: relative;
-                img { 
-                    border-radius: 10px;
-                }
-        }
-        }
-    }
-
-    /* desktop */
-    @media only screen and (min-width: 768px) {
-        .blog-entry-content {
-            background-color: green;
-            max-width: 55%;
-            padding: 2rem;
-            .overlapping-content {
-                
-            position: relative;
-            background-color: yellow;
-                .right-image {
-                    left: 170px;
-                    bottom: 60px;
-                }
-                img  {
-                    width: 67%;
-            
-            }
-        }
-            .related-posts-wrapper {
-                display: flex;
+    
+    .rsvp{
+        display: flex;
         justify-content: center;
-                    .related-posts-title {
-                        position: absolute;
-                        margin: 0;
-                        top: 40px;
-                        left: 30px;
-                        font-size: 1.5rem;
-                    }
-        
-                    .read-more {
-                        position: absolute;
-                        margin: 0;
-                        bottom: 40px;
-                        left: 40px;
-                        z-index: 1; 
-                        color: white;
-                        font-size: 1.5rem;
-                    }
-                
+        a {
+            text-decoration: non e;
+            color: $white;
             
-                .related-posts-image-wrapper {
-                    position: relative;
-                    max-width: 400px;
-                    
-                    
-                    img { 
-                        border-radius: 10px;
-                    
-                        
-                    }
-            }
-            }
+          }
+        .rsvp-btn {
+        padding: 18px 50px;
+        letter-spacing: 0.1rem;
+        font-weight: 500;
+        font-family: $font__hero-image-sub-heading-description;
+        font-size: 1.2rem;
+        background-color: $light_green;
+        border: $light_green;
+        box-shadow: 0 4px 4px rgba(14, 11, 11, 0.35);
+        border-radius: 5px;
+        text-decoration: none;
+        i {
+            margin-left: 10px;
+            font-size: 18px;
+            margin-right: 1rem;
         }
+        }
+    }
+    
+    // Single Event Content Section
+    .single-event-content {
+        display: flex;
+        width: 80%;
         
+
+        .single_event_description{
+            text-align: left;
+            justify-content: left;
         }
 
+        iframe{
+            width: 99%;
+            box-shadow: 0 0 10px rgba(14, 11, 11, 0.35);
+            border-radius: 5px;
+            height: 450px;
+        }
+
+       @include desktop{
+        width: 40%;
+        padding: 2rem;
+        flex-wrap: wrap;
+        background-color: #faf7f2;
+        padding: 2rem;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(14, 11, 11, 0.35);
+        iframe{
+            height: 550px;
+            width: 100%;    
+           }
+       }
+
+       
+    }
 }
