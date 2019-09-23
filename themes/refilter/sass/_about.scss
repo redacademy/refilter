@@ -2,25 +2,26 @@
 
     
 .about-content-area {
-    max-width: 480px;
     margin: 0 auto;
+    max-width: 767px;
+    h1, h2 {
+        text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
+    }
     @include desktop {
         max-width: 100%;
-      }
+    }
     
 .about-site-main {
-    max-width: 480px;
     margin: 0 auto;
     @include desktop {
         max-width: 100%;
-      }
+    }
     .about-entry-title {
         position: absolute;
         top: 40vh;
-        
         @include desktop {
             max-width: 100%;
-          }    
+        }    
     }
 }
     .mission-title {
@@ -29,50 +30,39 @@
         font-size: 2.5rem;
         padding-top: 6%;
         padding-bottom: 3%;
-        }
+    }
     }
     .mission {
-        
         @include desktop {
             display: flex;
             flex-direction: row;
             max-width: 55%;
-          }
+        }
         .mission-1-wrapper {
-            
-        @include desktop {
+            padding: 0px 5px 10px 5px;    
+            @include desktop {
             height: 27rem;
-           
-               }    
-         .icon-1-image-wrapper {
-             max-width: 20%;
-             
-             @include desktop {
-                 
-               }    
-         }
-         }
-
+            }    
+        .icon-1-image-wrapper {
+            max-width: 20%;
+        }
+        }
          .mission-2-wrapper {
-            
-        @include desktop {
+            padding: 0px 5px 10px 5px;      
+            @include desktop {
             height: 27rem;
-                
            } 
          .icon-2-image-wrapper {
-             max-width: 20%;
-             
-             @include desktop {
-                 
-             }    
-         }
-         }
+            max-width: 20%;
+        }
+        }
     }
 
     .who-we-are-header {
        text-align: center;
+       padding-top: 4rem;
        @include desktop {
-             font-size: 2.5rem;    
+            font-size: 2.5rem;    
     }  
     }
 
@@ -91,16 +81,14 @@
             @include desktop {
                 text-align: left;
                 padding-left: 1rem;
-                
-              }
+            }
         }
         h3 {
             text-align: center;
             @include desktop {
                 text-align: left;
                 padding-left: 1rem;
-                
-              }
+            }
         }
         p {
             display: none;
@@ -108,32 +96,28 @@
                 max-width: 100%;
                 display: block;
                 padding-left: 1rem;
-              }
+            }
         }
         .staff-member-profile-wrapper {
-
             .down-arrow-1{
                 text-align: center;
                 @include desktop {
                    display: none;
-                  }
+                }
             }
-
             .up-arrow{
                 text-align: center;
                 @include desktop {
                    display: none;
-                  }
+                }
             }
-
             .staff-member-mobile-description {
                 @include desktop {
                     display: none;
-                   }
+                }
             }
             @include desktop {
                 height: 33rem;
-                
             }    
         .staff-member-image-wrapper {
             max-width: 70%;
@@ -144,44 +128,37 @@
             }    
         }
     }
-
-
     .staff-member-text-wrapper {
         @include desktop {
             height: 33rem;
             .staff-member-1-description {
                 line-height: 2rem;
             }
-          }
+        }
         .staff-member-fun-fact-container {
             display: none;
-            
+            background-color: $light_green;
             @include desktop {
                 display: flex;
-              }
+            }
               .staff-member-fun-fact {
-                  padding:  1rem;
-              }
+                padding:  1rem;
+            }
             .staff-member-fun-fact-icon-wrapper {
                 @include desktop {
                     max-width: 10%;
                     padding-top: 1rem;
                     padding-bottom: 1rem;
-                  }
+                }
             } 
         }
     }
-
         .social-media-icon-container {
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
             max-width: 65%;
             padding-top: 4%;
-            @include desktop {
-                
-                
-                }
         }
     }
 }
