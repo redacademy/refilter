@@ -10,7 +10,7 @@
 
 <section class="upcoming-events-content">
 
-	<section class="upcoming-events container">
+	<section class="upcoming-events">
 		
 		<div class="event-wallpaper" style="background: url('<?php the_field('upcoming_single_event_background_thumbnail'); ?>') no-repeat center center/cover; background-size: 100% 50%; background-position-y: top; background-color: #94c8c0;">
 			<div class="upcoming-date">

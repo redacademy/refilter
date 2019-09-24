@@ -74,12 +74,25 @@
 
     .upcoming-events-content{ 
 
+        display: flex;
+        align-content: center;
+        justify-content: center;
+     
+        @include desktop {
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;  
+            flex-wrap: wrap;  
+            width: 1200px;
+        }
+
         .upcoming-events-title{
             padding: 1rem 0rem;
+            width: 100%;
+            margin-left: 0;
 
             @include desktop{
                 padding: 1rem 6.3rem;
-
                 h3{
                     margin-top:0;
                 }
@@ -89,20 +102,8 @@
     
     .upcoming-events {  
         display: flex;
-     
-        @include desktop {
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;  
-            -moz-box-orient: vertical;
-            flex-wrap: wrap;  
-            width: 1200px;
-        }
-
-        .upcoming-events-title {
-            width: 100%;
-            margin-left: 0;
-        }
+        flex-direction: row;
+       
 
         .event-wallpaper {
             position: relative;
@@ -113,7 +114,7 @@
             background-size: 664px 1022px; 
             border-radius: 5px;
             margin: 1.5rem;
-            width: 100%;
+            width: 330px;
             color: $white;
 
             @include desktop {
@@ -129,11 +130,12 @@
                 border-radius: 50%;
                 position: absolute;
                 top: 10px;
-                right: 205px;
-                padding: 1rem 1.4rem;
+                right:80%;
+                padding: 15px 22px;
+                margin: 0;
 
                 @include desktop {
-                    right: 200px;
+                    right: 255px;
                 }
                 
 
@@ -162,7 +164,7 @@
             text-align: flex-start;
             margin-left: 1.5rem;
             align-content: center;
-            margin-bottom: 3.5rem;
+            margin-bottom: 3rem;
             font-size: 1.5rem;
 
             @include desktop{
@@ -275,6 +277,7 @@
             padding-top: 1rem;
             border-top: solid $grey 1px;
             width: 100%;
+            margin-bottom: 0;
         } 
 
         .standard-class {
