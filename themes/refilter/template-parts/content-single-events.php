@@ -67,7 +67,7 @@
 		$wpex_query = new wp_query( $args );
 
 		// Loop through posts
-		foreach( $wpex_query->posts as $events ) : setup_postdata( $events ); ?>
+		foreach( $wpex_query->events as $events ) : setup_postdata( $events ); ?>
 			
 				
 					<div class="related-posts-image-wrapper">
