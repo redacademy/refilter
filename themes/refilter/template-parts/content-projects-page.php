@@ -114,25 +114,25 @@
 				
 		</div>
 
-            <section class ="container container-content"> 
+            <section class ="container container-content projects"> 
 					<h1 class="project-partner-title"><?php the_field('project_partner_title'); ?> </h1>
 					<p class="partner-description"> <?php the_field('projects_partner_description'); ?>  </p>    
 				
 				<div class="partners-container">
 					<div class="partner-container">   
-						<h1 class="partner-one"> <?php the_field('partner_one'); ?>  </h1>   
+						<h1 class="partner-number"> <?php the_field('partner_one'); ?>  </h1>   
 						<p class="partner-description"> <?php the_field('partner_one_description'); ?>  </p>   
 						<a class="partner-website" href="<?php the_field('projects_partner_website_one'); ?>">www.pdl.smugmug.com</a>
 					</div>
 
 					<div class="partner-container">
-						<h1 class="partner-two"> <?php the_field('partner_two'); ?>  </h1>      
+						<h1 class="partner-number"> <?php the_field('partner_two'); ?>  </h1>      
 						<p class="partner-description"> <?php the_field('partner_two_description'); ?>  </p>   
 						<a class="partner-website" href="<?php the_field('projects_partner_website_two'); ?>"> @hillseyed</a>
 					</div>
 
 					<div class="partner-container">
-						<h1 class="partner-two"> <?php the_field('partner_three'); ?>  </h1>      
+						<h1 class="partner-number"> <?php the_field('partner_three'); ?>  </h1>      
 						<p class="partner-description"> <?php the_field('partner_three_description'); ?>  </p>   
 						<a class="partner-website" href="<?php the_field('projects_partner_website_three'); ?>">www.banancampphoto.com</a>
 					</div>
