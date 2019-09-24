@@ -1,4 +1,13 @@
+.single-projects {
+        .blog-entry-content {
+            background: transparent;
 
+            @include desktop {
+                background: $white;
+                margin: 0 auto;
+            }
+        }
+}
 
 .page-template-page-all-projects{
     background-repeat: repeat;
@@ -61,6 +70,7 @@
 
 .single-projects-container{
     height: 30vh;
+    padding: 45px;
     margin-bottom: 2rem;
     margin: 14px;
     border-radius: 5px;
@@ -74,8 +84,7 @@
 
 
 .content-container-info{
-    position: relative;
-    top: 150px;
+
     @include tablet{
         position: unset;
     }
@@ -85,6 +94,7 @@
 
 .the-tittle-post{
     color: $white;
+    font-size: 25px;
 }
 
 .readmore-link{

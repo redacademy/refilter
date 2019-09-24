@@ -85,7 +85,7 @@
 			//   'posts_per_page' => 2,
 			  'date_query'    => array(
 				'column'  => 'post_date',
-				'after'   => '- 365 days'
+				'order' => 'DESC'
 		     	)
 		     	));
 		 								?>
