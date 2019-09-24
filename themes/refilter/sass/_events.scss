@@ -24,10 +24,12 @@
             line-height: 3rem;
         }
         
-
+        i{
+            margin-right: 1rem;
+        }
 
         @include desktop{
-            flex-direction: row;
+            flex-direction: column;
             flex-wrap: wrap;
             height: 800px;
         }
@@ -37,12 +39,12 @@
         display: flex;
         justify-content: center;
         a {
-            text-decoration: non e;
+            text-decoration: none;
             color: $white;
             
           }
         .rsvp-btn {
-        padding: 18px 50px;
+        padding: 18px 40px;
         letter-spacing: 0.1rem;
         font-weight: 500;
         font-family: $font__hero-image-sub-heading-description;
@@ -52,6 +54,12 @@
         box-shadow: 0 4px 4px rgba(14, 11, 11, 0.35);
         border-radius: 5px;
         text-decoration: none;
+        margin-top: 2rem;
+
+        @include desktop{
+            padding: 18px 50px;
+        }
+
         i {
             margin-left: 10px;
             font-size: 18px;
@@ -77,15 +85,24 @@
             border-radius: 5px;
             height: 450px;
         }
+        
+        .rsvp{
+            
+            .rsvp-btn {
+                margin-top: 0;    
+                margin-bottom: 4.5rem;
+            }
+        }
 
        @include desktop{
-        width: 40%;
+        width: 65%;
         padding: 2rem;
         flex-wrap: wrap;
         background-color: #faf7f2;
         padding: 2rem;
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(14, 11, 11, 0.35);
+        margin-top: 5rem;
         iframe{
             height: 550px;
             width: 100%;    
