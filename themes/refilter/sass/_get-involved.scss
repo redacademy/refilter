@@ -24,7 +24,7 @@
     li{
         margin-bottom: 0.75rem;
     }
-        
+
     // Landing Section
 
     .landing{
@@ -43,6 +43,8 @@
             font-weight: 300;
             margin-top: 0;
             line-height: 3rem;
+            align-self: flex-start;
+            justify-content: center;
         }
     }
 
@@ -293,7 +295,6 @@
         }
     }
 
-
     // Support Our Cause Section
     
     .support-our-cause {
@@ -310,3 +311,4 @@
         }
     }
 }
+
