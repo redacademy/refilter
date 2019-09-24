@@ -104,10 +104,24 @@
         </section>
 
         <section class="wavy-newsletter container-fluid">
-				<h1 class="wavy-newsletter-title"><?php the_field('newsletter_title'); ?></h1>										
+		<style>
+            .wavy-newsletter{
+                background: url('<?php the_field('newsletter_image', get_option('page_for_posts')); ?>') no-repeat center center/cover; 
+                background-size: 100% 100%;
+			}
+					
+            @media only screen and (min-width: 768px) {
+            .wavy-newsletter {
+                background: url('<?php the_field('newsletter_image_desktop', get_option('page_for_posts') ); ?>') no-repeat center center/cover;
+                background-size: 120% 100%;
+                background-color: transparent;
+            }
+		    }
+        </style>
+			<h1 class="wavy-newsletter-title"><?php the_field('newsletter_title', get_option('page_for_posts')); ?></h1>										
 				<form class="wavy-newsletter-form">
-				<input class="wavy-newsletter-name" type="text" placeholder="<?php the_field('newsletter_name'); ?>" />
-				<input class="wavy-newsletter-email" type="text" placeholder="<?php the_field('newsletter_email'); ?>" />													
+				<input class="wavy-newsletter-name" type="text" placeholder="<?php the_field('newsletter_name', get_option('page_for_posts')); ?>" />
+				<input class="wavy-newsletter-email" type="text" placeholder="<?php the_field('newsletter_email', get_option('page_for_posts')); ?>" />													
 				<button class="btn green-empty" type="submit">Join Mailing List</button>
 			</form>
 		</section>
