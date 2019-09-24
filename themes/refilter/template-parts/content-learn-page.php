@@ -8,7 +8,7 @@
 ?>
 
 <main id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<section class="entry-content learn">
+	<section class="entry-content-learn">
 
     <section class="landing container-fluid">
             <section class="landing-wave"></section>
@@ -39,7 +39,7 @@
             <?php if(have_rows('quotes')) :
                  $i = 0;    
                     ?>
-                    <ul class="quotes-grid">
+                    <ul class="quotes-grid" id="quotes-grid">
                         <?php while( have_rows('quotes')) : the_row();
                             $i++;
                             if( $i > 8 )
@@ -52,10 +52,10 @@
                             <?php the_sub_field('single_quote'); ?>
                             </li>              
                         <?php endwhile; ?>
-                        <button class="reshuffle-btn" type="submit"><i class="fas fa-random"></i>Reshuffle Cards</button>
+                        <button id="reshuffle-btn" class="reshuffle-btn"><i class="fas fa-random"></i>Reshuffle Cards</button>
                     </ul>  
                 <?php else: ?>
-                    <p>Show dates to be announced soon.</p>
+                    <p>Quotes to be shown soon.</p>
                 <?php endif; ?>
                     </ul>
             </section>
