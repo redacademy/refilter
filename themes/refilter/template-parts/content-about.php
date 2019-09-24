@@ -104,6 +104,21 @@
         </section>
 
         <section class="wavy-newsletter container-fluid">
+		<style>
+            .wavy-newsletter{
+                background: url('<?php the_field('newsletter_image', get_option('page_for_posts')); ?>') no-repeat center center/cover; 
+                background-size: 100% 100%;
+			}
+					
+            @media only screen and (min-width: 768px) {
+            .wavy-newsletter {
+                background: url('<?php the_field('newsletter_image_desktop', get_option('page_for_posts') ); ?>') no-repeat center center/cover;
+                background-size: 120% 100%;
+                background-color: transparent;
+            }
+		    }
+        </style>
+			<h1 class="wavy-newsletter-title"><?php the_field('newsletter_title', get_option('page_for_posts')); ?></h1>										
 				<h1 class="wavy-newsletter-title"><?php the_field('newsletter_title'); ?></h1>										
 				<?php echo do_shortcode('[gravityform id=3 ajax=true tabindex=49]'); ?>
 		</section>
