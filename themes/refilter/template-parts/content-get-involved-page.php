@@ -30,7 +30,9 @@
                     <a href="#become-a-member"><i class="fas fa-sort-down"></i></a> 
                 </section>
     </section>
-        
+    <div class="upcoming-events-title container">
+				<h3><?php the_field('upcoming_events_title'); ?></h3>
+		</div>   
     <?php
         //   $blog_posts = get_posts(array(
         //     'post_type' => 'events',
