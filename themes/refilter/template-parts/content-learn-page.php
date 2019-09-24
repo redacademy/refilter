@@ -27,7 +27,7 @@
 				<h1 class="landing-title"><?php the_field('learn_landing_title'); ?></h1>
 				<h2 class="landing-question"><?php the_field('learn_landing_question'); ?></h2>
                 <h3 class="landing-quote"><?php the_field('learn_landing_quote'); ?></h3>
-                <button class="learn-btn" type="submit">Learn More <i class="fas fa-arrow-right"></i></button>
+                <button class="learn-btn" type="submit">Learn More <i class="fas fa-arrow-right fa-sm"></i></button>
 			</section>
 
             <section class="how-to-help container container-content">
@@ -39,7 +39,7 @@
             <?php if(have_rows('quotes')) :
                  $i = 0;    
                     ?>
-                    <ul class="quotes-grid">
+                    <ul class="quotes-grid" id="quotes-grid">
                         <?php while( have_rows('quotes')) : the_row();
                             $i++;
                             if( $i > 8 )
@@ -52,10 +52,10 @@
                             <?php the_sub_field('single_quote'); ?>
                             </li>              
                         <?php endwhile; ?>
-                        <button id="reshuffle-btn" class="reshuffle-btn" type="submit"><i class="fas fa-random"></i>Reshuffle Cards</button>
+                        <button id="reshuffle-btn" class="reshuffle-btn"><i class="fas fa-random"></i>Reshuffle Cards</button>
                     </ul>  
                 <?php else: ?>
-                    <p>Show dates to be announced soon.</p>
+                    <p>Quotes to be shown soon.</p>
                 <?php endif; ?>
                     </ul>
             </section>

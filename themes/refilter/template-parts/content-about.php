@@ -28,10 +28,8 @@
 
 
 	<article class="entry-content">
-	
     <section class="wave"></section>
         <div class="about-title">
-            
         </div>
         <?php the_content(); ?>
 
@@ -42,11 +40,8 @@
 				<h3 class="landing-quote"><?php the_field('who_we_are_page_quote'); ?></h3>
 				<a class="btn green-full" href="#">Learn More</a>
         </section>
-            
             <h2 class="mission-title"><?php the_field('mission_title'); ?></h2>
-
         <section class="mission container container-content">
-        
             <div class="mission-1-wrapper">	
                 <div class="icon-1-image-wrapper">
                     <?php 
@@ -66,59 +61,46 @@
                         <img src="<?php echo $image_icon2['url']; ?>" alt="<?php echo $image_icon2['alt']; ?>" /> <!--displays the URL for the image variable and also the alt tag which is entered in the WordPress media library-->
                     <?php }; ?> <!--ends the if statement -->
                 </div>
-                <h2 class="mission-statment-2"><?php the_field('mission_statement_2'); ?></h2>
-                <p class="mission-description-2"><?php the_field('mission_description_2'); ?></p>
-            </div>          
+                    <h2 class="mission-statment-2"><?php the_field('mission_statement_2'); ?></h2>
+                    <p class="mission-description-2"><?php the_field('mission_description_2'); ?></p>
+                </div>          
         </section>
-        
+
         <h2 class="who-we-are-header"><?php the_field('who_we_are_header'); ?></h2>
 
         <section class="who-we-are-container">
-        <?php
-
-/*
-* Loop through a repeater field
-*/        
-
-            if(get_field('members')): ?>
-
-    <?php while(the_repeater_field('members')): ?>
-    <div class="staff-member-profile-wrapper">
-        <div class="staff-member-image-wrapper">                  
-            <img src="<?php the_sub_field('staff_member_picture'); ?>" alt="<?php the_sub_field('alt'); ?>" />
+            <?php if(get_field('members')): ?>
+            <?php while(the_repeater_field('members')): ?>
+            <div class="staff-member-profile-wrapper">
+                <div class="staff-member-image-wrapper">                  
+                    <img src="<?php the_sub_field('staff_member_picture'); ?>" alt="<?php the_sub_field('alt'); ?>" />
+                </div>
+            <div class="social-media-icon-container">
+                <div class="ln-icon-wrapper"><i class="fab fa-linkedin-in fa-3x"></i></div>
+                <div class="ig-icon-wrapper"><i class="fab fa-instagram fa-3x"></i></div>
+                <div class="fb-icon-wrapper"><i class="fab fa-facebook-square fa-3x"></i></div>
+            </div>
+            <div class="down-arrow-1" id="down-arrow-1"><i class="fas fa-chevron-down"></i></div>
+            <div class="up-arrow" style="display:none;"><i class="fas fa-chevron-up"></i></div>
         </div>
-        <div class="social-media-icon-container">
-            <div class="ln-icon-wrapper"><i class="fab fa-linkedin-in fa-3x"></i></div>
-            <div class="ig-icon-wrapper"><i class="fab fa-instagram fa-3x"></i></div>
-            <div class="fb-icon-wrapper"><i class="fab fa-facebook-square fa-3x"></i></div>
-        </div>
-
-        <div class="down-arrow-1" id="down-arrow-1"><i class="fas fa-chevron-down"></i></div>
-        <div class="up-arrow" style="display:none;"><i class="fas fa-chevron-up"></i></div>
-    </div>
         <div class="staff-member-text-wrapper">       
-        <h2 class="staff-member-name"><?php the_sub_field('staff_member_name'); ?></h2>
-        <h3 class="staff-member-title"><?php the_sub_field('staff_member_title'); ?></h3>
+            <h2 class="staff-member-name"><?php the_sub_field('staff_member_name'); ?></h2>
+            <h3 class="staff-member-title"><?php the_sub_field('staff_member_title'); ?></h3>
         <!-- displays the following content only on mobile arrow click -->         
             <div class="staff-member-mobile-description" style="display:none;"><?php the_sub_field('staff_member_description'); ?></div>
             <div class="mobile-fun-fact-header" style="display:none;"><h3>Planet Practice</h3></div> 
             <div class="staff-member-mobile-fun-fact" style="display:none;"><?php the_sub_field('staff_member_fun_fact'); ?></div>
         <!-- end mobile content --> 
         <p class="staff-member-description"><?php the_sub_field('staff_member_description'); ?></p>
-        
         <div class="staff-member-fun-fact-container">
             <div class="staff-member-fun-fact-icon-wrapper">
                 <img src="<?php the_sub_field('staff_member_fun_fact_icon'); ?>" alt="<?php the_sub_field('alt'); ?>" />
             </div>   
                 <p class="staff-member-fun-fact"><?php the_sub_field('staff_member_fun_fact'); ?></p>
             </div>
-        
         </div>
-        
-    <?php endwhile; ?>
-
- <?php endif; ?>
-                            
+            <?php endwhile; ?>
+            <?php endif; ?>
         </section>
 
         <section class="wavy-newsletter container-fluid">
