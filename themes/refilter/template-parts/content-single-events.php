@@ -45,44 +45,21 @@
 			<h3><?php the_field('other_events_title'); ?></h3>
 		</section>	
 
-	<?php
-		// Default arguments
-		$args = array(
-			'posts_per_page' => 2, // How many items to display
-			'post__not_in'   => array( get_the_ID() ), // Exclude current post
-			'no_found_rows'  => true, // We don't ned pagination so this speeds up the query
-		);
-
-		// Check for current post category and add tax_query to the query arguments
-		$cats = wp_get_post_terms( get_the_ID(), 'category' ); 
-		$cats_ids = array();  
-		foreach( $cats as $wpex_related_cat ) {
-			$cats_ids[] = $wpex_related_cat->term_id; 
-		}
-		if ( ! empty( $cats_ids ) ) {
-			$args['category__in'] = $cats_ids;
-		}
-
-		// Query posts
-		$wpex_query = new wp_query( $args );
-
-		// Loop through posts
-		foreach( $wpex_query->events as $events ) : setup_postdata( $events ); ?>
-			
-				
-					<div class="related-posts-image-wrapper">
-					<div class="related-posts-text">
-					<h3 class="related-posts-title"><?php the_title(); ?></h3>
-					<div class="read-wrapper"><h3 class="read-more">Read More </h3></div>
-					</div>
-					<a href="<?php the_permalink(); ?>"><img src="<?php the_field('landing_blog_post_image_desktop'); ?>" /></a>
-				</div>
 		<?php
-		// End loop
-		endforeach;
-
-		// Reset post data
-		wp_reset_postdata(); ?></div>
+        //   $blog_posts = get_posts(array(
+        //     'post_type' => 'events',
+		// 	'numberposts' => 2,
+		//   ));
+		$args = array(  
+			'post_type' => 'events',
+			'posts_per_page' => 2
+		);
+	 
+		$blog_posts = new WP_Query( $args );
+		while($blog_posts->have_posts()): $blog_posts->the_post();
+			get_template_part('template-parts/content', 'single-events-thumbnail');
+		endwhile; wp_reset_postdata();
+		?>
 
 	</section>
 
