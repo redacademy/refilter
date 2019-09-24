@@ -84,27 +84,27 @@
             </section>
 
             <section class="template-download container-fluid">
-                <span class="wallpaper" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('<?php the_field('wallpaper_1'); ?>') no-repeat center center/cover;">
+                <span class="wallpaper" style="background: url('<?php the_field('wallpaper_1'); ?>') no-repeat center center/cover; background-position-y: 90%;">
                     <a class="download-btn" href="#"><i class="fas fa-file-download"></i></a>    
-                    <h2 class="template-download-question"><?php the_field('wallpaper_1_question'); ?></h2>
+                    <!-- <h2 class="template-download-question"><?php the_field('wallpaper_1_question'); ?></h2>
                     <p class="template-download-description"><?php the_field('wallpaper_1_description'); ?></p>	
                     <a class="learn-btn"href="#">Learn More <i class="fas fa-arrow-right"></i></a>
-                    <img class="re-logo" src="<?php the_field('refilter_logo_1'); ?>" >    
+                    <img class="re-logo" src="<?php the_field('refilter_logo_1'); ?>" >    --> 
                 </span>
-                    <span class="wallpaper" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('<?php the_field('wallpaper_2'); ?>') no-repeat center center/cover;">
+                    <span class="wallpaper" style="background: url('<?php the_field('wallpaper_2'); ?>') no-repeat center center/cover; background-position-y: 90%;">
                     <a class="download-btn" href="#"><i class="fas fa-file-download"></i></a>    
-                    <h2 class="template-download-question"><?php the_field('wallpaper_2_question'); ?></h2>
+                    <!-- <h2 class="template-download-question"><?php the_field('wallpaper_2_question'); ?></h2>
                     <p class="template-download-description"><?php the_field('wallpaper_2_description'); ?></p>	
                     <a class="learn-btn" href="#">Learn More <i class="fas fa-arrow-right"></i></a>
-                    <img class="re-logo" src="<?php the_field('refilter_logo_1'); ?>" >  
+                    <img class="re-logo" src="<?php the_field('refilter_logo_1'); ?>" >   -->
                 </span>
                 
-                <span class="wallpaper" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('<?php the_field('wallpaper_3'); ?>') no-repeat center center/cover;">
+                <span class="wallpaper" style="background: url('<?php the_field('wallpaper_3'); ?>') no-repeat center center/cover; background-position-y: 90%;">
                     <a class="download-btn" href="#"><i class="fas fa-file-download"></i></a>    
-                    <h2 class="template-download-question"><?php the_field('wallpaper_3_question'); ?></h2>
+                    <!-- <h2 class="template-download-question"><?php the_field('wallpaper_3_question'); ?></h2>
                     <p class="template-download-description"><?php the_field('wallpaper_3_description'); ?></p>	
                     <a class="learn-btn" href="#">Learn More <i class="fas fa-arrow-right"></i></a>
-                    <img class="re-logo" src="<?php the_field('refilter_logo_1'); ?>" > 
+                    <img class="re-logo" src="<?php the_field('refilter_logo_1'); ?>" >  -->
                 </span>
             </section>
 
