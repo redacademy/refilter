@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying page content in page.php.
+ * Template part for displaying page content in page-about.php.
  *
  * @package Refilter
  */
@@ -119,18 +119,8 @@
 		    }
         </style>
 			<h1 class="wavy-newsletter-title"><?php the_field('newsletter_title', get_option('page_for_posts')); ?></h1>										
-				<form class="wavy-newsletter-form">
-				<input class="wavy-newsletter-name" type="text" placeholder="<?php the_field('newsletter_name', get_option('page_for_posts')); ?>" />
-				<input class="wavy-newsletter-email" type="text" placeholder="<?php the_field('newsletter_email', get_option('page_for_posts')); ?>" />													
-				<button class="btn green-empty" type="submit">Join Mailing List</button>
-			</form>
+				<h1 class="wavy-newsletter-title"><?php the_field('newsletter_title'); ?></h1>										
+				<?php echo do_shortcode('[gravityform id=3 ajax=true tabindex=49]'); ?>
 		</section>
-
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
-				'after'  => '</div>',
-			) );
-		?>
 	</article><!-- .entry-content -->
 </main><!-- #post-## -->

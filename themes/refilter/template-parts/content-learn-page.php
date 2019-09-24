@@ -52,12 +52,12 @@
                             <?php the_sub_field('single_quote'); ?>
                             </li>              
                         <?php endwhile; ?>
-                        <button id="reshuffle-btn" class="reshuffle-btn"><i class="fas fa-random"></i>Reshuffle Cards</button>
                     </ul>  
                 <?php else: ?>
                     <p>Quotes to be shown soon.</p>
                 <?php endif; ?>
                     </ul>
+                    <button id="reshuffle-btn" class="reshuffle-btn"><i class="fas fa-random"></i>Reshuffle Cards</button>
             </section>
 
             <section class="wavy-quiz container-fluid">
@@ -122,12 +122,8 @@
                     }
 		            }
                 </style>
-                <h1 class="wavy-newsletter-title"><?php the_field('newsletter_title'); ?></h1>										
-				<form class="wavy-newsletter-form">
-				<input class="wavy-newsletter-name" type="text" placeholder="<?php the_field('newsletter_name'); ?>" />
-				<input class="wavy-newsletter-email" type="text" placeholder="<?php the_field('newsletter_email'); ?>" />													
-				<button class="btn green-empty" type="submit">Join Mailing List</button>
-			</form>
+                <h1 class="wavy-newsletter-title"><?php the_field('newsletter_title'); ?></h1>									
+				<?php echo do_shortcode('[gravityform id=3 ajax=true tabindex=49]'); ?>
 		</section>
 	</section><!-- .entry-content -->
 </main><!-- #post-## -->
