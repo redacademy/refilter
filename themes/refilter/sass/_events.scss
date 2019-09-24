@@ -1,0 +1,114 @@
+.single.single-events{
+    
+    //Global Elements for Single Events
+
+    letter-spacing: 0.1rem;
+    
+    // Landing Section
+
+    .landing-single-event{
+
+        color:$white;
+        padding: 1rem;
+        height: 100vh;
+
+        h1{
+            font-size: 2.5rem;
+            
+        }
+        
+        h3{
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin: 0;
+            line-height: 3rem;
+        }
+        
+        i{
+            margin-right: 1rem;
+        }
+
+        @include desktop{
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 800px;
+        }
+    }
+    
+    .rsvp{
+        display: flex;
+        justify-content: center;
+        a {
+            text-decoration: none;
+            color: $white;
+            
+          }
+        .rsvp-btn {
+        padding: 18px 40px;
+        letter-spacing: 0.1rem;
+        font-weight: 500;
+        font-family: $font__hero-image-sub-heading-description;
+        font-size: 1.2rem;
+        background-color: $light_green;
+        border: $light_green;
+        box-shadow: 0 4px 4px rgba(14, 11, 11, 0.35);
+        border-radius: 5px;
+        text-decoration: none;
+        margin-top: 2rem;
+
+        @include desktop{
+            padding: 18px 50px;
+        }
+
+        i {
+            margin-left: 10px;
+            font-size: 18px;
+            margin-right: 1rem;
+        }
+        }
+    }
+    
+    // Single Event Content Section
+    .single-event-content {
+        display: flex;
+        width: 80%;
+        
+
+        .single_event_description{
+            text-align: left;
+            justify-content: left;
+        }
+
+        iframe{
+            width: 99%;
+            box-shadow: 0 0 10px rgba(14, 11, 11, 0.35);
+            border-radius: 5px;
+            height: 450px;
+        }
+        
+        .rsvp{
+            
+            .rsvp-btn {
+                margin-top: 0;    
+                margin-bottom: 4.5rem;
+            }
+        }
+
+       @include desktop{
+        width: 65%;
+        padding: 2rem;
+        flex-wrap: wrap;
+        background-color: #faf7f2;
+        padding: 2rem;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(14, 11, 11, 0.35);
+        margin-top: 5rem;
+        iframe{
+            height: 550px;
+            width: 100%;    
+           }
+       }
+
+       
+    }
+}

@@ -261,7 +261,7 @@ html {
           box-sizing: inherit; }
 
 body {
-  background: url("http://refilter.van.cp.academy.red/wp-content/uploads/2019/09/pattern.jpg") repeat-y bottom/contain;
+  background: url("http://refilter.van.cp.academy.red/wp-content/uploads/2019/09/pattern.jpg") repeat-y bottom/cover;
   color: #000;
   font-size: 14; }
 
@@ -2061,6 +2061,94 @@ textarea {
       font-weight: 300;
       width: 100%; }
 
+.single.single-events {
+  letter-spacing: 0.1rem; }
+  .single.single-events .landing-single-event {
+    color: #F8F6F0;
+    padding: 1rem;
+    height: 100vh; }
+    .single.single-events .landing-single-event h1 {
+      font-size: 2.5rem; }
+    .single.single-events .landing-single-event h3 {
+      font-size: 1.2rem;
+      font-weight: 300;
+      margin: 0;
+      line-height: 3rem; }
+    .single.single-events .landing-single-event i {
+      margin-right: 1rem; }
+    @media (min-width: 768px) {
+      .single.single-events .landing-single-event {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        height: 800px; } }
+  .single.single-events .rsvp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .single.single-events .rsvp a {
+      text-decoration: none;
+      color: #F8F6F0; }
+    .single.single-events .rsvp .rsvp-btn {
+      padding: 18px 40px;
+      letter-spacing: 0.1rem;
+      font-weight: 500;
+      font-family: "MADEEvolveSans-Medium", sans-serif;
+      font-size: 1.2rem;
+      background-color: #39A8AB;
+      border: #39A8AB;
+      -webkit-box-shadow: 0 4px 4px rgba(14, 11, 11, 0.35);
+              box-shadow: 0 4px 4px rgba(14, 11, 11, 0.35);
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 2rem; }
+      @media (min-width: 768px) {
+        .single.single-events .rsvp .rsvp-btn {
+          padding: 18px 50px; } }
+      .single.single-events .rsvp .rsvp-btn i {
+        margin-left: 10px;
+        font-size: 18px;
+        margin-right: 1rem; }
+  .single.single-events .single-event-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%; }
+    .single.single-events .single-event-content .single_event_description {
+      text-align: left;
+      -webkit-box-pack: left;
+          -ms-flex-pack: left;
+              justify-content: left; }
+    .single.single-events .single-event-content iframe {
+      width: 99%;
+      -webkit-box-shadow: 0 0 10px rgba(14, 11, 11, 0.35);
+              box-shadow: 0 0 10px rgba(14, 11, 11, 0.35);
+      border-radius: 5px;
+      height: 450px; }
+    .single.single-events .single-event-content .rsvp .rsvp-btn {
+      margin-top: 0;
+      margin-bottom: 4.5rem; }
+    @media (min-width: 768px) {
+      .single.single-events .single-event-content {
+        width: 65%;
+        padding: 2rem;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        background-color: #faf7f2;
+        padding: 2rem;
+        border-radius: 5px;
+        -webkit-box-shadow: 0 0 10px rgba(14, 11, 11, 0.35);
+                box-shadow: 0 0 10px rgba(14, 11, 11, 0.35);
+        margin-top: 5rem; }
+        .single.single-events .single-event-content iframe {
+          height: 550px;
+          width: 100%; } }
 .error404 {
   background: url(http://refilter.van.cp.academy.red/wp-content/uploads/2019/09/hero-404-desktop.png);
   background-size: cover;
