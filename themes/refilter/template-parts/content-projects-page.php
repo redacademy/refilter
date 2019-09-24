@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying page content in page.php.
+ * Template part for displaying page content in projects-page.php.
  *
  * @package Refilter
  */
@@ -141,14 +141,8 @@
 
 			<section class="wavy-newsletter container-fluid">
 				<h1 class="wavy-newsletter-title"><?php the_field('newsletter_title'); ?></h1>										
-		
-					<form class="wavy-newsletter-form">
-					<input class="wavy-newsletter-name" type="text" placeholder="<?php the_field('newsletter_name'); ?>" />
-					<input class="wavy-newsletter-email" type="text" placeholder="<?php the_field('newsletter_email'); ?>" />													
-					<button class="btn green-empty" type="submit">Join Mailing List</button>
-					</form>
-
-			</section>
+				<?php echo do_shortcode('[gravityform id=3 ajax=true tabindex=49]'); ?>
+		</section>
 	</section><!-- .entry-content -->
 </section><!-- #post-## -->
 
