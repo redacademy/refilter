@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying page content in page.php.
+ * Template part for displaying page content in page-get-involved.php.
  *
  * @package Refilter
  */
@@ -29,39 +29,25 @@
                     <h3 class="landing-description"><?php the_field('get_involved_landing_description'); ?></h3>
                     <a href="#become-a-member"><i class="fas fa-sort-down"></i></a> 
                 </section>
-
-    <section class="upcoming-events-content">
-
-        <section class="upcoming-events container">
-        <div class="upcoming-events-title container">
-                <h3><?php the_field('upcoming_events_title'); ?></h3>
-            </div>
-            <span class="event-wallpaper" style="background: url('<?php the_field('upcoming_events_background_image_1'); ?>') no-repeat center center/cover; background-size: 100% 50%; background-position-y: top; background-color: #94c8c0;">
-                <div class="upcoming-date">
-                    <p class="bold-date"><?php the_field('upcoming_events_date_number_1'); ?></p>
-                    <p class="upper-month"><?php the_field('upcoming_events_month_1'); ?></p>
-                </div>    
-                <p class="event-description-1"><?php the_field('upcoming_events_description_1'); ?></p>	
-                <a class="learn-btn-events"href="#">Learn More <i class="fas fa-arrow-right"></i></a>  
-            </span>
-            <span class="event-wallpaper" style="background: url('<?php the_field('upcoming_events_background_image_2'); ?>') no-repeat center center/cover; background-size: 100% 50%; background-position-y: top; background-color: #94c8c0">
-            <div class="upcoming-date">
-                    <p class="bold-date"><?php the_field('upcoming_events_date_number_2'); ?></p>
-                    <p class="upper-month"><?php the_field('upcoming_events_month_2'); ?></p>
-                </div>  
-                <p class="event-description"><?php the_field('upcoming_events_description_2'); ?></p>	
-                <a class="learn-btn-events"href="#">Learn More <i class="fas fa-arrow-right"></i></a>  
-            </span>
-            <span class="event-wallpaper" style="background: url('<?php the_field('upcoming_events_background_image_3'); ?>') no-repeat center center/cover; background-size: 100% 50%; background-position-y: top; background-color: #94c8c0">
-            <div class="upcoming-date">
-                    <p class="bold-date"><?php the_field('upcoming_events_date_number_3'); ?></p>
-                    <p class="upper-month"><?php the_field('upcoming_events_month_3'); ?></p>
-                </div>  
-                <p class="event-description"><?php the_field('upcoming_events_description_3'); ?></p>	
-                <a class="learn-btn-events"href="#">Learn More <i class="fas fa-arrow-right"></i></a>  
-            </span>
-        </section>
     </section>
+    <div class="upcoming-events-title container">
+				<h3><?php the_field('upcoming_events_title'); ?></h3>
+		</div>   
+    <?php
+        //   $blog_posts = get_posts(array(
+        //     'post_type' => 'events',
+		// 	'numberposts' => 2,
+		//   ));
+		$args = array(  
+			'post_type' => 'events',
+			'posts_per_page' => 3
+		);
+	 
+		$blog_posts = new WP_Query( $args );
+		while($blog_posts->have_posts()): $blog_posts->the_post();
+			get_template_part('template-parts/content', 'single-events-thumbnail');
+		endwhile; wp_reset_postdata();
+	?>
 
     <section class="become-a-member container" id="become-a-member">
 
@@ -127,12 +113,8 @@
                     }
 		            }
                 </style>
-                <h1 class="wavy-newsletter-title"><?php the_field('newsletter_title'); ?></h1>										
-				<form class="wavy-newsletter-form">
-				<input class="wavy-newsletter-name" type="text" placeholder="<?php the_field('newsletter_name'); ?>" />
-				<input class="wavy-newsletter-email" type="text" placeholder="<?php the_field('newsletter_email'); ?>" />													
-				<button class="btn green-empty" type="submit">Join Mailing List</button>
-			</form>
+                <h1 class="wavy-newsletter-title"><?php the_field('newsletter_title'); ?></h1>																				
+				<?php echo do_shortcode('[gravityform id=3 ajax=true tabindex=49]'); ?>
 		</section>
 </section>
 	</section><!-- .entry-content -->

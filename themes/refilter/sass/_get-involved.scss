@@ -12,7 +12,7 @@
         margin-left: 0;
         font-weight: 300; 
         width: 100%;
-        margin-top: 5rem;
+        margin-top: 2rem;
     }
 
     h4{
@@ -24,7 +24,7 @@
     li{
         margin-bottom: 0.75rem;
     }
-        
+
     // Landing Section
 
     .landing{
@@ -43,6 +43,7 @@
             font-weight: 300;
             margin-top: 0;
             line-height: 3rem;
+            justify-content: center;
         }
     }
 
@@ -74,12 +75,25 @@
 
     .upcoming-events-content{ 
 
+        display: flex;
+        align-content: center;
+        justify-content: center;
+     
+        @include desktop {
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;  
+            flex-wrap: wrap;  
+            width: 1200px;
+        }
+
         .upcoming-events-title{
             padding: 1rem 0rem;
+            width: 100%;
+            margin-left: 0;
 
             @include desktop{
                 padding: 1rem 6.3rem;
-
                 h3{
                     margin-top:0;
                 }
@@ -89,20 +103,8 @@
     
     .upcoming-events {  
         display: flex;
-     
-        @include desktop {
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;  
-            -moz-box-orient: vertical;
-            flex-wrap: wrap;  
-            width: 1200px;
-        }
-
-        .upcoming-events-title {
-            width: 100%;
-            margin-left: 0;
-        }
+        flex-direction: row;
+       
 
         .event-wallpaper {
             position: relative;
@@ -113,7 +115,7 @@
             background-size: 664px 1022px; 
             border-radius: 5px;
             margin: 1.5rem;
-            width: 350px;
+            width: 330px;
             color: $white;
 
             @include desktop {
@@ -129,11 +131,12 @@
                 border-radius: 50%;
                 position: absolute;
                 top: 10px;
-                right: 255px;
-                padding: 1rem 1.4rem;
+                right:80%;
+                padding: 15px 22px;
+                margin: 0;
 
                 @include desktop {
-                    right: 200px;
+                    right: 255px;
                 }
                 
 
@@ -162,8 +165,12 @@
             text-align: flex-start;
             margin-left: 1.5rem;
             align-content: center;
-            margin-bottom: 3.5rem;
+            margin-bottom: 3rem;
             font-size: 1.5rem;
+
+            @include desktop{
+                margin-bottom: 1.75rem;
+            }
         }
 
         .event-description{
@@ -202,6 +209,7 @@
         h3 {
             text-align: left;
             padding: 1rem;
+            font-size: 1.9rem;
         }
     }
 
@@ -228,9 +236,11 @@
         .right-half {
         padding: 1rem;
         flex-basis: 100%;
+        margin-bottom: 3rem;
         
         @include desktop {
             flex-basis: 50%;
+            margin-bottom: 0;
         }
         }
 
@@ -241,12 +251,11 @@
         } 
 
         ul {
-            margin: 0;
             padding: 1rem;
         }
 
         a {
-            padding: 12px 30px;
+            padding: 12px 25px;
             letter-spacing: 0.1rem;
             font-weight: 500;
             font-family: $font__hero-image-sub-heading-description;
@@ -266,24 +275,22 @@
         }
 
         h4 {
-            padding-top: 2rem;
+            padding-top: 1rem;
             border-top: solid $grey 1px;
             width: 100%;
+            margin-bottom: 0;
         } 
 
         .standard-class {
-            margin-top: 2rem;
+            margin-top: 1rem;
         }
 
-        .voting-class {
-            margin-top: 2rem;
-        }
+        
 
         .voting-class-title {
-            margin-top: 1.5rem;
+            margin-top: 2.5rem;
         }
     }
-
 
     // Support Our Cause Section
     
@@ -296,12 +303,9 @@
             width: 40%;
         }
 
-    .support-our-cause h3 {
-        font-family: $font__heading3;
-        margin-bottom: 0;
-        margin-left: 0;
-        font-weight: 300; 
-        width: 100%;
+        h3{
+            font-size: 2rem;
         }
     }
 }
+

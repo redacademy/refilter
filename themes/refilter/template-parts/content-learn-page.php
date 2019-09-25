@@ -27,8 +27,8 @@
 				<h1 class="landing-title"><?php the_field('learn_landing_title'); ?></h1>
 				<h2 class="landing-question"><?php the_field('learn_landing_question'); ?></h2>
                 <h3 class="landing-quote"><?php the_field('learn_landing_quote'); ?></h3>
-                <button class="learn-btn" type="submit">Learn More <i class="fas fa-arrow-right fa-sm"></i></button>
-			</section>
+                <a class="learn-btn" href="get-involved">Learn More <i class="fas fa-arrow-right fa-sm"></i></a> 
+			</section>  
 
             <section class="how-to-help container container-content">
 					<h1 class="how-to-help-title"><?php the_field('help_title'); ?></h2>			
@@ -42,7 +42,7 @@
                     <ul class="quotes-grid" id="quotes-grid">
                         <?php while( have_rows('quotes')) : the_row();
                             $i++;
-                            if( $i > 8 )
+                            if( $i > 9 )
                             {
                                 break;
                             }
@@ -52,12 +52,12 @@
                             <?php the_sub_field('single_quote'); ?>
                             </li>              
                         <?php endwhile; ?>
-                        <button id="reshuffle-btn" class="reshuffle-btn"><i class="fas fa-random"></i>Reshuffle Cards</button>
                     </ul>  
                 <?php else: ?>
                     <p>Quotes to be shown soon.</p>
                 <?php endif; ?>
                     </ul>
+                    <button id="reshuffle-btn" class="reshuffle-btn"><i class="fas fa-random"></i>Reshuffle Cards</button>
             </section>
 
             <section class="wavy-quiz container-fluid">
@@ -84,27 +84,27 @@
             </section>
 
             <section class="template-download container-fluid">
-                <span class="wallpaper" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('<?php the_field('wallpaper_1'); ?>') no-repeat center center/cover;">
+                <span class="wallpaper" style="background: url('<?php the_field('wallpaper_1'); ?>') no-repeat center center/cover; background-position-y: 90%;">
                     <a class="download-btn" href="#"><i class="fas fa-file-download"></i></a>    
-                    <h2 class="template-download-question"><?php the_field('wallpaper_1_question'); ?></h2>
+                    <!-- <h2 class="template-download-question"><?php the_field('wallpaper_1_question'); ?></h2>
                     <p class="template-download-description"><?php the_field('wallpaper_1_description'); ?></p>	
                     <a class="learn-btn"href="#">Learn More <i class="fas fa-arrow-right"></i></a>
-                    <img class="re-logo" src="<?php the_field('refilter_logo_1'); ?>" >    
+                    <img class="re-logo" src="<?php the_field('refilter_logo_1'); ?>" >    --> 
                 </span>
-                    <span class="wallpaper" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('<?php the_field('wallpaper_2'); ?>') no-repeat center center/cover;">
+                    <span class="wallpaper" style="background: url('<?php the_field('wallpaper_2'); ?>') no-repeat center center/cover; background-position-y: 90%;">
                     <a class="download-btn" href="#"><i class="fas fa-file-download"></i></a>    
-                    <h2 class="template-download-question"><?php the_field('wallpaper_2_question'); ?></h2>
+                    <!-- <h2 class="template-download-question"><?php the_field('wallpaper_2_question'); ?></h2>
                     <p class="template-download-description"><?php the_field('wallpaper_2_description'); ?></p>	
                     <a class="learn-btn" href="#">Learn More <i class="fas fa-arrow-right"></i></a>
-                    <img class="re-logo" src="<?php the_field('refilter_logo_1'); ?>" >  
+                    <img class="re-logo" src="<?php the_field('refilter_logo_1'); ?>" >   -->
                 </span>
                 
-                <span class="wallpaper" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('<?php the_field('wallpaper_3'); ?>') no-repeat center center/cover;">
+                <span class="wallpaper" style="background: url('<?php the_field('wallpaper_3'); ?>') no-repeat center center/cover; background-position-y: 90%;">
                     <a class="download-btn" href="#"><i class="fas fa-file-download"></i></a>    
-                    <h2 class="template-download-question"><?php the_field('wallpaper_3_question'); ?></h2>
+                    <!-- <h2 class="template-download-question"><?php the_field('wallpaper_3_question'); ?></h2>
                     <p class="template-download-description"><?php the_field('wallpaper_3_description'); ?></p>	
                     <a class="learn-btn" href="#">Learn More <i class="fas fa-arrow-right"></i></a>
-                    <img class="re-logo" src="<?php the_field('refilter_logo_1'); ?>" > 
+                    <img class="re-logo" src="<?php the_field('refilter_logo_1'); ?>" >  -->
                 </span>
             </section>
 
@@ -122,12 +122,8 @@
                     }
 		            }
                 </style>
-                <h1 class="wavy-newsletter-title"><?php the_field('newsletter_title'); ?></h1>										
-				<form class="wavy-newsletter-form">
-				<input class="wavy-newsletter-name" type="text" placeholder="<?php the_field('newsletter_name'); ?>" />
-				<input class="wavy-newsletter-email" type="text" placeholder="<?php the_field('newsletter_email'); ?>" />													
-				<button class="btn green-empty" type="submit">Join Mailing List</button>
-			</form>
+                <h1 class="wavy-newsletter-title"><?php the_field('newsletter_title'); ?></h1>									
+				<?php echo do_shortcode('[gravityform id=3 ajax=true tabindex=49]'); ?>
 		</section>
 	</section><!-- .entry-content -->
 </main><!-- #post-## -->
