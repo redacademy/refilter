@@ -44,6 +44,44 @@
 
 	<h2>Related Posts</h2>
 	<div class="related-posts-wrapper">
+		
+
+	<?php
+             $loop = new WP_Query( array(
+             'post_type' => 'projects',
+			//   'posts_per_page' => 2,
+			  'date_query'    => array(
+				'column'  => 'post_date',
+				'after'   => '- 30 days'
+		     	)
+		     	));
+		 								?>
+			   <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+			   <a  class ="readmore-link"  href="<?php the_permalink(); ?>">
+			   <div class="projects-container-single-one"
+			   style="background: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)), url('<?php the_field('single_project_background_image'); ?>') no-repeat center center/cover"
+			   >
+			   
+						<div class="container-info-single ">
+							
+							
+							<div class="post-container-single"><h3 class="the-tittle-post"> <?php the_title(); ?></h3></div>
+
+
+							<h4 class="learn-more-arrow-single"> Learn More <i class="fas fa-arrow-right"></i> </h4>
+
+
+
+
+
+							
+
+						</div>
+			  </div></a>
+
+                 <!-- do stuff -->
+              <?php endwhile; wp_reset_query(); ?>
+		
 			
 	</div>
 </section>

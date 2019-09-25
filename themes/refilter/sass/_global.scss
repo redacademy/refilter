@@ -115,13 +115,24 @@ img {
     }
   }
 
-  .wavy-newsletter-form {
-    margin-bottom: 6rem;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    width: 80%;
-    flex-direction: column;
+  .wavy-newsletter-form_wrapper {
+    width: 100%;
+    margin-bottom: 5rem;
+
+    .wavy-newsletter-form {
+      width: 80%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      @include desktop {
+        flex-direction: row;
+      }
+    }
+
+    input[type='text'] {
+      padding: 0.75rem;
+    }
 
     @include desktop {
       align-items: center;
@@ -130,28 +141,80 @@ img {
       flex-direction: row;
     }
 
-    input {
-      width: 100%;
-      padding: 1rem;
-      margin: 0.8rem 0;
-      font-size: 1rem;
-
-      @include desktop {
-        width: 30%;
-      }
+    .gform_heading {
+      display: none;
     }
 
-    button {
-      background: $white;
-      color: $light_green;
-      padding: 0.8rem 4rem;
-      align-self: inherit;
-      margin-top: 0.75rem;
+    .gform_footer {
+      text-align: center;
+    }
+
+    .gform_body {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
 
       @include desktop {
-        padding: 13px 70px;
-        margin: 0.8rem 0;
+        flex-direction: row;
       }
+
+      .gform_fields.top_label.form_sublabel_below.description_below {
+        display: flex;
+        flex-direction: column;
+
+        @include desktop {
+          flex-direction: row;
+        }
+      }
+    }
+  }
+
+  .gfield.input.field_sublabel_below.field_description_below.gfield_visibility_visible {
+    width: 100%;
+
+    input {
+      @include desktop {
+        padding: 0.75rem !important;
+        width: 250px !important;
+      }
+    }
+  }
+
+  span {
+    width: 100% !important;
+
+    input {
+      padding: 0.75rem;
+    }
+  }
+
+  label {
+    display: none !important;
+  }
+
+  input {
+    width: 100% !important;
+    padding: 1rem;
+    margin: 0.8rem 0;
+    font-size: 1rem;
+
+    @include desktop {
+      width: 30%;
+    }
+  }
+
+  .gform_button.button {
+    background: $white;
+    color: $light_green;
+    text-align: center;
+    border: 2px solid $light_green;
+    border-radius: 4px;
+    margin-top: 0.75rem;
+
+    @include desktop {
+      margin: 0.8rem 0;
+      padding: 0.8rem;
+      width: 100% !important;
     }
   }
 }
