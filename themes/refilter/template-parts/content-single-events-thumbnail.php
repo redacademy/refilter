@@ -8,9 +8,7 @@
 ?>
 
 
-<section class="upcoming-events-content">
 
-	<section class="upcoming-events">
 		
 		<div class="event-wallpaper" style="background: url('<?php the_field('upcoming_single_event_background_thumbnail'); ?>') no-repeat center center/cover; background-size: 100% 50%; background-position-y: top; background-color: #94c8c0; width: 330px;">
 			<div class="upcoming-date">
@@ -21,9 +19,6 @@
 			<a class="learn-btn-events" href="<?php the_permalink(); ?>">Learn More <i class="fas fa-arrow-right"></i></a>  
 		</div>
 
-	</section>
-
-</section>
 
 
 

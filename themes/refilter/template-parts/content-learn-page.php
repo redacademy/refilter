@@ -85,26 +85,14 @@
 
             <section class="template-download container-fluid">
                 <span class="wallpaper" style="background: url('<?php the_field('wallpaper_1'); ?>') no-repeat center center/cover; background-position-y: 90%;">
-                    <a class="download-btn" href="#"><i class="fas fa-file-download"></i></a>    
-                    <!-- <h2 class="template-download-question"><?php the_field('wallpaper_1_question'); ?></h2>
-                    <p class="template-download-description"><?php the_field('wallpaper_1_description'); ?></p>	
-                    <a class="learn-btn"href="#">Learn More <i class="fas fa-arrow-right"></i></a>
-                    <img class="re-logo" src="<?php the_field('refilter_logo_1'); ?>" >    --> 
+                <a class="download-btn" href="<?php the_field('wallpaper_1'); ?>" download><i class="fas fa-file-download"></i></a>                        
                 </span>
                     <span class="wallpaper" style="background: url('<?php the_field('wallpaper_2'); ?>') no-repeat center center/cover; background-position-y: 90%;">
-                    <a class="download-btn" href="#"><i class="fas fa-file-download"></i></a>    
-                    <!-- <h2 class="template-download-question"><?php the_field('wallpaper_2_question'); ?></h2>
-                    <p class="template-download-description"><?php the_field('wallpaper_2_description'); ?></p>	
-                    <a class="learn-btn" href="#">Learn More <i class="fas fa-arrow-right"></i></a>
-                    <img class="re-logo" src="<?php the_field('refilter_logo_1'); ?>" >   -->
+                    <a class="download-btn" href="<?php the_field('wallpaper_2'); ?>" download><i class="fas fa-file-download"></i></a>    
                 </span>
                 
                 <span class="wallpaper" style="background: url('<?php the_field('wallpaper_3'); ?>') no-repeat center center/cover; background-position-y: 90%;">
-                    <a class="download-btn" href="#"><i class="fas fa-file-download"></i></a>    
-                    <!-- <h2 class="template-download-question"><?php the_field('wallpaper_3_question'); ?></h2>
-                    <p class="template-download-description"><?php the_field('wallpaper_3_description'); ?></p>	
-                    <a class="learn-btn" href="#">Learn More <i class="fas fa-arrow-right"></i></a>
-                    <img class="re-logo" src="<?php the_field('refilter_logo_1'); ?>" >  -->
+                <a class="download-btn" href="<?php the_field('wallpaper_3'); ?>" download><i class="fas fa-file-download"></i></a>                        
                 </span>
             </section>
 

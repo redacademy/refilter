@@ -27,7 +27,7 @@
 			<h1 class="landing-title"><?php the_field('projects_title'); ?></h1>
 			<h2 class="landing-question"><?php the_field('projects_question'); ?></h2>
 			<h3 class="landing-quote"><?php the_field('projects_quote'); ?></h3>
-			<a class="btn green-full" href="#">Learn More</a>
+			<a class="btn green-full" href="<?php echo site_url('learn'); ?>">Learn More</a>
         </section>
             
         <section class="container container-content">
@@ -63,7 +63,7 @@
 						<div class="content-container-info">
 							
 							
-							<div class="title-post-container"><h3 class="the-tittle-post"> <?php the_title(); ?></h3></div>
+							<h3 class="the-tittle-post"> <?php the_title(); ?></h3>
 
 
 							<p class="single-page-excerpt"><?php the_field('single_project_description'); ?></p>
@@ -82,7 +82,7 @@
 			<?php
              $loop = new WP_Query( array(
              'post_type' => 'projects',
-			//   'posts_per_page' => 2,
+			  'posts_per_page' => 2,
 			  'date_query'    => array(
 				'column'  => 'post_date',
 				'order' => 'DESC'
@@ -114,7 +114,7 @@
 				
 		</div>
 
-            <section class ="container container-content projects"> 
+            <section class ="container projects"> 
 					<h1 class="project-partner-title"><?php the_field('project_partner_title'); ?> </h1>
 					<p class="partner-description"> <?php the_field('projects_partner_description'); ?>  </p>    
 				
@@ -122,25 +122,25 @@
 					<div class="partner-container">   
 						<h1 class="partner-number"> <?php the_field('partner_one'); ?>  </h1>   
 						<p class="partner-description"> <?php the_field('partner_one_description'); ?>  </p>   
-						<a class="partner-website" href="<?php the_field('projects_partner_website_one'); ?>">www.pdl.smugmug.com</a>
+						<a class="partner-website" href="https://<?php the_field('projects_partner_website_one'); ?>"><?php the_field('projects_partner_website_one'); ?></a>
 					</div>
 
 					<div class="partner-container">
 						<h1 class="partner-number"> <?php the_field('partner_two'); ?>  </h1>      
 						<p class="partner-description"> <?php the_field('partner_two_description'); ?>  </p>   
-						<a class="partner-website" href="<?php the_field('projects_partner_website_two'); ?>"> @hillseyed</a>
+						<a class="partner-website" href="https://<?php the_field('projects_partner_website_two'); ?>"> @hillseyed</a>
 					</div>
 
 					<div class="partner-container">
 						<h1 class="partner-number"> <?php the_field('partner_three'); ?>  </h1>      
 						<p class="partner-description"> <?php the_field('partner_three_description'); ?>  </p>   
-						<a class="partner-website" href="<?php the_field('projects_partner_website_three'); ?>">www.banancampphoto.com</a>
+						<a class="partner-website" href="https://<?php the_field('projects_partner_website_three'); ?>"><?php the_field('projects_partner_website_three'); ?></a>
 					</div>
 				</div>	
 			</section>
 
 			<section class="wavy-newsletter container-fluid">
-				<h1 class="wavy-newsletter-title"><?php the_field('newsletter_title'); ?></h1>										
+			<h1 class="wavy-newsletter-title"><?php the_field('newsletter_title'); ?></h1>										
 				<?php echo do_shortcode('[gravityform id=3 ajax=true tabindex=49]'); ?>
 		</section>
 	</section><!-- .entry-content -->

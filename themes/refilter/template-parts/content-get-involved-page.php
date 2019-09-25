@@ -31,13 +31,10 @@
                 </section>
     </section>
     <div class="upcoming-events-title container">
-				<h3><?php the_field('upcoming_events_title'); ?></h3>
-		</div>   
+				<h3 class="events-title"><?php the_field('upcoming_events_title'); ?></h3>
+        </div>   
+	<section class="upcoming-events">        
     <?php
-        //   $blog_posts = get_posts(array(
-        //     'post_type' => 'events',
-		// 	'numberposts' => 2,
-		//   ));
 		$args = array(  
 			'post_type' => 'events',
 			'posts_per_page' => 3
@@ -47,7 +44,8 @@
 		while($blog_posts->have_posts()): $blog_posts->the_post();
 			get_template_part('template-parts/content', 'single-events-thumbnail');
 		endwhile; wp_reset_postdata();
-	?>
+    ?>
+    </section>
 
     <section class="become-a-member container" id="become-a-member">
 
@@ -74,7 +72,7 @@
                             <?php endif; ?>
                     </ul>
 
-                    <a class="join-btn" href="#">Join As Standard Class<i class="fas fa-arrow-right"></i></a>
+                    <a class="join-btn" href="<?php echo site_url('standard-class'); ?>">Join As Standard Class<i class="fas fa-arrow-right"></i></a>
                     
                     <h4 class="voting-class-title"><?php the_field('voting_class_title'); ?></h4>
                     
@@ -88,7 +86,7 @@
                             <?php endwhile; else: ?>
                             <?php endif; ?>  
                     </ul>       
-                    <a class="join-btn" href="#">Join As Voting Class <i class="fas fa-arrow-right"></i></a>
+                    <a class="join-btn" href="<?php echo site_url('voting-class'); ?>">Join As Voting Class <i class="fas fa-arrow-right"></i></a>
             </section>    
         </section>
 
@@ -97,6 +95,7 @@
     <section class="support-our-cause container">
         <h3 class="support-our-cause-title"><?php the_field('support_our_cause_title'); ?></h3>
         <p class="support-our-cause-description"><?php the_field('support_our_cause_description'); ?></p>
+        <a class="btn green-empty" href="<?php the_field('paypal-link'); ?>">Learn About Our Mission</a>
     </section>
 
     <section class="wavy-newsletter container-fluid">

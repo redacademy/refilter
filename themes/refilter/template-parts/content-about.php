@@ -25,20 +25,13 @@
 		
 		}
 </style>
-
-
-	<article class="entry-content">
-    <section class="wave"></section>
-        <div class="about-title">
-        </div>
-        <?php the_content(); ?>
-
+	<article class="entry-content">  
         <section class="about landing container-fluid">
             <section class="landing-wave"></section>
                 <h1 class="landing-title"><?php the_field('who_we_are_page_title'); ?></h1>		
 	        	<h2 class="landing-question"><?php the_field('who_we_are_page_question'); ?></h2>
 				<h3 class="landing-quote"><?php the_field('who_we_are_page_quote'); ?></h3>
-				<a class="btn green-full" href="#">Learn More</a>
+				<a class="btn green-full" href="<?php echo site_url('learn'); ?>">Learn More</a>
         </section>
             <h2 class="mission-title"><?php the_field('mission_title'); ?></h2>
         <section class="mission container container-content">
@@ -118,7 +111,6 @@
             }
 		    }
         </style>
-			<h1 class="wavy-newsletter-title"><?php the_field('newsletter_title', get_option('page_for_posts')); ?></h1>										
 				<h1 class="wavy-newsletter-title"><?php the_field('newsletter_title'); ?></h1>										
 				<?php echo do_shortcode('[gravityform id=3 ajax=true tabindex=49]'); ?>
 		</section>

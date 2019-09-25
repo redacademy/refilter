@@ -43,12 +43,8 @@
 			</div>
 			<?php the_field('event_location_google_maps'); ?>
 			<h3><?php the_field('other_events_title'); ?></h3>
-			<section class="events-loop">
+			<section class="upcoming-events">
 				<?php
-					//   $blog_posts = get_posts(array(
-					//     'post_type' => 'events',
-					// 	'numberposts' => 2,
-					//   ));
 					$args = array(  
 						'post_type' => 'events',
 						'posts_per_page' => 2

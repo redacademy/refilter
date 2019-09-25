@@ -1,29 +1,23 @@
-
-
-
-
-.projects-container-single-one{
-    border-radius: 15px;
-    height: 25vh;
-    width: 40vh;
-    margin: 30px;
-    padding: 10px 20px;
-    
+.projects-container-single-one {
+  border-radius: 15px;
+  height: 25vh;
+  width: 400px;
+  margin: 2rem;
 }
 
-
-.paragraph-single-projects{
-
-        max-width: 300px;
-        margin: 0 auto;
-        line-height: 1.8;
-        @include desktop{
-            max-width: 800px;
-        }
-
+.related-posts {
+  margin: 3rem auto 1rem auto;
+  max-width: 800px;
 }
 
-.container-info-single{
+.paragraph-single-projects {
+  margin: 2rem auto;
+  line-height: 1.8;
+  @include desktop {
+    max-width: 800px;
+  }
+}
 
-padding-top: 20px;
+.container-info-single {
+  padding: 1rem 2rem;
 }
