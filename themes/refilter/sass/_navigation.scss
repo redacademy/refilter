@@ -30,6 +30,10 @@
   align-items: center;
   z-index: 2;
 
+  .navbar-hamburger {
+    color: #000;
+  }
+
   @include desktop {
     justify-content: space-evenly;
   }

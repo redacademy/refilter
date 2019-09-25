@@ -95,7 +95,7 @@
     <section class="support-our-cause container">
         <h3 class="support-our-cause-title"><?php the_field('support_our_cause_title'); ?></h3>
         <p class="support-our-cause-description"><?php the_field('support_our_cause_description'); ?></p>
-        <a class="btn green-empty" href="<?php the_field('paypal-link'); ?>">Learn About Our Mission</a>
+        <a class="btn green-empty" href="http://<?php the_field('paypal-link'); ?>">Learn About Our Mission</a>
     </section>
 
     <section class="wavy-newsletter container-fluid">

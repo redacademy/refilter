@@ -63,11 +63,7 @@ get_header(); ?>
 		    }
         </style>
 			<h1 class="wavy-newsletter-title"><?php the_field('newsletter_title', get_option('page_for_posts')); ?></h1>										
-				<form class="wavy-newsletter-form">
-				<input class="wavy-newsletter-name" type="text" placeholder="<?php the_field('newsletter_name', get_option('page_for_posts')); ?>" />
-				<input class="wavy-newsletter-email" type="text" placeholder="<?php the_field('newsletter_email', get_option('page_for_posts')); ?>" />													
-				<button class="btn green-empty" type="submit">Join Mailing List</button>
-			</form>
+			<?php echo do_shortcode('[gravityform id=3 ajax=true tabindex=49]'); ?>		
 		</section>
 	</main><!-- #primary -->
 
