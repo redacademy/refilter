@@ -28,7 +28,7 @@
 				<h2 class="landing-question"><?php the_field('learn_landing_question'); ?></h2>
                 <h3 class="landing-quote"><?php the_field('learn_landing_quote'); ?></h3>
                 <a class="learn-btn" href="get-involved">Learn More <i class="fas fa-arrow-right fa-sm"></i></a> 
-			</section>
+			</section>  
 
             <section class="how-to-help container container-content">
 					<h1 class="how-to-help-title"><?php the_field('help_title'); ?></h2>			
@@ -42,7 +42,7 @@
                     <ul class="quotes-grid" id="quotes-grid">
                         <?php while( have_rows('quotes')) : the_row();
                             $i++;
-                            if( $i > 8 )
+                            if( $i > 9 )
                             {
                                 break;
                             }
@@ -52,12 +52,12 @@
                             <?php the_sub_field('single_quote'); ?>
                             </li>              
                         <?php endwhile; ?>
-                        <button id="reshuffle-btn" class="reshuffle-btn"><i class="fas fa-random"></i>Reshuffle Cards</button>
                     </ul>  
                 <?php else: ?>
                     <p>Quotes to be shown soon.</p>
                 <?php endif; ?>
                     </ul>
+                    <button id="reshuffle-btn" class="reshuffle-btn"><i class="fas fa-random"></i>Reshuffle Cards</button>
             </section>
 
             <section class="wavy-quiz container-fluid">
