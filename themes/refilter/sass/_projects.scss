@@ -1,59 +1,63 @@
 .single-projects {
-        .blog-entry-content {
-            background: transparent;
+  .blog-entry-content {
+    background: transparent;
 
-            @include desktop {
-                background: $white;
-                margin: 0 auto;
-            }
-        }
-}
-
-.page-template-page-all-projects{
-    background-repeat: repeat;
-    
-}
-.projects-title{
-    text-align: left;
-    margin-top: 20px;
-    padding-bottom: 15px;
-}
-.proejcts-descripton{
-    line-height: 2;
-    margin-bottom: 20px;
-}
-
-.partner-description{
-    padding-top: 30px;
-    line-height: 1.75;
-}
-
-.partners-container{
-    display: inline;
- @include desktop{  
-     display: flex;
-     .partner-container{
-         margin-right: 20px;
-     }
- }
-    justify-content: space-between;
-}
-
-.project-partner-title{
-    padding-top: 40px;
-    text-align: left;
-}
-.partner-website{
-    text-decoration: none;
-}
-
-.slide-container{
-    text-align: center;
-    margin-bottom: 30px;
-    @include desktop{
-         margin-right: 600px;
-
+    @include desktop {
+      background: $white;
+      margin: 0 auto;
     }
+  }
+}
+
+.page-template-page-all-projects {
+  background-repeat: repeat;
+}
+.projects-title {
+  text-align: left;
+  margin-top: 20px;
+  padding-bottom: 15px;
+}
+.proejcts-descripton {
+  line-height: 2;
+  margin-bottom: 20px;
+}
+
+.partner-description {
+  padding-top: 30px;
+  max-width: 800px;
+  line-height: 1.75;
+}
+
+.partners-container {
+  display: flex;
+  flex-direction: column;
+
+  @include desktop {
+    flex-direction: row;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+}
+
+.partner-container {
+  margin: 0 3rem;
+}
+
+.project-partner-title {
+  padding-top: 40px;
+  text-align: left;
+}
+.partner-website {
+  text-decoration: none;
+}
+
+.slide-container {
+  width: 55%;
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 30px;
 }
 
 .tabs {
@@ -66,85 +70,50 @@
   border-bottom: 2px solid #000;
 }
 
+.single-projects-container {
+  height: 40vh;
+  margin: 2rem auto;
 
-
-.single-projects-container{
-    height: 30vh;
-    padding: 45px;
-    margin-bottom: 2rem;
-    margin: 14px;
-    border-radius: 5px;
-    @include desktop {
-        width: 100vh;
-        height: 50vh;
-        margin: 0 auto;
-        margin-bottom: 20px;
-    }
-
+  @include desktop {
+    width: 60%;
+    height: 50vh;
+  }
 }
 
-
-.content-container-info{
-
-    @include tablet{
-        position: unset;
-    }
-
+.content-container-info {
+  padding: 5rem 2rem;
 }
 
-
-.the-tittle-post{
-    color: $white;
-    font-size: 25px;
+.the-tittle-post {
+  color: $white;
+  font-size: 25px;
 }
 
-.readmore-link{
-    text-decoration: none;
-     color: $white;
-    
+.readmore-link {
+  text-decoration: none;
+  color: $white;
 }
 
-
-
-.learn-more-arrow{
-      position: relative;
-     top: 65px;
-     left: 20px;
-     
-    
-
+.learn-more-arrow {
+  margin-top: 1rem;
 }
 
-.tab-container{
-
-    @include desktop{
-        
-    }
-
+.single-page-excerpt {
+  display: none;
+  @include desktop {
+    display: block;
+    max-width: 565px;
+    line-height: 1.9;
+  }
 }
 
-
-.single-page-excerpt{
-    display: none;
-    @include desktop{
-        display: block;
-        max-width: 565px;
-        line-height: 1.9;
-        margin-left: 60px;
-    }
+.title-post-container {
+  margin-left: 20px;
+  @include tablet {
+    padding-top: 10px;
+  }
 }
 
-
-.title-post-container{
-    margin-left: 20px;
-    @include tablet {
-        padding-top: 10px;
-    }
-
-}
-
-
-.projects-template-default.single-projects{
-    background-attachment: fixed;
-
+.projects-template-default.single-projects {
+  background-attachment: fixed;
 }

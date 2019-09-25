@@ -77,25 +77,25 @@
 					<img class="contribute-logo" src="<?php the_field('contribute_recycling_image'); ?>" />
 					<h3 class="contribute-recycling-title"><?php the_field('contribute_recycling_title'); ?></h3>
 					<p class="contribute-recycling-description"><?php the_field('contribute_recycling_description'); ?></p>
-					<a class="btn green-empty" href="#">Learn More</a>
+					<a class="btn green-empty" href="<?php echo site_url('learn'); ?>">Learn More</a>
 				</li>
 				<li class="contribute-events">
 					<img class="contribute-logo" src="<?php the_field('contribute_events_image'); ?>" />
 					<h3 class="contribute-events-title"><?php the_field('contribute_events_title'); ?></h3>
 					<p class="contribute-events-description"><?php the_field('contribute_events_description'); ?></p>
-					<a class="btn green-empty" href="#">See Our Events</a>				
+					<a class="btn green-empty" href="<?php echo site_url('get-involved'); ?>">See Our Events</a>				
 				</li>
 				<li class="contribute-donation">
 					<img class="contribute-logo" src="<?php the_field('contribute_donation_image'); ?>" />
 					<h3 class="contribute-donation-title"><?php the_field('contribute_donation_title'); ?></h3>
 					<p class="contribute-donation-description"><?php the_field('contribute_donation_description'); ?></p>
-					<a class="btn green-empty" href="#">Donate Now</a>				
+					<a class="btn green-empty" href="<?php echo site_url('get-involved'); ?>">Donate Now</a>				
 				</li>
 				<li class="contribute-word">
 					<img class="contribute-logo" src="<?php the_field('contribute_word_image'); ?>" />
 					<h3 class="contribute-word-title"><?php the_field('contribute_word_title'); ?></h3>
 					<p class="contribute-word-description"><?php the_field('contribute_word_description'); ?></p>
-					<a class="btn green-empty" href="#">Download Our Templates</a>			
+					<a class="btn green-empty" href="<?php echo site_url('learn'); ?>">Download Our Templates</a>			
 				</li>	
 			</ul>
 		</section>

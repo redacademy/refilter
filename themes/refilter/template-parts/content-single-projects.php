@@ -42,7 +42,7 @@
 	<p class="paragraph-single-projects"> <?php the_field('single_project_content'); ?></p>
 	
 
-	<h2>Related Posts</h2>
+	<h2 class="related-posts">Related Posts</h2>
 	<div class="related-posts-wrapper">
 		
 
