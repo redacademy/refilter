@@ -122,19 +122,19 @@
 					<div class="partner-container">   
 						<h1 class="partner-number"> <?php the_field('partner_one'); ?>  </h1>   
 						<p class="partner-description"> <?php the_field('partner_one_description'); ?>  </p>   
-						<a class="partner-website" href="https://<?php the_field('projects_partner_website_one'); ?>"><?php the_field('projects_partner_website_one'); ?></a>
+						<a class="partner-website" href="http://<?php the_field('projects_partner_website_one'); ?>"><?php the_field('projects_partner_website_one'); ?></a>
 					</div>
 
 					<div class="partner-container">
 						<h1 class="partner-number"> <?php the_field('partner_two'); ?>  </h1>      
 						<p class="partner-description"> <?php the_field('partner_two_description'); ?>  </p>   
-						<a class="partner-website" href="https://<?php the_field('projects_partner_website_two'); ?>"> @hillseyed</a>
+						<a class="partner-website" href="http://<?php the_field('projects_partner_website_two'); ?>"> @hillseyed</a>
 					</div>
 
 					<div class="partner-container">
 						<h1 class="partner-number"> <?php the_field('partner_three'); ?>  </h1>      
 						<p class="partner-description"> <?php the_field('partner_three_description'); ?>  </p>   
-						<a class="partner-website" href="https://<?php the_field('projects_partner_website_three'); ?>"><?php the_field('projects_partner_website_three'); ?></a>
+						<a class="partner-website" href="http://<?php the_field('projects_partner_website_three'); ?>"><?php the_field('projects_partner_website_three'); ?></a>
 					</div>
 				</div>	
 			</section>

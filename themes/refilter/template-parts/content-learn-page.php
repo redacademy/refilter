@@ -11,7 +11,6 @@
 	<section class="entry-content-learn">
 
     <section class="landing container-fluid">
-            <section class="landing-wave"></section>
                 <style>
                     .landing{
                         background: url('<?php the_field('landing_image_mobile'); ?>') no-repeat center center/cover; 
@@ -75,7 +74,7 @@
 		            }
                 </style>
                 <h3 class="wavy-quiz-question"><?php the_field('wavy_quiz_question'); ?></h3>
-                <button class="learn-btn" type="submit">Take the Quiz <i class="fas fa-arrow-right"></i></button>
+                <a class="learn-btn" href="http://<?php the_field('wavy_quiz_link'); ?>">Take the Quiz <i class="fas fa-arrow-right"></i></a>
             </section>
 
             <section class="help-spread container container-content">
