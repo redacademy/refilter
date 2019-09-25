@@ -12,6 +12,17 @@
 }
 
 
+.paragraph-single-projects{
+
+        max-width: 300px;
+        margin: 0 auto;
+        line-height: 1.8;
+        @include desktop{
+            max-width: 800px;
+        }
+
+}
+
 .container-info-single{
 
 padding-top: 20px;

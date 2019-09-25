@@ -38,8 +38,8 @@
 </section>		
 
 <section class="blog-entry-content">
-	<p><?php the_field('single_project_excerpt'); ?></p>
-	<p><?php the_field('single_project_content'); ?></p>
+	<p class="paragraph-single-projects"> <?php the_field('single_project_excerpt'); ?></p>
+	<p class="paragraph-single-projects"> <?php the_field('single_project_content'); ?></p>
 	
 
 	<h2>Related Posts</h2>
