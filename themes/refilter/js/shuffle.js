@@ -3,7 +3,6 @@
 
   shuffleBtn.addEventListener('click', e => {
     e.preventDefault();
-    // shuffleAnimation();
 
     const quotes =
       'https://refilter.van.cp.academy.red/wp-json/acf/v3/pages/16/quotes';
