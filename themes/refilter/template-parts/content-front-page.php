@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying page content in page.php.
+ * Template part for displaying page content in front-page.php.
  *
  * @package Refilter
  */
@@ -120,16 +120,12 @@
 
 			<section class="instagram-feed container">
 				<h1 class="instagram-feed-title"><?php the_field('instagram_feed_title'); ?></h1>
-				<?php the_content(); ?>
+				<?php echo do_shortcode('[instagram-feed width=80 widthunit=%. num=6  cols=3 imagepadding=18 showheader=false]'); ?>
 			</section>
 
 			<section class="wavy-newsletter container-fluid">
 				<h1 class="wavy-newsletter-title"><?php the_field('newsletter_title'); ?></h1>										
-				<form class="wavy-newsletter-form">
-				<input class="wavy-newsletter-name" type="text" placeholder="<?php the_field('newsletter_name'); ?>" />
-				<input class="wavy-newsletter-email" type="text" placeholder="<?php the_field('newsletter_email'); ?>" />													
-				<button class="btn green-empty" type="submit">Join Mailing List</button>
-			</form>
+				<?php echo do_shortcode('[gravityform id=3 ajax=true tabindex=49]'); ?>
 		</section>
 	</section><!-- .entry-content -->
 </main><!-- #post-## -->

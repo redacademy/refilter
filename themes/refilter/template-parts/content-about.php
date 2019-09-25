@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying page content in page.php.
+ * Template part for displaying page content in page-about.php.
  *
  * @package Refilter
  */
@@ -104,19 +104,23 @@
         </section>
 
         <section class="wavy-newsletter container-fluid">
+		<style>
+            .wavy-newsletter{
+                background: url('<?php the_field('newsletter_image', get_option('page_for_posts')); ?>') no-repeat center center/cover; 
+                background-size: 100% 100%;
+			}
+					
+            @media only screen and (min-width: 768px) {
+            .wavy-newsletter {
+                background: url('<?php the_field('newsletter_image_desktop', get_option('page_for_posts') ); ?>') no-repeat center center/cover;
+                background-size: 120% 100%;
+                background-color: transparent;
+            }
+		    }
+        </style>
+			<h1 class="wavy-newsletter-title"><?php the_field('newsletter_title', get_option('page_for_posts')); ?></h1>										
 				<h1 class="wavy-newsletter-title"><?php the_field('newsletter_title'); ?></h1>										
-				<form class="wavy-newsletter-form">
-				<input class="wavy-newsletter-name" type="text" placeholder="<?php the_field('newsletter_name'); ?>" />
-				<input class="wavy-newsletter-email" type="text" placeholder="<?php the_field('newsletter_email'); ?>" />													
-				<button class="btn green-empty" type="submit">Join Mailing List</button>
-			</form>
+				<?php echo do_shortcode('[gravityform id=3 ajax=true tabindex=49]'); ?>
 		</section>
-
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
-				'after'  => '</div>',
-			) );
-		?>
 	</article><!-- .entry-content -->
 </main><!-- #post-## -->
