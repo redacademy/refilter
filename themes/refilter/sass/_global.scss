@@ -64,7 +64,6 @@ img {
 .landing {
   min-height: 100vh;
   color: #fff;
-  position: relative;
 
   @include desktop {
     min-height: 80vh;
@@ -72,7 +71,8 @@ img {
 
   .landing-title,
   .landing-quote {
-    line-height: 1.5;
+    line-height: 1.2;
+    font-size: 3rem;
     font-weight: 400;
     width: 80%;
   }
@@ -80,6 +80,10 @@ img {
   .landing-title {
     padding-bottom: 1rem;
     margin: 0;
+
+    @include desktop {
+      font-size: 3.5rem;
+    }
   }
 
   .landing-question {
@@ -92,6 +96,7 @@ img {
   .landing-quote {
     margin: 0;
     font-weight: 400;
+    font-size: 2.65rem;
     margin-bottom: 2rem;
   }
 }
