@@ -16,8 +16,8 @@ get_header(); ?>
 			
 			<main class="content">
 					<h1 class="page-title"><?php echo esc_html( 'These are not the butts you are looking for!' ); ?></h1>
-					<p>Looks like this page is missing. If you have unaswered questions, please <a class="contact-us" href="#">contact us</a>.</p>
-					<a class="btn green-full" href="<?php home_url(); ?>">Return Home</a>
+					<p>Looks like this page is missing. If you have unaswered questions, please <a class="contact-us" href="<?php echo site_url('about'); ?>">contact us</a>.</p>
+					<a class="btn green-full" href="<?php echo home_url(); ?>">Return Home</a>
 				</main><!-- .page-content -->
 			</section><!-- .error-404 -->
 
